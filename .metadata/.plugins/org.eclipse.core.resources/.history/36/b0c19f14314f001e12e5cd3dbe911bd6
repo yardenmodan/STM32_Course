@@ -1,0 +1,110 @@
+#include "ex4.h"
+#define BUFF_SIZE 10
+uint8_t uart3_flag_callback = 0;
+uint8_t uart4_flag_callback=0;
+uint8_t uart5_flag_callback=0; //Flag when UART completes receiving data from user
+
+
+void ex4()
+{
+	uint8_t buff_r3[BUFF_SIZE];
+	uint8_t buff_r4[BUFF_SIZE];
+	uint8_t buff_r5[BUFF_SIZE];
+	HAL_StatusTypeDef status;
+	status = HAL_UART_Receive_IT(UART_DEBUG, buff_r3, BUFF_SIZE);				//Prepare UART to receive 10 bytes of data to buff
+	if(status != HAL_OK)
+	{
+		printf("UART_3 Receive failed with status: %d", status);
+		return;
+	}
+
+	while(1){
+		if(uart3_flag_callback)								//Check if UART received 10 bytes of data (by callback definition)
+		{
+			printf("callback 3 flag up [%s]\n",buff_r3);
+			uart3_flag_callback = 0;
+			status = HAL_UART_Receive_IT(UART_4, buff_r4, BUFF_SIZE);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_4 Receive failed with status: %d", status);
+			}
+
+			status = HAL_UART_Transmit(UART_DEBUG, buff_r3, BUFF_SIZE,HAL_MAX_DELAY);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_3 TRANSMIT failed with status: %d", status);
+			}
+			memset(buff_r3,0,BUFF_SIZE);
+//setting flag back to 0
+
+		}
+		if(uart4_flag_callback)
+		{
+			printf("callback 4 flag up [%s]\n",buff_r4);
+			uart4_flag_callback = 0;
+			status = HAL_UART_Receive_IT(UART_5, buff_r5, BUFF_SIZE);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_5 Receive failed with status: %d", status);
+			}
+			status = HAL_UART_Receive_IT(UART_DEBUG, buff_r3, BUFF_SIZE);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_DEBUG Receive failed with status: %d", status);
+			}
+			status = HAL_UART_Transmit(UART_4, buff_r4, BUFF_SIZE,HAL_MAX_DELAY);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_4 TRANSMIT failed with status: %d", status);
+			}
+			memset(buff_r4,0,BUFF_SIZE);
+
+
+
+		}
+		if(uart5_flag_callback)
+		{
+			printf("callback 5 flag up [%s]\n",buff_r5);
+			uart5_flag_callback = 0;
+			status = HAL_UART_Receive_IT(UART_4, buff_r4, BUFF_SIZE);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_4 Receive failed with status: %d", status);
+			}
+
+			status = HAL_UART_Transmit(UART_5, buff_r5, BUFF_SIZE,HAL_MAX_DELAY);		//preparing UART to receive 10 bytes of data under interrupt mode
+			if(status != HAL_OK)
+			{
+				printf("UART_5 TRANSMIT failed with status: %d", status);
+			}
+			memset(buff_r5,0,BUFF_SIZE);
+
+
+
+		}
+	}
+
+
+}
+
+/**
+  * @brief This function is called when *any* UART completes receiving X bytes.
+  */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart==UART_DEBUG){
+		uart3_flag_callback=1;
+	}
+	if (huart==UART_5){
+		uart5_flag_callback=1;
+	}
+
+	if (huart==UART_4){
+		uart4_flag_callback=1;
+
+	}
+
+}
+
+
+

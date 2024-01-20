@@ -1,0 +1,17 @@
+17:38:13 **** Incremental Build of configuration Debug for project IRQ_HW_FIX ****
+make -j8 all 
+arm-none-eabi-gcc "../RTG/Src/RTG.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/IRQ_HW_FIX/RTG/Inc" -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"RTG/Src/RTG.d" -MT"RTG/Src/RTG.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "RTG/Src/RTG.o"
+arm-none-eabi-gcc -o "IRQ_HW_FIX.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\IRQ_HW_FIX\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IRQ_HW_FIX.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IRQ_HW_FIX.elf
+ 
+arm-none-eabi-size   IRQ_HW_FIX.elf 
+arm-none-eabi-objdump -h -S  IRQ_HW_FIX.elf  > "IRQ_HW_FIX.list"
+   text	   data	    bss	    dec	    hex	filename
+  15848	    340	   3236	  19424	   4be0	IRQ_HW_FIX.elf
+Finished building: default.size.stdout
+ 
+Finished building: IRQ_HW_FIX.list
+ 
+
+17:38:15 Build Finished. 0 errors, 0 warnings. (took 2s.148ms)
+

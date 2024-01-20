@@ -1,0 +1,92 @@
+2024-01-15 01:47:35,906 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-01-15 01:47:35,966 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-01-15 01:47:35,966 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-01-15 01:47:53,923 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-01-15 01:47:53,923 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-01-15 01:47:53,923 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-01-15 19:40:50,063 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-01-15 19:40:50,071 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-01-15 19:40:50,071 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-01-15 19:41:03,526 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 320
+2024-01-15 19:41:03,526 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 81920
+2024-01-15 19:47:07,150 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-01-15 19:47:07,150 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-01-15 19:47:07,150 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-01-15 19:47:07,150 [INFO] TasksAndQueuesTab:757 - Static
+2024-01-15 19:47:24,022 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 727674064 Bytes (1073741824)
+2024-01-15 19:47:25,490 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 880243920 Bytes (1073741824)
+2024-01-15 19:49:27,653 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2024-01-15 19:49:27,666 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-15 19:49:27,666 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-15 19:49:27,667 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORTEX_M7
+2024-01-15 19:49:27,680 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2024-01-15 19:49:28,426 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\license.tmp_save
+2024-01-15 19:49:28,809 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\license.tmp
+2024-01-15 19:49:28,907 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-01-15 19:49:28,940 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_inc.tmp_save
+2024-01-15 19:49:29,059 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_inc.tmp
+2024-01-15 19:49:29,078 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-01-15 19:49:29,521 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelInit.tmp
+2024-01-15 19:49:29,537 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-01-15 19:49:29,627 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelStart.tmp
+2024-01-15 19:49:29,648 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_typedefs.tmp_save
+2024-01-15 19:49:29,865 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_typedefs.tmp
+2024-01-15 19:49:29,894 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_vars.tmp_save
+2024-01-15 19:49:30,018 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_vars.tmp
+2024-01-15 19:49:30,039 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_pfp.tmp_save
+2024-01-15 19:49:30,138 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_pfp.tmp
+2024-01-15 19:49:30,158 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-01-15 19:49:30,274 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_obj_creat.tmp
+2024-01-15 19:49:30,296 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_default_thread.tmp_save
+2024-01-15 19:49:30,388 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_default_thread.tmp
+2024-01-15 19:49:30,409 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_threads.tmp_save
+2024-01-15 19:49:30,503 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_threads.tmp
+2024-01-15 19:49:30,517 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-01-15 19:49:30,539 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_inc.tmp_save
+2024-01-15 19:49:30,644 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_inc.tmp
+2024-01-15 19:49:30,659 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-01-15 19:49:30,735 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelInit.tmp
+2024-01-15 19:49:30,749 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-01-15 19:49:30,846 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_kernelStart.tmp
+2024-01-15 19:49:30,858 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_typedefs.tmp_save
+2024-01-15 19:49:30,948 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_typedefs.tmp
+2024-01-15 19:49:30,970 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_vars.tmp_save
+2024-01-15 19:49:31,079 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_vars.tmp
+2024-01-15 19:49:31,095 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_pfp.tmp_save
+2024-01-15 19:49:31,183 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_pfp.tmp
+2024-01-15 19:49:31,204 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-01-15 19:49:31,277 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_obj_creat.tmp
+2024-01-15 19:49:31,292 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_default_thread.tmp_save
+2024-01-15 19:49:31,390 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_default_thread.tmp
+2024-01-15 19:49:31,402 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_threads.tmp_save
+2024-01-15 19:49:31,492 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\rtos_threads.tmp
+2024-01-15 19:49:31,545 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\FreeRTOSConfig.h_save
+2024-01-15 19:49:31,736 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\FreeRTOSConfig.h
+2024-01-15 19:49:31,780 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\freertos.c_save
+2024-01-15 19:49:31,898 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\freertos.c
+2024-01-15 19:49:31,942 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\cortex.tmp_save
+2024-01-15 19:49:32,105 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\cortex.tmp
+2024-01-15 19:49:32,151 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\stm32f7xx_it.c_save
+2024-01-15 19:49:32,396 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\stm32f7xx_it.c
+2024-01-15 19:49:32,439 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\stm32f7xx_it.h_save
+2024-01-15 19:49:32,536 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\stm32f7xx_it.h
+2024-01-15 19:49:32,586 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\stm32f7xx_hal_msp.c_save
+2024-01-15 19:49:32,737 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\stm32f7xx_hal_msp.c
+2024-01-15 19:49:32,754 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\system.tmp_save
+2024-01-15 19:49:32,833 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\MXTmpFiles\system.tmp
+2024-01-15 19:49:32,885 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-01-15 19:49:33,012 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\stm32f7xx_hal_conf.h
+2024-01-15 19:49:33,092 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\main.h_save
+2024-01-15 19:49:33,239 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Inc\main.h
+2024-01-15 19:49:33,284 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\main.c_save
+2024-01-15 19:49:33,558 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\Core\Src\main.c
+2024-01-15 19:49:36,896 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 1946mS.
+2024-01-15 19:49:36,910 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2024-01-15 19:49:37,368 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2024-01-15 19:49:40,603 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3695mS.
+2024-01-15 19:49:40,606 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-01-15 19:49:40,623 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2024-01-15 22:23:14,598 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-01-15 22:23:14,601 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-01-15 22:23:14,601 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-01-15 22:23:14,601 [INFO] TasksAndQueuesTab:757 - Static

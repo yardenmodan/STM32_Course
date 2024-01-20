@@ -1,0 +1,1472 @@
+2023-11-10 01:36:17,273 [INFO] MainUpdater:2868 - connection check result : 10
+2023-11-10 01:36:17,350 [INFO] MainUpdater:2868 - connection check result : 10
+2023-11-10 01:36:17,677 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-11-10 01:36:17,677 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-11-10 01:36:17,734 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-11-10 01:36:17,734 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-11-10 01:36:17,734 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-11-10 01:36:17,741 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-11-10 01:36:17,760 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2023-11-10 01:36:17,769 [WARN] MainPanel:272 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2023-11-10 01:36:17,777 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 867548976 Bytes (1073741824)
+2023-11-10 01:36:17,778 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-11-10 01:36:17,778 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-11-10 01:36:17,778 [INFO] OpenFileManager:308 - Change cursor
+2023-11-10 01:36:17,795 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-11-10 01:36:17,805 [INFO] Mcu:1946 - Initializing MCU STM32F746ZGTx STM32F746ZGTx STM32F746ZGT6
+2023-11-10 01:36:19,711 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-11-10 01:36:20,242 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-11-10 01:36:20,242 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-11-10 01:36:20,242 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-11-10 01:36:20,242 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-11-10 01:36:20,242 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-11-10 01:36:20,279 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,279 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,280 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,281 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,281 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,281 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 01:36:20,401 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-11-10 01:36:21,003 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-11-10 01:36:21,011 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Name)
+2023-11-10 01:36:21,011 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Value)
+2023-11-10 01:36:21,012 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PhyAddress)
+2023-11-10 01:36:21,012 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (48MHZClocksFreq_Value)
+2023-11-10 01:36:21,012 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC12outputFreq_Value)
+2023-11-10 01:36:21,012 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC34outputFreq_Value)
+2023-11-10 01:36:21,012 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2SClocksFreq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (LCDTFToutputFreq_Value) has invalid value (96000000)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOFreq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMCOFreq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PRESCALERUSB)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (RTCHSEDivFreq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (72000000)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SYSCLKSourceVirtual)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM15Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM16Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM17Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM1Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM20Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM3Freq_Value)
+2023-11-10 01:36:21,013 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM8Freq_Value)
+2023-11-10 01:36:21,014 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutput2Freq_Value)
+2023-11-10 01:36:21,014 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VcooutputI2S)
+2023-11-10 01:36:21,499 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 840887208 Bytes (1073741824)
+2023-11-10 01:36:21,565 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2023-11-10 01:36:21,566 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-11-10 01:36:21,566 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-11-10 01:36:21,567 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-11-10 01:36:21,568 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-11-10 01:36:21,569 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-11-10 01:36:21,570 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-11-10 01:36:21,874 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-11-10 01:36:21,876 [INFO] PinOutPanel:1499 - setPackage(STM32F746ZGTx,LQFP144)
+2023-11-10 01:36:22,417 [INFO] UtilMem:75 - Before build in PCC Used Memory: 938130008 Bytes (1073741824)
+2023-11-10 01:36:22,609 [INFO] UtilMem:75 - After build in PCC Used Memory: 835753360 Bytes (1073741824)
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,663 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,664 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,664 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,664 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,664 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,664 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,665 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,666 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,667 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,668 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,668 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,668 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,669 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,669 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,669 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,669 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,670 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,670 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,670 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,670 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,670 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,671 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,671 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,671 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,671 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,671 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,672 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,672 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,672 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,672 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,673 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,673 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,673 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,673 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,674 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,674 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,674 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,675 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,675 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,675 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,675 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,676 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,676 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,677 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,677 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,678 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,678 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 01:36:22,686 [INFO] ApiDbMcu:507 - Load IP Config File for PDM2PCM
+2023-11-10 01:36:22,737 [INFO] CADModel:165 - CPN selected for project levelSTM32F746ZGT6
+2023-11-10 01:36:22,738 [INFO] CADModel:114 - Register for checkConnection events
+2023-11-10 01:36:22,797 [INFO] OpenFileManager:328 - Restore cursor
+2023-11-10 01:36:30,326 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 01:37:45,391 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 803243064 Bytes (1073741824)
+2023-11-10 01:37:48,501 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 857707568 Bytes (1073741824)
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:37:48,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 01:37:48,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 01:37:48,900 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 01:37:48,901 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 01:37:49,254 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 01:37:49,398 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 01:37:49,454 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 01:37:49,628 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 01:37:50,194 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 01:37:50,298 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 01:37:50,338 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 01:37:50,542 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 01:37:50,559 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 01:37:50,647 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 01:37:50,674 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 01:37:50,804 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 01:37:50,811 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 01:37:50,903 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 01:37:50,929 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 01:37:51,027 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 01:37:51,056 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 01:37:51,057 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 01:37:51,080 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 01:37:51,176 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 01:37:51,189 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 01:37:51,330 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 01:37:52,068 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 308mS.
+2023-11-10 01:37:52,074 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 01:37:52,434 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 01:37:52,438 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-11-10 01:37:52,443 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-11-10 01:37:52,446 [INFO] ApiDbMcu:507 - Load IP Config File for LIBJPEG
+2023-11-10 01:37:52,453 [INFO] ApiDbMcu:507 - Load IP Config File for LWIP
+2023-11-10 01:37:52,459 [INFO] ApiDbMcu:507 - Load IP Config File for MBEDTLS
+2023-11-10 01:37:52,467 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2023-11-10 01:37:52,471 [INFO] ApiDbMcu:507 - Load IP Config File for USB_HOST
+2023-11-10 01:37:54,491 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2417mS.
+2023-11-10 01:37:54,492 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 01:37:54,496 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 01:52:50,326 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 01:55:02,107 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 846777608 Bytes (1073741824)
+2023-11-10 01:55:03,204 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 915983624 Bytes (1073741824)
+2023-11-10 01:55:03,547 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 793202088 Bytes (1073741824)
+2023-11-10 01:55:03,861 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 01:55:03,861 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 01:55:03,861 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:55:03,861 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 01:55:03,861 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 01:55:03,862 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 01:55:03,863 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 01:55:03,865 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 01:55:04,134 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 01:55:04,302 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 01:55:04,414 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 01:55:04,633 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 01:55:05,099 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 01:55:05,214 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 01:55:05,254 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 01:55:05,441 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 01:55:05,450 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 01:55:05,591 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 01:55:05,623 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 01:55:05,744 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 01:55:05,753 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 01:55:05,827 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 01:55:05,851 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 01:55:05,936 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 01:55:05,956 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 01:55:05,957 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 01:55:05,979 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 01:55:06,069 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 01:55:06,086 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 01:55:06,236 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 01:55:07,070 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 329mS.
+2023-11-10 01:55:07,075 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 01:55:07,414 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 01:55:09,483 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2408mS.
+2023-11-10 01:55:09,485 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 01:55:09,491 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 02:02:14,503 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 02:07:11,006 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 02:07:21,870 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 02:08:35,960 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:20:53,009 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:21:03,549 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:21:17,281 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:21:49,998 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 830028224 Bytes (1073741824)
+2023-11-10 17:21:52,372 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 925933128 Bytes (1073741824)
+2023-11-10 17:21:53,013 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:21:53,014 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:21:53,016 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:21:53,016 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:21:53,021 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:21:53,420 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:21:53,650 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:21:53,780 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:21:54,126 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:21:54,916 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:21:55,068 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:21:55,123 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:21:55,362 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:21:55,413 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:21:55,533 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:21:55,583 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:21:55,730 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:21:55,746 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:21:55,818 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:21:55,852 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:21:55,955 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:21:55,987 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:21:55,988 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:21:56,022 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:21:56,145 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:21:56,190 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:21:56,368 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:21:57,489 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 420mS.
+2023-11-10 17:21:57,496 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:21:57,938 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:22:02,181 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4684mS.
+2023-11-10 17:22:02,183 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-11-10 17:22:02,189 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 17:25:07,374 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 17:29:08,752 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:29:13,389 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 866144784 Bytes (1073741824)
+2023-11-10 17:29:14,647 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 915954192 Bytes (1073741824)
+2023-11-10 17:29:16,458 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 912863648 Bytes (1073741824)
+2023-11-10 17:29:17,046 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:29:17,046 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:29:17,046 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:29:17,046 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:29:17,046 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:29:17,047 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:29:17,048 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:29:17,050 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:29:17,449 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:29:17,793 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:29:17,899 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:29:18,325 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:29:18,930 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:29:19,042 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:29:19,088 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:29:19,351 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:29:19,363 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:29:19,460 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:29:19,491 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:29:19,681 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:29:19,690 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:29:19,774 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:29:19,835 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:29:19,990 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:29:20,025 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:29:20,026 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:29:20,051 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:29:20,193 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:29:20,214 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:29:20,393 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:29:21,398 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 346mS.
+2023-11-10 17:29:21,403 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:29:21,830 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:29:24,464 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3060mS.
+2023-11-10 17:29:24,465 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 17:29:24,470 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 17:30:40,590 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:32:28,905 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 17:32:42,855 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 829324144 Bytes (1073741824)
+2023-11-10 17:32:44,302 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 839132480 Bytes (1073741824)
+2023-11-10 17:32:46,950 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 846514696 Bytes (1073741824)
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:32:47,382 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:32:47,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:32:47,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:32:47,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:32:47,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:32:47,385 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:32:47,749 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:32:47,935 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:32:48,015 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:32:48,273 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:32:49,352 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:32:49,498 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:32:49,568 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:32:49,840 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:32:49,854 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:32:49,951 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:32:50,058 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:32:50,490 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:32:50,540 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:32:50,707 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:32:50,777 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:32:51,064 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:32:51,274 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:32:51,276 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:32:51,385 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:32:51,716 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:32:51,768 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:32:52,424 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:32:54,244 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 822mS.
+2023-11-10 17:32:54,253 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:32:54,949 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:32:58,067 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3814mS.
+2023-11-10 17:32:58,069 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 17:32:58,090 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 17:53:02,015 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:53:27,389 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 17:53:43,342 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 872825496 Bytes (1073741824)
+2023-11-10 17:53:44,493 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 814702376 Bytes (1073741824)
+2023-11-10 17:53:46,428 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 821304136 Bytes (1073741824)
+2023-11-10 17:53:46,892 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:53:46,893 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:53:46,895 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:53:46,895 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:53:46,896 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:53:47,208 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:53:47,365 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:53:47,438 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:53:47,608 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:53:48,425 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:53:48,548 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:53:48,606 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:53:48,824 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:53:48,834 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:53:48,919 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:53:48,950 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:53:49,132 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:53:49,141 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:53:49,226 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:53:49,254 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:53:49,383 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:53:49,419 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:53:49,419 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:53:49,447 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:53:49,586 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:53:49,632 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:53:49,812 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:53:50,713 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 349mS.
+2023-11-10 17:53:50,719 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:53:51,286 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:53:53,525 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2806mS.
+2023-11-10 17:53:53,527 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 17:53:53,532 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 17:55:08,010 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:55:11,096 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 853883488 Bytes (1073741824)
+2023-11-10 17:55:12,294 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 909984352 Bytes (1073741824)
+2023-11-10 17:55:14,270 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 913530960 Bytes (1073741824)
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:55:14,831 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:55:14,832 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:55:14,832 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:55:14,834 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:55:15,284 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:55:15,403 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:55:15,484 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:55:15,837 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:55:16,786 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:55:16,990 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:55:17,072 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:55:17,318 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:55:17,328 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:55:17,394 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:55:17,426 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:55:17,549 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:55:17,557 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:55:17,622 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:55:17,648 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:55:17,758 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:55:17,783 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:55:17,783 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:55:17,805 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:55:17,943 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:55:17,965 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:55:18,164 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:55:19,217 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 352mS.
+2023-11-10 17:55:19,223 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:55:19,558 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:55:22,057 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2833mS.
+2023-11-10 17:55:22,058 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 17:55:22,063 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 17:56:48,767 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:56:52,545 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:57:06,733 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 17:57:17,901 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 17:59:00,722 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 904491584 Bytes (1073741824)
+2023-11-10 17:59:02,184 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 810568824 Bytes (1073741824)
+2023-11-10 17:59:04,102 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 800560920 Bytes (1073741824)
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 17:59:04,623 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 17:59:04,624 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 17:59:04,624 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 17:59:04,626 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 17:59:04,948 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 17:59:05,093 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 17:59:05,162 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 17:59:05,405 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 17:59:06,238 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 17:59:06,366 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 17:59:06,417 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 17:59:06,621 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 17:59:06,630 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 17:59:06,695 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 17:59:06,724 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 17:59:06,873 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 17:59:06,881 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 17:59:06,950 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 17:59:06,975 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 17:59:07,115 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 17:59:07,151 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 17:59:07,153 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 17:59:07,185 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 17:59:07,323 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 17:59:07,341 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 17:59:07,523 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 17:59:08,534 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 393mS.
+2023-11-10 17:59:08,539 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 17:59:08,853 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 17:59:11,175 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2636mS.
+2023-11-10 17:59:11,177 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 17:59:11,182 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 18:01:48,391 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 798806368 Bytes (1073741824)
+2023-11-10 18:01:49,888 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 829053728 Bytes (1073741824)
+2023-11-10 18:01:51,617 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 819810912 Bytes (1073741824)
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:01:52,000 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 18:01:52,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 18:01:52,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 18:01:52,003 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 18:01:52,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 18:01:52,498 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 18:01:52,557 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 18:01:52,739 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 18:01:53,441 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 18:01:53,565 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 18:01:53,624 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 18:01:53,856 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 18:01:53,871 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 18:01:53,972 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 18:01:54,019 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 18:01:54,195 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 18:01:54,203 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 18:01:54,281 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 18:01:54,308 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 18:01:54,447 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 18:01:54,480 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 18:01:54,481 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 18:01:54,503 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 18:01:54,635 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 18:01:54,671 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 18:01:54,857 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 18:01:55,659 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 301mS.
+2023-11-10 18:01:55,663 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 18:01:56,081 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 18:01:58,277 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2614mS.
+2023-11-10 18:01:58,279 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 18:01:58,285 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 18:03:50,205 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 18:03:59,778 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 18:04:38,711 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 18:04:41,217 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 847752048 Bytes (1073741824)
+2023-11-10 18:04:42,343 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 848586224 Bytes (1073741824)
+2023-11-10 18:04:43,940 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 835153056 Bytes (1073741824)
+2023-11-10 18:04:44,348 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:04:44,348 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:04:44,349 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 18:04:44,350 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 18:04:44,350 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 18:04:44,352 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 18:04:44,736 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 18:04:44,920 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 18:04:45,009 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 18:04:45,235 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 18:04:45,960 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 18:04:46,112 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 18:04:46,182 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 18:04:46,452 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 18:04:46,461 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 18:04:46,558 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 18:04:46,592 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 18:04:46,764 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 18:04:46,772 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 18:04:46,850 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 18:04:46,881 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 18:04:47,038 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 18:04:47,060 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 18:04:47,061 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 18:04:47,084 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 18:04:47,187 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 18:04:47,204 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 18:04:47,365 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 18:04:48,226 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 346mS.
+2023-11-10 18:04:48,232 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 18:04:48,660 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 18:04:51,096 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2864mS.
+2023-11-10 18:04:51,098 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 18:04:51,105 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 18:06:19,734 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 18:06:26,003 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 870484720 Bytes (1073741824)
+2023-11-10 18:06:27,243 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 928682736 Bytes (1073741824)
+2023-11-10 18:06:29,081 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 848359368 Bytes (1073741824)
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 18:06:29,511 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 18:06:29,512 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:06:29,512 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 18:06:29,512 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 18:06:29,513 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 18:06:29,513 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 18:06:29,514 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 18:06:29,843 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 18:06:29,951 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 18:06:30,040 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 18:06:30,214 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 18:06:30,896 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 18:06:31,018 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 18:06:31,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 18:06:31,319 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 18:06:31,332 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 18:06:31,433 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 18:06:31,478 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 18:06:31,648 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 18:06:31,659 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 18:06:31,772 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 18:06:31,800 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 18:06:31,943 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 18:06:31,973 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 18:06:31,974 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 18:06:31,994 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 18:06:32,149 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 18:06:32,165 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 18:06:32,349 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 18:06:33,135 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 327mS.
+2023-11-10 18:06:33,141 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 18:06:33,599 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 18:06:35,914 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2773mS.
+2023-11-10 18:06:35,916 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 18:06:35,922 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 20:01:05,795 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:01:14,762 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:01:22,625 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 877051936 Bytes (1073741824)
+2023-11-10 20:01:23,784 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 870034296 Bytes (1073741824)
+2023-11-10 20:01:26,313 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 844931528 Bytes (1073741824)
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:01:26,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 20:01:26,735 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 20:01:26,735 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 20:01:26,739 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 20:01:27,122 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 20:01:27,247 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 20:01:27,316 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 20:01:27,468 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 20:01:28,197 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 20:01:28,314 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 20:01:28,377 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 20:01:28,619 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 20:01:28,645 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 20:01:28,762 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 20:01:28,801 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 20:01:28,950 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 20:01:28,958 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 20:01:29,051 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 20:01:29,088 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 20:01:29,239 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 20:01:29,266 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 20:01:29,267 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 20:01:29,301 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 20:01:29,448 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 20:01:29,480 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 20:01:29,677 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 20:01:30,569 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 410mS.
+2023-11-10 20:01:30,580 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 20:01:31,067 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 20:01:33,573 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2993mS.
+2023-11-10 20:01:33,575 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 20:01:33,580 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 20:14:54,107 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:14:54,261 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:16:05,707 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 859507072 Bytes (1073741824)
+2023-11-10 20:16:06,841 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 905598120 Bytes (1073741824)
+2023-11-10 20:16:07,452 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 856719144 Bytes (1073741824)
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:16:07,768 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 20:16:07,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 20:16:07,769 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 20:16:07,770 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 20:16:08,110 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 20:16:08,247 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 20:16:08,337 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 20:16:08,567 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 20:16:09,296 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 20:16:09,451 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 20:16:09,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 20:16:09,705 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 20:16:09,714 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 20:16:09,792 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 20:16:09,821 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 20:16:09,981 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 20:16:09,989 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 20:16:10,079 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 20:16:10,107 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 20:16:10,265 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 20:16:10,303 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 20:16:10,304 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 20:16:10,329 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 20:16:10,463 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 20:16:10,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 20:16:10,684 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 20:16:11,564 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 370mS.
+2023-11-10 20:16:11,569 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 20:16:12,534 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 20:16:14,635 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3066mS.
+2023-11-10 20:16:14,636 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 20:16:14,642 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 20:34:30,702 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:36:47,311 [INFO] Gpio:273 - dependency for GPIO [ETH, RCC, SYS, TIM10, UART4, USART3]
+2023-11-10 20:43:35,861 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:50:52,551 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 882773064 Bytes (1073741824)
+2023-11-10 20:50:54,057 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 942077736 Bytes (1073741824)
+2023-11-10 20:50:55,929 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 866131736 Bytes (1073741824)
+2023-11-10 20:50:56,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:50:56,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:50:56,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:50:56,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 20:50:56,383 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 20:50:56,384 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 20:50:56,386 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 20:50:56,732 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 20:50:56,962 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 20:50:57,051 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 20:50:57,300 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 20:50:57,992 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 20:50:58,159 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 20:50:58,232 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 20:50:58,497 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 20:50:58,509 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 20:50:58,587 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 20:50:58,619 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 20:50:58,814 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 20:50:58,821 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 20:50:58,904 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 20:50:58,940 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 20:50:59,106 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 20:50:59,132 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 20:50:59,133 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 20:50:59,156 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 20:50:59,257 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 20:50:59,273 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 20:50:59,421 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 20:51:00,455 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 372mS.
+2023-11-10 20:51:00,460 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 20:51:00,923 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 20:51:03,824 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3364mS.
+2023-11-10 20:51:03,826 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 20:51:03,835 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 20:57:48,872 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 20:58:21,139 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 898054816 Bytes (1073741824)
+2023-11-10 20:58:22,993 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 868456696 Bytes (1073741824)
+2023-11-10 20:58:23,481 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 918750832 Bytes (1073741824)
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 20:58:23,870 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 20:58:23,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:58:23,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 20:58:23,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 20:58:23,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 20:58:23,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 20:58:23,872 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 20:58:24,278 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 20:58:24,452 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 20:58:24,531 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 20:58:24,764 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 20:58:25,478 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 20:58:25,607 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 20:58:25,673 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 20:58:25,953 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 20:58:25,965 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 20:58:26,067 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 20:58:26,096 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 20:58:26,243 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 20:58:26,251 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 20:58:26,339 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 20:58:26,368 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 20:58:26,516 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 20:58:26,550 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 20:58:26,551 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 20:58:26,573 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 20:58:26,690 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 20:58:26,710 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 20:58:26,893 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 20:58:27,739 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 328mS.
+2023-11-10 20:58:27,746 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 20:58:28,279 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 20:58:30,512 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2766mS.
+2023-11-10 20:58:30,514 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 20:58:30,520 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:00:24,716 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:04:41,258 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:05:24,820 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:07:12,121 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 858662024 Bytes (1073741824)
+2023-11-10 21:07:13,411 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 917904520 Bytes (1073741824)
+2023-11-10 21:07:15,530 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 861522568 Bytes (1073741824)
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:07:15,966 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:07:15,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:07:15,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:07:15,969 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:07:16,389 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:07:16,534 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:07:16,613 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:07:16,862 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:07:17,678 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:07:17,807 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:07:17,868 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:07:18,120 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:07:18,128 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:07:18,224 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:07:18,253 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:07:18,424 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:07:18,433 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:07:18,538 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:07:18,563 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:07:18,725 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:07:18,760 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:07:18,761 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:07:18,784 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:07:18,935 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:07:18,954 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:07:19,194 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:07:20,200 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 374mS.
+2023-11-10 21:07:20,206 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:07:20,757 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:07:23,571 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3366mS.
+2023-11-10 21:07:23,573 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-11-10 21:07:23,579 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:13:58,419 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:14:22,160 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:14:31,275 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:14:42,756 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 901093168 Bytes (1073741824)
+2023-11-10 21:14:44,094 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 958764848 Bytes (1073741824)
+2023-11-10 21:14:45,912 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 869644576 Bytes (1073741824)
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:14:46,414 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:14:46,415 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:14:46,415 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:14:46,417 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:14:46,773 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:14:46,956 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:14:47,049 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:14:47,274 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:14:47,999 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:14:48,170 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:14:48,236 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:14:48,475 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:14:48,486 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:14:48,569 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:14:48,603 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:14:48,807 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:14:48,816 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:14:48,886 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:14:48,915 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:14:49,053 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:14:49,076 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:14:49,077 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:14:49,098 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:14:49,205 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:14:49,226 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:14:49,401 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:14:50,474 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 447mS.
+2023-11-10 21:14:50,479 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:14:51,035 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:14:53,328 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2849mS.
+2023-11-10 21:14:53,330 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:14:53,335 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:15:37,957 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:15:59,159 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 896174896 Bytes (1073741824)
+2023-11-10 21:16:01,848 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 861300800 Bytes (1073741824)
+2023-11-10 21:16:02,354 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 913203264 Bytes (1073741824)
+2023-11-10 21:16:02,747 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:16:02,748 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:16:02,750 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:16:03,115 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:16:03,380 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:16:03,449 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:16:03,676 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:16:04,591 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:16:04,757 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:16:04,813 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:16:05,006 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:16:05,017 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:16:05,102 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:16:05,135 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:16:05,294 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:16:05,302 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:16:05,389 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:16:05,421 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:16:05,574 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:16:05,603 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:16:05,604 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:16:05,628 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:16:05,779 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:16:05,824 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:16:06,043 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:16:06,957 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 406mS.
+2023-11-10 21:16:06,963 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:16:07,997 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:16:09,882 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2919mS.
+2023-11-10 21:16:09,883 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 21:16:09,890 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:16:20,716 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:17:30,120 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 927430176 Bytes (1073741824)
+2023-11-10 21:17:31,361 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 884139408 Bytes (1073741824)
+2023-11-10 21:17:33,413 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 877129648 Bytes (1073741824)
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:17:33,871 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:17:33,873 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:17:33,873 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:17:33,875 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:17:34,222 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:17:34,373 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:17:34,433 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:17:34,640 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:17:35,313 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:17:35,481 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:17:35,540 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:17:35,840 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:17:35,849 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:17:35,941 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:17:35,972 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:17:36,183 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:17:36,192 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:17:36,277 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:17:36,306 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:17:36,445 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:17:36,485 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:17:36,486 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:17:36,509 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:17:36,612 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:17:36,628 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:17:36,791 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:17:37,725 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 368mS.
+2023-11-10 21:17:37,736 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:17:38,316 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:17:41,137 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3401mS.
+2023-11-10 21:17:41,139 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 21:17:41,144 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:18:42,276 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:18:57,493 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 939432432 Bytes (1073741824)
+2023-11-10 21:18:59,053 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 906712592 Bytes (1073741824)
+2023-11-10 21:19:00,773 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 878065072 Bytes (1073741824)
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:19:01,254 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:19:01,255 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:19:01,255 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:19:01,257 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:19:01,620 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:19:01,785 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:19:01,838 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:19:02,018 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:19:02,778 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:19:02,900 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:19:02,950 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:19:03,152 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:19:03,166 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:19:03,248 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:19:03,275 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:19:03,424 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:19:03,433 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:19:03,504 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:19:03,530 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:19:03,701 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:19:03,733 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:19:03,733 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:19:03,757 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:19:03,894 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:19:03,911 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:19:04,127 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:19:04,975 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 309mS.
+2023-11-10 21:19:04,984 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:19:06,010 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:19:08,345 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3361mS.
+2023-11-10 21:19:08,347 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-11-10 21:19:08,353 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:21:56,302 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:22:00,796 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:22:11,412 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:22:36,553 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 865142184 Bytes (1073741824)
+2023-11-10 21:22:38,471 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 912995704 Bytes (1073741824)
+2023-11-10 21:22:40,175 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 912444392 Bytes (1073741824)
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F7
+2023-11-10 21:22:40,692 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2023-11-10 21:22:40,693 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-10 21:22:40,693 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-10 21:22:40,695 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-10 21:22:41,112 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp_save
+2023-11-10 21:22:41,278 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\license.tmp
+2023-11-10 21:22:41,370 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp_save
+2023-11-10 21:22:41,730 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\gpio.tmp
+2023-11-10 21:22:42,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp_save
+2023-11-10 21:22:42,475 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\cortex.tmp
+2023-11-10 21:22:42,534 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c_save
+2023-11-10 21:22:42,756 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_it.c
+2023-11-10 21:22:42,767 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h_save
+2023-11-10 21:22:42,859 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_it.h
+2023-11-10 21:22:42,888 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-10 21:22:43,072 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\stm32f7xx_hal_msp.c
+2023-11-10 21:22:43,082 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp_save
+2023-11-10 21:22:43,162 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\MXTmpFiles\system.tmp
+2023-11-10 21:22:43,193 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-10 21:22:43,372 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-10 21:22:43,406 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-11-10 21:22:43,407 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-10 21:22:43,433 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h_save
+2023-11-10 21:22:43,576 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Inc\main.h
+2023-11-10 21:22:43,598 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c_save
+2023-11-10 21:22:43,785 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\Desktop\Homework6-Timers\Core\Src\main.c
+2023-11-10 21:22:44,724 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 371mS.
+2023-11-10 21:22:44,730 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-10 21:22:45,782 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-10 21:22:48,113 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3383mS.
+2023-11-10 21:22:48,115 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-10 21:22:48,120 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-10 21:27:10,593 [INFO] MainUpdater:2868 - connection check result : 10
+2023-11-10 21:27:10,594 [INFO] MainUpdater:2868 - connection check result : 10
+2023-11-10 21:27:11,005 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-11-10 21:27:11,005 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-11-10 21:27:11,033 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-11-10 21:27:11,033 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-11-10 21:27:11,033 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-11-10 21:27:11,037 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-11-10 21:27:11,044 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2023-11-10 21:27:11,049 [WARN] MainPanel:272 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2023-11-10 21:27:11,055 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 929340032 Bytes (1073741824)
+2023-11-10 21:27:11,056 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-11-10 21:27:11,056 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-11-10 21:27:11,056 [INFO] OpenFileManager:308 - Change cursor
+2023-11-10 21:27:11,096 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2023-11-10 21:27:11,109 [INFO] Mcu:1946 - Initializing MCU STM32F746ZGTx STM32F746ZGTx STM32F746ZGT6
+2023-11-10 21:27:13,909 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2023-11-10 21:27:14,386 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2023-11-10 21:27:14,386 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2023-11-10 21:27:14,386 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2023-11-10 21:27:14,386 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2023-11-10 21:27:14,386 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,392 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,393 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2023-11-10 21:27:14,489 [INFO] ThirdPartyModel:298 - Start build external matchings
+2023-11-10 21:27:15,407 [INFO] ThirdPartyModel:316 - End build external matchings
+2023-11-10 21:27:15,418 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Name)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PHY_Value)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ETH) : Invalid parameter (PhyAddress)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (48MHZClocksFreq_Value)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC12outputFreq_Value)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC34outputFreq_Value)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2SClocksFreq_Value)
+2023-11-10 21:27:15,419 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (LCDTFToutputFreq_Value) has invalid value (96000000)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOFreq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMCOFreq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PRESCALERUSB)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (RTCHSEDivFreq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (72000000)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SYSCLKSourceVirtual)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM15Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM16Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM17Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM1Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM20Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM3Freq_Value)
+2023-11-10 21:27:15,420 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM8Freq_Value)
+2023-11-10 21:27:15,421 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutput2Freq_Value)
+2023-11-10 21:27:15,421 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VcooutputI2S)
+2023-11-10 21:27:15,900 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 927021544 Bytes (1073741824)
+2023-11-10 21:27:15,959 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2023-11-10 21:27:15,959 [INFO] ThirdParty:835 - entering critical section [change project]
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-11-10 21:27:15,959 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-11-10 21:27:15,960 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-11-10 21:27:15,961 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-11-10 21:27:15,961 [INFO] ThirdParty:841 - exiting critical section [change project]
+2023-11-10 21:27:16,197 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-11-10 21:27:16,200 [INFO] PinOutPanel:1499 - setPackage(STM32F746ZGTx,LQFP144)
+2023-11-10 21:27:16,673 [INFO] UtilMem:75 - Before build in PCC Used Memory: 877644960 Bytes (1073741824)
+2023-11-10 21:27:16,994 [INFO] UtilMem:75 - After build in PCC Used Memory: 925340704 Bytes (1073741824)
+2023-11-10 21:27:17,031 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,032 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,033 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,034 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,035 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,036 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,036 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,036 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,037 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,037 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,037 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,037 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,038 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,038 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,038 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,039 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,039 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,040 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,040 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,041 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,041 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,041 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,042 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,042 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,043 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,043 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,043 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,044 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,044 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,044 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,045 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,045 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,046 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,046 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,046 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,047 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,047 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,047 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,048 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,048 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,049 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,049 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,056 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,057 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,058 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,058 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,059 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,059 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,060 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2023-11-10 21:27:17,077 [INFO] ApiDbMcu:507 - Load IP Config File for PDM2PCM
+2023-11-10 21:27:17,152 [INFO] CADModel:165 - CPN selected for project levelSTM32F746ZGT6
+2023-11-10 21:27:17,152 [INFO] CADModel:114 - Register for checkConnection events
+2023-11-10 21:27:17,221 [INFO] OpenFileManager:328 - Restore cursor
+2023-11-10 21:27:23,013 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,076 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,077 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,078 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:23,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:25,991 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:26,028 [INFO] ADCParametersView:116 -                Rank 1 : false
+2023-11-10 21:27:34,702 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x134,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-10 21:27:57,952 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x134,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]

@@ -1,0 +1,10 @@
+23:57:01 **** Incremental Build of configuration Debug for project Homework7- DAC_ADC ****
+make -j8 all 
+arm-none-eabi-size   Homework7-\ DAC_ADC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30464	    432	   3744	  34640	   8750	Homework7- DAC_ADC.elf
+Finished building: default.size.stdout
+ 
+
+23:57:02 Build Finished. 0 errors, 0 warnings. (took 512ms)
+

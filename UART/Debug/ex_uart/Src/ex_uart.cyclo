@@ -1,0 +1,8 @@
+../ex_uart/Src/ex_uart.c:35:6:ex1	11
+../ex_uart/Src/ex_uart.c:109:6:ex2	7
+../ex_uart/Src/ex_uart.c:164:6:ex3	10
+../ex_uart/Src/ex_uart.c:234:6:ex4	10
+../ex_uart/Src/ex_uart.c:301:6:HAL_UART_RxCpltCallback	4
+../ex_uart/Src/ex_uart.c:316:6:HAL_UARTEx_RxEventCallback	3
+../ex_uart/Src/ex_uart.c:331:14:get_console_message	7
+../ex_uart/Src/ex_uart.c:372:6:hw_main	1

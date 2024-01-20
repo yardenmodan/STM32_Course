@@ -1,0 +1,76 @@
+#include "main.h"
+
+
+extern UART_HandleTypeDef huart5;
+extern UART_HandleTypeDef huart2;
+#define UART_2 &huart2
+#define UART_5 &huart2
+
+
+
+
+
+
+uint8_t* uart_testing(uint8_t * str_in,  uint16_t msg_size, uint8_t* return_from_test_value)
+{
+	int uart2_flag_callback=0;
+	int uart5_flag_callback=0;
+	uint8_t buff_5[BUFF_SIZE]={0};
+	status= HAL_UART_Receive_IT(UART_5 ,buff_5 , msg_size);
+	if(status != HAL_OK)
+	{
+		printf("UART_5 Transmit failed with status: %d", status);
+		return;
+	}
+	status= HAL_UART_Transmit(UART_2 ,str, msg_size, HAL_MAX_DELAY);
+	if(status != HAL_OK)
+	{
+		printf("UART_2 Transmit failed with status: %d", status);
+		return;
+	}
+
+
+	while(1){
+		if(uart5_flag_callback)
+		{
+
+			uart5_flag_callback = 0;
+			status = HAL_UART_Receive_DMA(UART_2, return_from_test_value, msg_size);
+			if(status != HAL_OK)
+			{
+				printf("UART_2 Receive failed with status: %d", status);
+			}
+
+			status = HAL_UART_Transmit(UART_4, buff_5, msg_size ,HAL_MAX_DELAY);
+			if(status != HAL_OK)
+			{
+				printf("UART_4 TRANSMIT failed with status: %d", status);
+			}
+
+		}
+		if(uart2_flag_callback)
+		{
+			return return_from_test_value;
+
+		}
+
+	}
+
+
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+
+{
+
+
+	if (huart==UART_2){
+		uart2_flag_callback=1;
+	}
+
+	if (huart==UART_5){
+		uart5_flag_callback=1;
+
+	}
+
+}

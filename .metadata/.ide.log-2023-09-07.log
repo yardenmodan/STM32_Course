@@ -1,0 +1,11 @@
+2023-09-08 01:30:20,860 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,485x157,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 01:33:22,718 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 01:33:23,811 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 01:33:27,344 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 02:49:37,804 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,452x157,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 02:49:40,012 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-09-08 02:50:21,719 [INFO] RtosManager:919 - Current active RTOS is FREERTOS [Cortex-M7NS]
+2023-09-08 02:50:22,206 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-09-08 02:50:22,603 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-09-08 02:50:22,660 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2023-09-08 02:50:41,193 [INFO] RtosManager:930 - There is no active RTOS [Cortex-M7NS]

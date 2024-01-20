@@ -1,0 +1,17 @@
+00:26:57 **** Incremental Build of configuration Debug for project Homework_I2C ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/Homework_I2C/hw_main/Inc" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Homework_I2C.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Homework_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Homework_I2C.elf
+ 
+arm-none-eabi-size   Homework_I2C.elf 
+arm-none-eabi-objdump -h -S  Homework_I2C.elf  > "Homework_I2C.list"
+   text	   data	    bss	    dec	    hex	filename
+  24720	    340	   3412	  28472	   6f38	Homework_I2C.elf
+Finished building: default.size.stdout
+ 
+Finished building: Homework_I2C.list
+ 
+
+00:27:00 Build Finished. 0 errors, 0 warnings. (took 2s.444ms)
+

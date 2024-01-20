@@ -1,0 +1,7 @@
+../DMA_HW/Src/hw_main.c:111:6:ex2	7
+../DMA_HW/Src/hw_main.c:146:6:ex3	3
+../DMA_HW/Src/hw_main.c:175:14:get_console_message	7
+../DMA_HW/Src/hw_main.c:218:6:HAL_I2C_SlaveRxCpltCallback	1
+../DMA_HW/Src/hw_main.c:228:6:HAL_I2C_SlaveTxCpltCallback	2
+../DMA_HW/Src/hw_main.c:235:6:HAL_SPI_RxCpltCallback	3
+../DMA_HW/Src/hw_main.c:244:6:hw_main	1

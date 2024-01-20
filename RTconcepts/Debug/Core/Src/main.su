@@ -1,0 +1,16 @@
+../Core/Src/main.c:377:5:main	8	static
+../Core/Src/main.c:518:6:SystemClock_Config	88	static
+../Core/Src/main.c:566:6:generateTask	40	static
+../Core/Src/main.c:581:6:dispatchTask	24	static
+../Core/Src/main.c:618:6:policeTask	24	static
+../Core/Src/main.c:634:6:ambulanceTask	24	static
+../Core/Src/main.c:650:6:fireTask	24	static
+../Core/Src/main.c:666:6:coronaTask	24	static
+../Core/Src/main.c:685:6:ServiceRoutinePolice	24	static
+../Core/Src/main.c:726:6:ServiceRoutineFire	24	static
+../Core/Src/main.c:766:6:ServiceRoutineAmbulance	24	static
+../Core/Src/main.c:806:6:ServiceRoutineCorona	24	static
+../Core/Src/main.c:848:6:timerCallback	16	static
+../Core/Src/main.c:863:6:loggingStartThread	24	static
+../Core/Src/main.c:874:6:MPU_Config	24	static
+../Core/Src/main.c:905:6:Error_Handler	4	static,ignoring_inline_asm

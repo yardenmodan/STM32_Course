@@ -1,0 +1,3 @@
+../ex_uart/Src/Tools.c:21:5:__io_putchar	16	static
+../ex_uart/Src/Tools.c:27:5:_write	24	static
+../ex_uart/Src/Tools.c:34:5:_read	32	static

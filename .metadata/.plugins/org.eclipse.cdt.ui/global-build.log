@@ -1,0 +1,79 @@
+13:47:04 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'generateTask':
+../Core/Src/main.c:574:25: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  574 |                         printf("request was put inside dispatch queue!\r\n");
+      |                         ^~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include "stdlib.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:574:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  574 |                         printf("request was put inside dispatch queue!\r\n");
+      |                         ^~~~~~
+../Core/Src/main.c:574:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'dispatchTask':
+../Core/Src/main.c:590:33: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  590 |                                 printf("Police request was sent to department!\r\n");
+      |                                 ^~~~~~
+../Core/Src/main.c:590:33: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'timerCallback':
+../Core/Src/main.c:849:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  849 |         printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
+      |         ^~~~~~
+../Core/Src/main.c:849:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'loggingStartThread':
+../Core/Src/main.c:868:20: warning: unused variable 'status' [-Wunused-variable]
+  868 |         osStatus_t status = osTimerStart(log_timer, LOG_TIME_INTERVAL);
+      |                    ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:359:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+  359 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "RTconcepts.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTconcepts.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RTconcepts.elf
+ 
+arm-none-eabi-size   RTconcepts.elf 
+arm-none-eabi-objdump -h -S  RTconcepts.elf  > "RTconcepts.list"
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+Finished building: RTconcepts.list
+ 
+13:47:41 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+13:59:15 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+13:59:51 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+14:04:21 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+14:05:35 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 

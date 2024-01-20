@@ -1,0 +1,98 @@
+2023-10-28 21:51:29,998 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:51:30,173 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,199 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,202 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,226 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,229 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,445 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:56:53,448 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,602 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,604 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,628 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,630 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,700 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:21,703 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:26,124 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:26,132 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:26,199 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:26,201 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,011 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,014 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,036 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,038 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,125 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:35,127 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,536 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,538 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,560 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,562 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,634 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 21:59:49,637 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,390 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,394 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,418 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,422 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,501 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 22:01:03,504 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 22:03:26,534 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 858082256 Bytes (1073741824)
+2023-10-28 22:03:30,805 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 806262752 Bytes (1073741824)
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-10-28 22:03:32,700 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-10-28 22:03:32,701 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-28 22:03:32,701 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-10-28 22:03:32,703 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-10-28 22:03:32,711 [WARN] IP:2114 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2023-10-28 22:03:32,715 [WARN] IP:2114 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2023-10-28 22:03:33,348 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\license.tmp_save
+2023-10-28 22:03:33,628 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\license.tmp
+2023-10-28 22:03:33,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\gpio.tmp_save
+2023-10-28 22:03:34,091 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\gpio.tmp
+2023-10-28 22:03:34,272 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_vars.tmp_save
+2023-10-28 22:03:34,444 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_vars.tmp
+2023-10-28 22:03:34,460 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_inc.tmp_save
+2023-10-28 22:03:34,538 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_inc.tmp
+2023-10-28 22:03:34,565 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_HalInit.tmp_save
+2023-10-28 22:03:34,680 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_HalInit.tmp
+2023-10-28 22:03:34,693 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_Msp.tmp_save
+2023-10-28 22:03:34,799 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\eth_Msp.tmp
+2023-10-28 22:03:35,028 [WARN] IPConfigManager:2937 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2023-10-28 22:03:35,065 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-28 22:03:35,093 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\cortex.tmp_save
+2023-10-28 22:03:35,198 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\cortex.tmp
+2023-10-28 22:03:35,212 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-28 22:03:35,248 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\App\lwip.c_save
+2023-10-28 22:03:35,364 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\App\lwip.c
+2023-10-28 22:03:35,377 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\App\lwip.h_save
+2023-10-28 22:03:35,459 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\App\lwip.h
+2023-10-28 22:03:35,476 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\lwipopts.h_save
+2023-10-28 22:03:35,683 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\lwipopts.h
+2023-10-28 22:03:35,700 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\ethernetif.c_save
+2023-10-28 22:03:35,828 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\ethernetif.c
+2023-10-28 22:03:35,850 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\ethernetif.h_save
+2023-10-28 22:03:35,949 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\LWIP\Target\ethernetif.h
+2023-10-28 22:03:36,001 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\stm32f7xx_it.c_save
+2023-10-28 22:03:36,246 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\stm32f7xx_it.c
+2023-10-28 22:03:36,265 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\stm32f7xx_it.h_save
+2023-10-28 22:03:36,365 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\stm32f7xx_it.h
+2023-10-28 22:03:36,407 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\stm32f7xx_hal_msp.c_save
+2023-10-28 22:03:36,542 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\stm32f7xx_hal_msp.c
+2023-10-28 22:03:36,556 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\system.tmp_save
+2023-10-28 22:03:36,612 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\MXTmpFiles\system.tmp
+2023-10-28 22:03:36,643 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-10-28 22:03:36,737 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\stm32f7xx_hal_conf.h
+2023-10-28 22:03:36,772 [WARN] IPConfigManager:3431 - IP not found : USB_OTG
+2023-10-28 22:03:36,775 [WARN] CodeGenerator:3760 - IP not found : null
+2023-10-28 22:03:36,810 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\main.h_save
+2023-10-28 22:03:36,907 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Inc\main.h
+2023-10-28 22:03:36,932 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\main.c_save
+2023-10-28 22:03:37,076 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_UDP\Core\Src\main.c
+2023-10-28 22:03:38,692 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 1069mS.
+2023-10-28 22:03:38,709 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-28 22:03:38,978 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-10-28 22:03:42,036 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3327mS.
+2023-10-28 22:03:42,038 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-28 22:03:42,059 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

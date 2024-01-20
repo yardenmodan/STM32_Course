@@ -1,0 +1,5 @@
+../SPI_HW/Src/hw_main.c:23:6:ex1	3
+../SPI_HW/Src/hw_main.c:53:6:ex2	3
+../SPI_HW/Src/hw_main.c:79:6:HAL_SPI_RxCpltCallback	3
+../SPI_HW/Src/hw_main.c:97:6:hw_main	1
+../SPI_HW/Src/hw_main.c:192:14:get_console_message	7

@@ -1,0 +1,142 @@
+2023-11-23 00:13:17,970 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-11-23 00:13:20,867 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 5161mS.
+2023-11-23 00:13:20,869 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-23 00:13:20,875 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-23 00:15:08,035 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:16:04,331 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,479x142,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-23 00:16:23,429 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:16:43,630 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,479x142,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-23 00:17:04,267 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:17:17,181 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:17:44,383 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:20:22,492 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 696270864 Bytes (1073741824)
+2023-11-23 00:20:23,617 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 719398592 Bytes (1073741824)
+2023-11-23 00:20:23,958 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 768681664 Bytes (1073741824)
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-23 00:20:25,174 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-23 00:20:25,175 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-23 00:20:25,175 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-23 00:20:25,177 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-23 00:20:25,486 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp_save
+2023-11-23 00:20:25,820 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp
+2023-11-23 00:20:25,999 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp_save
+2023-11-23 00:20:26,286 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp
+2023-11-23 00:20:26,784 [WARN] IPConfigManager:2937 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2023-11-23 00:20:26,804 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp_save
+2023-11-23 00:20:27,020 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp
+2023-11-23 00:20:27,092 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c_save
+2023-11-23 00:20:27,394 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c
+2023-11-23 00:20:27,411 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h_save
+2023-11-23 00:20:27,487 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h
+2023-11-23 00:20:27,520 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-23 00:20:27,688 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c
+2023-11-23 00:20:27,705 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp_save
+2023-11-23 00:20:27,797 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp
+2023-11-23 00:20:27,827 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-23 00:20:28,225 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-23 00:20:28,290 [WARN] IPConfigManager:3431 - IP not found : USB_OTG
+2023-11-23 00:20:28,292 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-23 00:20:28,331 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h_save
+2023-11-23 00:20:28,651 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h
+2023-11-23 00:20:28,678 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c_save
+2023-11-23 00:20:28,974 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c
+2023-11-23 00:20:29,933 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 417mS.
+2023-11-23 00:20:29,939 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-23 00:20:30,245 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-23 00:20:32,693 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2754mS.
+2023-11-23 00:20:32,694 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-23 00:20:32,700 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-23 00:21:17,302 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:23:07,471 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 633251848 Bytes (1073741824)
+2023-11-23 00:23:08,682 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 701409288 Bytes (1073741824)
+2023-11-23 00:23:08,999 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 750170120 Bytes (1073741824)
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-23 00:23:09,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-23 00:23:09,402 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-23 00:23:09,402 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-23 00:23:09,403 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-23 00:23:09,658 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp_save
+2023-11-23 00:23:09,772 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp
+2023-11-23 00:23:09,834 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp_save
+2023-11-23 00:23:10,008 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp
+2023-11-23 00:23:10,369 [WARN] IPConfigManager:2937 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2023-11-23 00:23:10,391 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp_save
+2023-11-23 00:23:10,488 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp
+2023-11-23 00:23:10,526 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c_save
+2023-11-23 00:23:10,731 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c
+2023-11-23 00:23:10,751 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h_save
+2023-11-23 00:23:10,819 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h
+2023-11-23 00:23:10,846 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-23 00:23:10,978 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c
+2023-11-23 00:23:10,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp_save
+2023-11-23 00:23:11,065 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp
+2023-11-23 00:23:11,092 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-23 00:23:11,218 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-23 00:23:11,251 [WARN] IPConfigManager:3431 - IP not found : USB_OTG
+2023-11-23 00:23:11,252 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-23 00:23:11,274 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h_save
+2023-11-23 00:23:11,368 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h
+2023-11-23 00:23:11,387 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c_save
+2023-11-23 00:23:11,520 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c
+2023-11-23 00:23:12,326 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 403mS.
+2023-11-23 00:23:12,332 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-23 00:23:12,597 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-23 00:23:14,551 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2219mS.
+2023-11-23 00:23:14,553 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-11-23 00:23:14,558 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-23 00:26:29,919 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:26:36,554 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-23 00:26:36,617 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:26:36,719 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-11-23 00:26:50,126 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 718032416 Bytes (1073741824)
+2023-11-23 00:26:51,409 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 784619040 Bytes (1073741824)
+2023-11-23 00:26:51,746 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 834084384 Bytes (1073741824)
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2023-11-23 00:26:52,154 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-23 00:26:52,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-23 00:26:52,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-23 00:26:52,155 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-11-23 00:26:52,157 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-23 00:26:52,401 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp_save
+2023-11-23 00:26:52,549 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\license.tmp
+2023-11-23 00:26:52,603 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp_save
+2023-11-23 00:26:52,728 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\gpio.tmp
+2023-11-23 00:26:53,043 [WARN] IPConfigManager:2937 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2023-11-23 00:26:53,060 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp_save
+2023-11-23 00:26:53,157 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\cortex.tmp
+2023-11-23 00:26:53,199 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c_save
+2023-11-23 00:26:53,277 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_it.c
+2023-11-23 00:26:53,294 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h_save
+2023-11-23 00:26:53,353 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_it.h
+2023-11-23 00:26:53,382 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c_save
+2023-11-23 00:26:53,553 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\stm32f7xx_hal_msp.c
+2023-11-23 00:26:53,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp_save
+2023-11-23 00:26:53,619 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\MXTmpFiles\system.tmp
+2023-11-23 00:26:53,643 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-11-23 00:26:53,738 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\stm32f7xx_hal_conf.h
+2023-11-23 00:26:53,760 [WARN] IPConfigManager:3431 - IP not found : USB_OTG
+2023-11-23 00:26:53,761 [WARN] CodeGenerator:3760 - IP not found : null
+2023-11-23 00:26:53,785 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h_save
+2023-11-23 00:26:53,864 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Inc\main.h
+2023-11-23 00:26:53,883 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c_save
+2023-11-23 00:26:54,041 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\Homework_I2C\Core\Src\main.c
+2023-11-23 00:26:54,868 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 418mS.
+2023-11-23 00:26:54,873 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-23 00:26:55,184 [INFO] ConfigFileManager:1457 - The Die is : DIE449
+2023-11-23 00:26:57,138 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2265mS.
+2023-11-23 00:26:57,140 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-23 00:26:57,146 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

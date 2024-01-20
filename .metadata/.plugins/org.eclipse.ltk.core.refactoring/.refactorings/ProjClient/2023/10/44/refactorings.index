@@ -1,0 +1,6 @@
+1698589578456	Rename resource 'i2c_testing.c'
+1698589604181	Rename resource 'spi_testing.c'
+1698589698774	Rename resource 'ETH'
+1698609416219	Move 'uart_testing.c' to 'Src'
+1698609431697	Move 'uart_testing.h' to 'Inc'
+1698609443506	Move 'i2c_testing.h' to 'Inc'

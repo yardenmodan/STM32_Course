@@ -1,0 +1,6 @@
+../hw_main/Src/hw_main.c:22:6:ex1	3088	static
+../hw_main/Src/hw_main.c:51:6:ex2	3088	static
+../hw_main/Src/hw_main.c:83:6:HAL_I2C_MasterTxCpltCallback	16	static
+../hw_main/Src/hw_main.c:92:6:HAL_I2C_SlaveRxCpltCallback	16	static
+../hw_main/Src/hw_main.c:100:14:get_console_message	32	static
+../hw_main/Src/hw_main.c:141:6:hw_main	8	static

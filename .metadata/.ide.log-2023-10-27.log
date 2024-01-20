@@ -1,0 +1,99 @@
+2023-10-30 00:54:35,244 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-30 00:54:35,274 [INFO] MainUpdater:2868 - connection check result : 10
+2023-10-30 00:54:35,473 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-10-30 00:54:35,501 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2023-10-30 00:54:35,511 [INFO] MicroXplorer:468 - Change Database Path : 
+2023-10-30 00:54:35,512 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.91
+2023-10-30 00:54:35,569 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2023-10-30 00:54:35,569 [INFO] ThirdParty:873 - entering critical section [close project]
+2023-10-30 00:54:35,569 [INFO] ThirdParty:883 - exiting critical section [close project]
+2023-10-30 00:54:35,574 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2023-10-30 00:54:35,597 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2023-10-30 00:54:35,604 [WARN] MainPanel:272 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2023-10-30 00:54:35,616 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 948068384 Bytes (1073741824)
+2023-10-30 00:54:37,711 [INFO] ServerAccessManage:473 - Download File stm32cube_db_v6081.zip
+2023-10-30 00:54:39,907 [INFO] FileExtend:240 - Unzip File : stm32cube_db_v6081.zip
+2023-10-30 00:54:39,907 [INFO] FileExtend:255 - Standard Zip Deflate
+2023-10-30 00:54:56,775 [INFO] MainUpdater:3562 - Updater definition file requires update
+2023-10-30 00:54:56,777 [INFO] LoadServerPackagesThread:196 - End of LoadServerPackages Thread
+2023-10-30 00:54:57,074 [INFO] ServerAccessManage:473 - Download File updaters.zip
+2023-10-30 00:54:57,161 [INFO] FileExtend:240 - Unzip File : updaters.zip
+2023-10-30 00:54:57,162 [INFO] FileExtend:255 - Standard Zip Deflate
+2023-10-30 00:54:58,148 [INFO] ServerAccessManage:473 - Download File PacksControlFlags.xml
+2023-10-30 00:54:58,401 [INFO] ServerAccessManage:473 - Download File cubemx.pidx
+2023-10-30 00:54:59,382 [INFO] ServerAccessManage:473 - Download File STMicroelectronics.X-CUBE-EEPRMA1.pdsc
+2023-10-30 00:55:00,165 [ERROR] ServerAccessManage:1089 - Problem, file not found on Server
+2023-10-30 00:55:01,117 [INFO] ServerAccessManage:473 - Download File STMicroelectronics.X-CUBE-MEMS1.pdsc
+2023-10-30 00:55:06,734 [ERROR] ServerAccessManage:1096 - Problem, Http access forbiden
+2023-10-30 00:55:06,735 [ERROR] ServerAccessManage:651 - Problem, Http access forbiden : RoweBots.I-CUBE-UNISONRTOS.pdsc.
+2023-10-30 00:55:06,897 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.4.2.0
+2023-10-30 00:55:06,936 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.10.0.0
+2023-10-30 00:55:07,033 [INFO] PopulateThirdPartyThread:66 - Ending populate Thread
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 1.1.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.6.3
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2023-10-30 00:55:07,034 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 9.6.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.2.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.8.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 4.3.2
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.3.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 2.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.3.1
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.1.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.5.1
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2023-10-30 00:55:07,035 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.1.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.22.1
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 4.1.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.1
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 8.1.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2023-10-30 00:55:07,036 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2023-10-30 00:55:07,037 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2023-10-30 00:55:07,038 [INFO] LoadServerUpdatesThread:373 - End of LoadServerUpdate Thread
+2023-10-30 00:55:07,047 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2023-10-30 00:56:14,896 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-10-30 00:56:14,897 [INFO] UserAuth:179 - activating auth plugin
+2023-10-30 00:56:14,908 [INFO] UserAuth:393 - Internet connection configuration mode: 1

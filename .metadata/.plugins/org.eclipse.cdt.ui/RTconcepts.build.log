@@ -1,0 +1,10 @@
+14:05:35 **** Incremental Build of configuration Debug for project RTconcepts ****
+make -j8 all 
+arm-none-eabi-size   RTconcepts.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    140	  45852	  74572	  1234c	RTconcepts.elf
+Finished building: default.size.stdout
+ 
+
+14:05:35 Build Finished. 0 errors, 0 warnings. (took 439ms)
+

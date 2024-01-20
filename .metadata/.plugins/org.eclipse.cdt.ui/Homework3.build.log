@@ -1,0 +1,27 @@
+23:29:53 **** Incremental Build of configuration Debug for project Homework3 ****
+make -j8 all 
+arm-none-eabi-gcc "../ex1/Src/ex1.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/Desktop/Homework-GPIO/ex1/Inc" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ex1/Src/ex1.d" -MT"ex1/Src/ex1.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "ex1/Src/ex1.o"
+../ex1/Src/ex1.c: In function 'ex6':
+../ex1/Src/ex1.c:187:13: warning: unused variable 'curr_state_blue' [-Wunused-variable]
+  187 |         int curr_state_blue=0;
+      |             ^~~~~~~~~~~~~~~
+../ex1/Src/ex1.c:185:13: warning: unused variable 'curr_state_red' [-Wunused-variable]
+  185 |         int curr_state_red=0;
+      |             ^~~~~~~~~~~~~~
+../ex1/Src/ex1.c:183:13: warning: unused variable 'curr_state_green' [-Wunused-variable]
+  183 |         int curr_state_green=0;
+      |             ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Homework3.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\Desktop\Homework-GPIO\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Homework3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Homework3.elf
+ 
+arm-none-eabi-size   Homework3.elf 
+arm-none-eabi-objdump -h -S  Homework3.elf  > "Homework3.list"
+   text	   data	    bss	    dec	    hex	filename
+  17072	    340	   3372	  20784	   5130	Homework3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Homework3.list
+ 
+
+23:29:57 Build Finished. 0 errors, 3 warnings. (took 3s.80ms)
+
