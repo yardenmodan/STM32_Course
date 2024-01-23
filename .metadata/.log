@@ -11709,3 +11709,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-20 21:21:11.229
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-23 19:29:12.957
+!MESSAGE Indexed 'ProjClient' (125 sources, 309 headers) in 15.5 sec: 20,033 declarations; 131,038 references; 3 unresolved inclusions; 43 syntax errors; 241 unresolved names (0.16%)

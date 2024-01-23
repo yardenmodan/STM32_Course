@@ -65,6 +65,12 @@
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/LwIP/src/include/compat/stdc"/>
 									<listOptionValue builtIn="false" value="../Middlewares/Third_Party/LwIP/system/arch"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/Components/lan8742"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/adc_testing/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/i2c_testing/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/server/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/spi_testing/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/Testing_Program/Inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ProjClient/UUT/uart_testin/Inc}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.272017838" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -92,9 +98,15 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="LWIP"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/Testing_Program/Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/adc_testing/Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/i2c_testing/Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/server/Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/spi_testing/Src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="UUT/uart_testin/Src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

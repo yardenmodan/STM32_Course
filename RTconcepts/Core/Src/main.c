@@ -17,30 +17,25 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
+#include "string.h"
 #include "cmsis_os.h"
-
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+#include "FreeRTOS.h"
+#include "task.h"
 #include "stdlib.h"
-/* USER CODE END Includes */
+#include "semphr.h"
 
-/* Private typedef -----------------------------------------------------------*/
+#include "timers.h"
+
 typedef StaticTask_t osStaticThreadDef_t;
 typedef StaticQueue_t osStaticMessageQDef_t;
-//typedef StaticSemaphore_t osStaticSemaphoreDef_t;
-/* USER CODE BEGIN PTD */
 
-/* USER CODE END PTD */
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))
 
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-
-#define XTICKS_MAX 5
 #define DEPARTMENTS_NUM 4
 #define MAX_NUM_REQUESTED_VEHICLES 5
-#define XTICKS_DELAY_DISPATCH_QUEUE 20
-#define XTICKS_DELAY_DEPARTMENT_QUEUE 20
+
 #define INIT_POLICE_NUM 10
 #define INIT_AMBULANCE_NUM 10
 #define INIT_FIRE_NUM 10
@@ -55,70 +50,81 @@ typedef StaticQueue_t osStaticMessageQDef_t;
 #define FIRE_INIT_BUFF_SIZE_BYTES 1024
 #define CORONA_INIT_BUFF_SIZE_BYTES 1024
 #define POLICE_INIT_BUFF_SIZE_BYTES 1024
-#define LOG_TIME_INTERVAL 1000
-#define DISPATCH_QUEUE_PRIORITY osPriorityHigh
-#define DISPATCH_QUEUE_TIMEOUT 0
+#define LOG_TIMER_INTERVAL 1000
+#define DISPATCH_QUEUE_TIMEOUT portMAX_DELAY
+#define POLICE_QUEUE_TIMEOUT portMAX_DELAY
+#define FIRE_QUEUE_TIMEOUT portMAX_DELAY
+#define AMBULANCE_QUEUE_TIMEOUT portMAX_DELAY
+#define CORONA_QUEUE_TIMEOUT portMAX_DELAY
+#define LOG_TIMER_INTERVAL 1000
+#define XTICKS_MAX 5
 #define LOGGING_THREAD_PRIORITY (osPriorityNormal)
-#define LOG_THREAD_BUFFER (128)
+#define LOG_THREAD_BUFFER_SIZE (128)
 
 /* Define for GenerateThread */
 #define GENERATE_THREAD_PRIORITY (osPriorityNormal)
-#define GENERATE_THREAD_BUFFER (128)
+#define GENERATE_THREAD_BUFFER_SIZE (128)
 
 /* Define for DispatchThread */
 #define DISPATCH_THREAD_PRIORITY (osPriorityNormal)
-#define DISPATCH_THREAD_BUFFER (128)
+#define DISPATCH_THREAD_BUFFER_SIZE (128)
 
 /* Define for PoliceThread */
 #define POLICE_THREAD_PRIORITY (osPriorityNormal)
-#define POLICE_THREAD_BUFFER (128)
+#define POLICE_THREAD_BUFFER_SIZE (128)
 
 /* Define for FireThread */
 #define FIRE_THREAD_PRIORITY (osPriorityNormal)
-#define FIRE_THREAD_BUFFER (128)
+#define FIRE_THREAD_BUFFER_SIZE (128)
 
 /* Define for AmbulanceThread */
 #define AMBULANCE_THREAD_PRIORITY (osPriorityNormal)
-#define AMBULANCE_THREAD_BUFFER (128)
+#define AMBULANCE_THREAD_BUFFER_SIZE (128)
 
 /* Define for CoronaThread */
 #define CORONA_THREAD_PRIORITY (osPriorityNormal)
-#define CORONA_THREAD_BUFFER (128)
+#define CORONA_THREAD_BUFFER_SIZE (128)
+
+#define AMBULANCE_SR_THREAD_PRIORITY (osPriorityNormal)
+#define AMBULANCE_SR_THREAD_BUFFER_SIZE (128)
+
+#define POLICE_SR_THREAD_PRIOIRTY (osPriorityNormal)
+#define POLICE_SR_THREAD_BUFFER_SIZE (128)
+
+#define CORONA_SR_THREAD_PRIOIRTY (osPriorityNormal)
+#define CORONA_SR_THREAD_BUFFER_SIZE (128)
+
+#define FIRE_SR_THREAD_PRIOIRTY (osPriorityNormal)
+#define FIRE_SR_THREAD_BUFFER_SIZE (128)
+
+#define SEMAPHORE_WAIT_TIME portMAX_DELAY
+
+//TaskFunction_t loggingStartThread(void *argument);
+
+TaskFunction_t timerCallback(void *argument);
+TaskFunction_t ServiceRoutine(void* req);
+
+TaskFunction_t departmentTask(void *argument);
+
+TaskFunction_t dispatchTask(void *argument);
+TaskFunction_t generateTask(void *argument);
 
 
-/* USER CODE END PD */
 
+uint32_t totalVehicles=MAX_NUM_REQUESTED_VEHICLES;
+uint32_t coronaConNum=CORONA_CONCURRENT_NUM;
+uint32_t policeConNum=POLICE_CONCURRENT_NUM;
+uint32_t fireConNum=FIRE_CONCURRENT_NUM;
+uint32_t ambulanceConNum=AMBULANCE_CONCURRENT_NUM;
 
-
-void timerCallback(void *argument);
-void ServiceRoutineCorona(void* corona_req);
-void ServiceRoutineAmbulance(void* ambulance_req);
-void ServiceRoutineFire(void* fire_req);
-void ServiceRoutinePolice(void* police_req1);
-void coronaTask(void *argument);
-void fireTask(void *argument);
-void ambulanceTask(void *argument);
-void policeTask(void *argument);
-void dispatchTask(void *argument);
-void generateTask(void *argument);
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-	uint32_t totalVehicles=MAX_NUM_REQUESTED_VEHICLES;
-	uint32_t coronaConNum=CORONA_CONCURRENT_NUM;
-	uint32_t policeConNum=POLICE_CONCURRENT_NUM;
-	uint32_t fireConNum=FIRE_CONCURRENT_NUM;
-	uint32_t ambulanceConNum=AMBULANCE_CONCURRENT_NUM;
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
+osPriority_t department_thread_priority[DEPARTMENTS_NUM]={POLICE_THREAD_PRIORITY, FIRE_THREAD_PRIORITY, AMBULANCE_THREAD_PRIORITY, CORONA_THREAD_PRIORITY};
 typedef enum {
 	POLICE,
 	FIRE,
 	AMBULANCE,
 	CORONA
 }department_id;
+void releaseResources(int i,department_id depar_id);
 
 typedef struct {
 	uint8_t init_num;
@@ -136,14 +142,6 @@ typedef struct {
 typedef struct {
 	uint8_t available_num;
 }dispatcher_data;
-
-/* Definitions for defaultTask
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};*/
 department_data police_dep = {INIT_POLICE_NUM, POLICE_CONCURRENT_NUM, POLICE_CONCURRENT_NUM};
 department_data fire_dep = {INIT_FIRE_NUM, FIRE_CONCURRENT_NUM, FIRE_CONCURRENT_NUM};
 department_data ambulance_dep = {INIT_AMBULANCE_NUM, AMBULANCE_CONCURRENT_NUM, AMBULANCE_CONCURRENT_NUM};
@@ -151,215 +149,69 @@ department_data corona_dep = {INIT_CORONA_NUM, CORONA_CONCURRENT_NUM, CORONA_CON
 department_data department_list[DEPARTMENTS_NUM]={0};
 dispatcher_data dispatch_data = {INIT_DISPATCHER_SIZE};
 
-osMutexId_t policeMutex;
-osMutexId_t globalMutex;
+SemaphoreHandle_t policeSemaphore;
+SemaphoreHandle_t globalSemaphore;
 
-osMutexId_t ambulanceMutex;
-osMutexId_t fireMutex;
-osMutexId_t coronaMutex;
+SemaphoreHandle_t ambulanceSemaphore;
+SemaphoreHandle_t fireSemaphore;
+SemaphoreHandle_t coronaSemaphore;
 
 /* Definitions for loggingThread */
-osThreadId_t loggingThreadHandle;
-uint32_t loggingThreadBuffer[LOG_THREAD_BUFFER];
-osStaticThreadDef_t loggingThreadControlBlock;
-const osThreadAttr_t loggingThread_attributes = {
-  .name = "loggingThread",
-  .cb_mem = &loggingThreadControlBlock,
-  .cb_size = sizeof(loggingThreadControlBlock),
-  .stack_mem = &loggingThreadBuffer[0],
-  .stack_size = sizeof(loggingThreadBuffer),
-  .priority = (osPriority_t)LOGGING_THREAD_PRIORITY,
-};
+TaskHandle_t loggingThreadHandle;
+
 
 /* Definitions for GenerateThread */
-osThreadId_t generateThreadHandle;
-uint32_t generateThreadBuffer[GENERATE_THREAD_BUFFER];
-osStaticThreadDef_t generateThreadControlBlock;
-const osThreadAttr_t generateThread_attributes = {
-  .name = "generateThread",
-  .cb_mem = &generateThreadControlBlock,
-  .cb_size = sizeof(generateThreadControlBlock),
-  .stack_mem = &generateThreadBuffer[0],
-  .stack_size = sizeof(generateThreadBuffer),
-  .priority = (osPriority_t)GENERATE_THREAD_PRIORITY,
-};
+TaskHandle_t generateThreadHandle;
 
 /* Definitions for DispatchThread */
-osThreadId_t dispatchThreadHandle;
-uint32_t dispatchThreadBuffer[DISPATCH_THREAD_BUFFER];
-osStaticThreadDef_t dispatchThreadControlBlock;
-const osThreadAttr_t dispatchThread_attributes = {
-  .name = "dispatchThread",
-  .cb_mem = &dispatchThreadControlBlock,
-  .cb_size = sizeof(dispatchThreadControlBlock),
-  .stack_mem = &dispatchThreadBuffer[0],
-  .stack_size = sizeof(dispatchThreadBuffer),
-  .priority = (osPriority_t)DISPATCH_THREAD_PRIORITY,
-};
+
+
+TaskHandle_t dispatchThreadHandle;
+
 
 /* Definitions for PoliceThread */
-osThreadId_t policeThreadHandle;
-uint32_t policeThreadBuffer[POLICE_THREAD_BUFFER];
-osStaticThreadDef_t policeThreadControlBlock;
-const osThreadAttr_t policeThread_attributes = {
-  .name = "policeThread",
-  .cb_mem = &policeThreadControlBlock,
-  .cb_size = sizeof(policeThreadControlBlock),
-  .stack_mem = &policeThreadBuffer[0],
-  .stack_size = sizeof(policeThreadBuffer),
-  .priority = (osPriority_t)POLICE_THREAD_PRIORITY,
-};
+TaskHandle_t policeThreadHandle;
 
 /* Definitions for FireThread */
-osThreadId_t fireThreadHandle;
-uint32_t fireThreadBuffer[FIRE_THREAD_BUFFER];
-osStaticThreadDef_t fireThreadControlBlock;
-const osThreadAttr_t fireThread_attributes = {
-  .name = "fireThread",
-  .cb_mem = &fireThreadControlBlock,
-  .cb_size = sizeof(fireThreadControlBlock),
-  .stack_mem = &fireThreadBuffer[0],
-  .stack_size = sizeof(fireThreadBuffer),
-  .priority = (osPriority_t)FIRE_THREAD_PRIORITY,
-};
+TaskHandle_t fireThreadHandle;
+
 
 /* Definitions for AmbulanceThread */
-osThreadId_t ambulanceThreadHandle;
-uint32_t ambulanceThreadBuffer[AMBULANCE_THREAD_BUFFER];
-osStaticThreadDef_t ambulanceThreadControlBlock;
-const osThreadAttr_t ambulanceThread_attributes = {
-  .name = "ambulanceThread",
-  .cb_mem = &ambulanceThreadControlBlock,
-  .cb_size = sizeof(ambulanceThreadControlBlock),
-  .stack_mem = &ambulanceThreadBuffer[0],
-  .stack_size = sizeof(ambulanceThreadBuffer),
-  .priority = (osPriority_t)AMBULANCE_THREAD_PRIORITY,
-};
+TaskHandle_t ambulanceThreadHandle;
+
 
 /* Definitions for CoronaThread */
-osThreadId_t coronaThreadHandle;
-uint32_t coronaThreadBuffer[CORONA_THREAD_BUFFER];
-osStaticThreadDef_t coronaThreadControlBlock;
-const osThreadAttr_t coronaThread_attributes = {
-  .name = "coronaThread",
-  .cb_mem = &coronaThreadControlBlock,
-  .cb_size = sizeof(coronaThreadControlBlock),
-  .stack_mem = &coronaThreadBuffer[0],
-  .stack_size = sizeof(coronaThreadBuffer),
-  .priority = (osPriority_t)CORONA_THREAD_PRIORITY,
-};
-/* Definitions for DispatchQueue */
-osMessageQueueId_t DispatchQueueHandle;
-uint8_t DispatchQueueBuffer[ DISPATCH_INIT_BUFF_SIZE_BYTES * sizeof( uint32_t ) ];
-osStaticMessageQDef_t DispatchQueueControlBlock;
-const osMessageQueueAttr_t DispatchQueue_attributes = {
-  .name = "DispatchQueue",
-  .cb_mem = &DispatchQueueControlBlock,
-  .cb_size = sizeof(DispatchQueueControlBlock),
-  .mq_mem = &DispatchQueueBuffer,
-  .mq_size = sizeof(DispatchQueueBuffer)
-};
-/* Definitions for AmbulanceQueue */
-osMessageQueueId_t AmbulanceQueueHandle;
-uint8_t AmbulanceQueueBuffer[ AMBULANCE_INIT_BUFF_SIZE_BYTES * sizeof( uint32_t ) ];
-osStaticMessageQDef_t AmbulanceQueueControlBlock;
-const osMessageQueueAttr_t AmbulanceQueue_attributes = {
-  .name = "AmbulanceQueue",
-  .cb_mem = &AmbulanceQueueControlBlock,
-  .cb_size = sizeof(AmbulanceQueueControlBlock),
-  .mq_mem = &AmbulanceQueueBuffer,
-  .mq_size = sizeof(AmbulanceQueueBuffer)
-};
-/* Definitions for PoliceQueue */
-osMessageQueueId_t PoliceQueueHandle;
-uint8_t PoliceQueueBuffer[ POLICE_INIT_BUFF_SIZE_BYTES * sizeof( uint32_t ) ];
-osStaticMessageQDef_t PoliceQueueControlBlock;
-const osMessageQueueAttr_t PoliceQueue_attributes = {
-  .name = "PoliceQueue",
-  .cb_mem = &PoliceQueueControlBlock,
-  .cb_size = sizeof(PoliceQueueControlBlock),
-  .mq_mem = &PoliceQueueBuffer,
-  .mq_size = sizeof(PoliceQueueBuffer)
-};
-/* Definitions for FireQueue */
-osMessageQueueId_t FireQueueHandle;
-uint8_t FireQueueBuffer[ FIRE_INIT_BUFF_SIZE_BYTES * sizeof( uint32_t ) ];
-osStaticMessageQDef_t FireQueueControlBlock;
-const osMessageQueueAttr_t FireQueue_attributes = {
-  .name = "FireQueue",
-  .cb_mem = &FireQueueControlBlock,
-  .cb_size = sizeof(FireQueueControlBlock),
-  .mq_mem = &FireQueueBuffer,
-  .mq_size = sizeof(FireQueueBuffer)
-};
-/* Definitions for CoronaQueue */
-osMessageQueueId_t CoronaQueueHandle;
-uint8_t CoronaQueueBuffer[ CORONA_INIT_BUFF_SIZE_BYTES * sizeof( uint32_t ) ];
-osStaticMessageQDef_t CoronaQueueControlBlock;
-const osMessageQueueAttr_t CoronaQueue_attributes = {
-  .name = "CoronaQueue",
-  .cb_mem = &CoronaQueueControlBlock,
-  .cb_size = sizeof(CoronaQueueControlBlock),
-  .mq_mem = &CoronaQueueBuffer,
-  .mq_size = sizeof(CoronaQueueBuffer)
-};
-/* Definitions for AmbulanceSemaphore */
-//osSemaphoreId_t AmbulanceSemaphoreHandle;
-//const osSemaphoreAttr_t AmbulanceSemaphore_attributes = {
-//  .name = "AmbulanceSemaphore"
-//};
-///* Definitions for PoliceSemaphore */
-//osSemaphoreId_t PoliceSemaphoreHandle;
-//const osSemaphoreAttr_t PoliceSemaphore_attributes = {
-//  .name = "PoliceSemaphore"
-//};
-///* Definitions for AmbulanceSemaphoreStatic */
-//osSemaphoreId_t AmbulanceSemaphoreStaticHandle;
-//osStaticSemaphoreDef_t Ambulance_SCB;
-//const osSemaphoreAttr_t AmbulanceSemaphoreStatic_attributes = {
-//  .name = "AmbulanceSemaphoreStatic",
-//  .cb_mem = &Ambulance_SCB,
-//  .cb_size = sizeof(Ambulance_SCB),
-//};
-///* Definitions for PoliceSemaphoreStatic */
-//osSemaphoreId_t PoliceSemaphoreStaticHandle;
-//osStaticSemaphoreDef_t Police_SCB;
-//const osSemaphoreAttr_t PoliceSemaphoreStatic_attributes = {
-//  .name = "PoliceSemaphoreStatic",
-//  .cb_mem = &Police_SCB,
-//  .cb_size = sizeof(Police_SCB),
-//};
-///* Definitions for FireSemaphoreStatic */
-//osSemaphoreId_t FireSemaphoreStaticHandle;
-//osStaticSemaphoreDef_t Fire_SCB;
-//const osSemaphoreAttr_t FireSemaphoreStatic_attributes = {
-//  .name = "FireSemaphoreStatic",
-//  .cb_mem = &Fire_SCB,
-//  .cb_size = sizeof(Fire_SCB),
-//};
-///* Definitions for CoronaSemaphoreStatic */
-//osSemaphoreId_t CoronaSemaphoreStaticHandle;
-//osStaticSemaphoreDef_t Fire_SCB_new;
-//const osSemaphoreAttr_t CoronaSemaphoreStatic_attributes = {
-//  .name = "CoronaSemaphoreStatic",
-//  .cb_mem = &Fire_SCB_new,
-//  .cb_size = sizeof(Fire_SCB_new),
-//};
-///* Definitions for TotalSemaphoreDynamic */
-//osSemaphoreId_t TotalSemaphoreDynamicHandle;
-//const osSemaphoreAttr_t TotalSemaphoreDynamic_attributes = {
-//  .name = "TotalSemaphoreDynamic"
-//};
-/* USER CODE BEGIN PV */
+TaskHandle_t coronaThreadHandle;
 
-/* USER CODE END PV */
+/* Definitions for DispatchQueue */
+QueueHandle_t DispatchQueueHandle;
+
+/* Definitions for AmbulanceQueue */
+QueueHandle_t AmbulanceQueueHandle;
+
+/* Definitions for PoliceQueue */
+QueueHandle_t PoliceQueueHandle;
+
+/* Definitions for FireQueue */
+QueueHandle_t FireQueueHandle;
+
+/* Definitions for CoronaQueue */
+QueueHandle_t CoronaQueueHandle;
+
+
+QueueHandle_t department_queue_handles_lists[DEPARTMENTS_NUM];
+TickType_t QueueTimeoutList[DEPARTMENTS_NUM]={POLICE_QUEUE_TIMEOUT,FIRE_QUEUE_TIMEOUT,AMBULANCE_QUEUE_TIMEOUT,CORONA_QUEUE_TIMEOUT};
+
+TaskFunction_t loggingStartThread(void *argument);
+SemaphoreHandle_t semaphoreList[DEPARTMENTS_NUM];
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MPU_Initialize(void);
 static void MPU_Config(void);
 void StartDefaultTask(void *argument);
-void loggingStartThread(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -381,124 +233,97 @@ int main(void)
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
-	department_list[0] = police_dep;
-	department_list[1] = fire_dep ;
-	department_list[2] = ambulance_dep;
-	department_list[3] = corona_dep;
+	department_list[POLICE] = police_dep;
+		department_list[FIRE] = fire_dep ;
+		department_list[AMBULANCE] = ambulance_dep;
+		department_list[CORONA] = corona_dep;
 
-	policeMutex=osMutexNew(NULL);
-	globalMutex=osMutexNew(NULL);
+	policeSemaphore = xSemaphoreCreateCounting(
+	    MIN(POLICE_CONCURRENT_NUM, INIT_POLICE_NUM),
+	    MIN(POLICE_CONCURRENT_NUM, INIT_POLICE_NUM)
+	);
+	fireSemaphore = xSemaphoreCreateCounting(
+	    MIN(FIRE_CONCURRENT_NUM, INIT_FIRE_NUM),
+	    MIN(FIRE_CONCURRENT_NUM, INIT_FIRE_NUM)
+	);
+	ambulanceSemaphore = xSemaphoreCreateCounting(
+	    MIN(AMBULANCE_CONCURRENT_NUM, INIT_AMBULANCE_NUM),
+	    MIN(AMBULANCE_CONCURRENT_NUM, INIT_AMBULANCE_NUM)
+	);
 
-	ambulanceMutex=osMutexNew(NULL);
-	fireMutex=osMutexNew(NULL);
-	coronaMutex=osMutexNew(NULL);
+	coronaSemaphore = xSemaphoreCreateCounting(
+	    MIN(CORONA_CONCURRENT_NUM, INIT_CORONA_NUM),
+	    MIN(CORONA_CONCURRENT_NUM, INIT_CORONA_NUM)
+	);
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	globalSemaphore=xSemaphoreCreateCounting(MAX_NUM_REQUESTED_VEHICLES,
+	                                        MAX_NUM_REQUESTED_VEHICLES);
 
-  /* MPU Configuration--------------------------------------------------------*/
-  MPU_Config();
+	SemaphoreHandle_t semaphoreList[DEPARTMENTS_NUM]={policeSemaphore,fireSemaphore,ambulanceSemaphore,coronaSemaphore};
 
-  /* USER CODE BEGIN Init */
+	  /* Create the queue(s) */
+	  /* creation of DispatchQueue */
+	  DispatchQueueHandle = xQueueCreate  (DISPATCH_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t));
 
-  /* USER CODE END Init */
+	  /* creation of AmbulanceQueue */
+	  AmbulanceQueueHandle = xQueueCreate (AMBULANCE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t));
 
-  /* Configure the system clock */
-  SystemClock_Config();
+	  /* creation of PoliceQueue */
+	  PoliceQueueHandle = xQueueCreate (POLICE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t));
 
-  /* USER CODE BEGIN SysInit */
+	  /* creation of FireQueue */
+	  FireQueueHandle = xQueueCreate (FIRE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t));
 
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Init scheduler */
-  osKernelInitialize();
-
-  /* USER CODE BEGIN RTOS_MUTEX */
+	  /* creation of CoronaQueue */
+	  CoronaQueueHandle = xQueueCreate (CORONA_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t));
 
 
-  /* USER CODE END RTOS_MUTEX */
+	  /* creation of loggingThread */
+	  //BaseType_t log_thread = xTaskCreate(&loggingStartThread,(const char*) "loggingStartThread",(const) LOG_THREAD_BUFFER_SIZE, NULL, (UBaseType_t)LOGGING_THREAD_PRIORITY,(TaskHandle_t * const) &loggingThreadHandle);
 
-  /* Create the semaphores(s) */
-//  /* creation of AmbulanceSemaphore */
-//  AmbulanceSemaphoreHandle = osSemaphoreNew(4, 4, &AmbulanceSemaphore_attributes);
-//
-//  /* creation of PoliceSemaphore */
-//  PoliceSemaphoreHandle = osSemaphoreNew(3, 3, &PoliceSemaphore_attributes);
-//
-//  /* creation of AmbulanceSemaphoreStatic */
-//  AmbulanceSemaphoreStaticHandle = osSemaphoreNew(4, 4, &AmbulanceSemaphoreStatic_attributes);
-//
-//  /* creation of PoliceSemaphoreStatic */
-//  PoliceSemaphoreStaticHandle = osSemaphoreNew(3, 3, &PoliceSemaphoreStatic_attributes);
-//
-//  /* creation of FireSemaphoreStatic */
-//  FireSemaphoreStaticHandle = osSemaphoreNew(2, 2, &FireSemaphoreStatic_attributes);
-//
-//  /* creation of CoronaSemaphoreStatic */
-//  CoronaSemaphoreStaticHandle = osSemaphoreNew(4, 4, &CoronaSemaphoreStatic_attributes);
-//
-//  /* creation of TotalSemaphoreDynamic */
-//  TotalSemaphoreDynamicHandle = osSemaphoreNew(50, 50, &TotalSemaphoreDynamic_attributes);
+	  /* USER CODE BEGIN RTOS_THREADS */
+	  BaseType_t generate_thread = xTaskCreate(generateTask,
+											  (const char*) "generateThread",
+											  (const configSTACK_DEPTH_TYPE) 90,
+											  NULL,
+											  (UBaseType_t)GENERATE_THREAD_PRIORITY,
+											  (TaskHandle_t * const) &generateThreadHandle);
+	  BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
+											  (const char*) "dispatchThread",
+											  (const configSTACK_DEPTH_TYPE) 90,
+											  NULL,
+											  (UBaseType_t)DISPATCH_THREAD_PRIORITY,
+											  (TaskHandle_t * const) &dispatchThreadHandle);
 
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
+	  BaseType_t police_thread = xTaskCreate(departmentTask,
+											  (const char*) "policeThread",
+											  (const configSTACK_DEPTH_TYPE) 90 ,
+											  (void * const)POLICE,
+											  (UBaseType_t)POLICE_THREAD_PRIORITY,
+											  (TaskHandle_t * const) &policeThreadHandle);
 
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
+	  BaseType_t fire_thread = xTaskCreate(	  departmentTask,
+											  (const char*) "fireThread",
+											  (const configSTACK_DEPTH_TYPE) 90,
+											  (void * const)FIRE,
+											  (UBaseType_t)FIRE_THREAD_PRIORITY,
+											  (TaskHandle_t * const) &fireThreadHandle);
+	  BaseType_t ambulnace_thread = xTaskCreate(departmentTask,
+											  (const char*) "ambulanceThread",
+											  (const configSTACK_DEPTH_TYPE) 90,
+											  (void * const)AMBULANCE,
+											  (UBaseType_t)AMBULANCE_THREAD_PRIORITY,
+											  (TaskHandle_t * const) &ambulanceThreadHandle);
+	  BaseType_t corona_thread = xTaskCreate(departmentTask,
+											  (const char*) "coronaThread",
+											  (const configSTACK_DEPTH_TYPE) 90,
+											  (void * const)CORONA,
+											  (UBaseType_t)CORONA_THREAD_PRIORITY ,
+											  (TaskHandle_t * const) &coronaThreadHandle);
 
-  /* Create the queue(s) */
-  /* creation of DispatchQueue */
-  DispatchQueueHandle = osMessageQueueNew (DISPATCH_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t), &DispatchQueue_attributes);
 
-  /* creation of AmbulanceQueue */
-  AmbulanceQueueHandle = osMessageQueueNew (AMBULANCE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t), &AmbulanceQueue_attributes);
 
-  /* creation of PoliceQueue */
-  PoliceQueueHandle = osMessageQueueNew (POLICE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t), &PoliceQueue_attributes);
-
-  /* creation of FireQueue */
-  FireQueueHandle = osMessageQueueNew (FIRE_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t), &FireQueue_attributes);
-
-  /* creation of CoronaQueue */
-  CoronaQueueHandle = osMessageQueueNew (CORONA_INIT_BUFF_SIZE_BYTES, sizeof(uint32_t), &CoronaQueue_attributes);
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
-  /* Create the thread(s) */
-  /* creation of defaultTask */
- // defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
-  /* creation of loggingThread */
-  loggingThreadHandle = osThreadNew(loggingStartThread, NULL, &loggingThread_attributes);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  generateThreadHandle = osThreadNew(generateTask, NULL, &generateThread_attributes);
-  dispatchThreadHandle = osThreadNew(dispatchTask, NULL, &dispatchThread_attributes);
-
-  policeThreadHandle = osThreadNew(policeTask, NULL, &policeThread_attributes);
-
-  fireThreadHandle = osThreadNew(fireTask, NULL, &fireThread_attributes);
-  ambulanceThreadHandle = osThreadNew(ambulanceTask, NULL, &ambulanceThread_attributes);
-  coronaThreadHandle = osThreadNew(coronaTask, NULL, &coronaThread_attributes);
-
-  /* USER CODE END RTOS_THREADS */
-
-  /* USER CODE BEGIN RTOS_EVENTS */
-  /* add events, ... */
-  /* USER CODE END RTOS_EVENTS */
-
-  /* Start scheduler */
-  osKernelStart();
-
+	  vTaskStartScheduler();
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -509,6 +334,190 @@ int main(void)
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
+}
+ // @brief: takes request from dispatcher queue and send to relevant department queue
+TaskFunction_t dispatchTask(void *argument){
+
+  BaseType_t retval_Sent_From_Dispatch_Queue=0;
+  BaseType_t retval_Police_Send=0;
+  BaseType_t retval_Fire_Send=0;
+  BaseType_t retval_Corona_Send=0;
+  BaseType_t retval_Ambulance_Send=0;
+
+  BaseType_t retval_Send_to_dep_list[DEPARTMENTS_NUM]={retval_Police_Send,retval_Fire_Send, retval_Ambulance_Send,retval_Corona_Send};
+  department_queue_handles_lists[POLICE]=PoliceQueueHandle;
+  department_queue_handles_lists[FIRE]=FireQueueHandle;
+  department_queue_handles_lists[AMBULANCE]=AmbulanceQueueHandle;
+  department_queue_handles_lists[CORONA]=CoronaQueueHandle;
+
+
+
+	request req;
+	while(1){
+    if ((retval_Sent_From_Dispatch_Queue= xQueueReceive(DispatchQueueHandle, &req, DISPATCH_QUEUE_TIMEOUT )) == pdPASS){
+
+			department_id id=req.dep_id;
+
+      if ((retval_Send_to_dep_list[id]= xQueueSend(department_queue_handles_lists[id], &req, QueueTimeoutList[id])) == pdPASS ){
+        switch (id){
+          case FIRE:
+            printf("Fire request was sent to department!\r\n");
+            break;
+          case AMBULANCE:
+            printf("Ambulance request was sent to department!\r\n");
+            break;
+          case CORONA:
+            printf("Corona request was sent to department!\r\n");
+            break;
+          case POLICE:
+            printf("Police request was sent to department!\r\n");
+            break;
+          default:
+            break;
+
+
+        }
+      }
+    }
+  }
+}
+
+
+// @brief: this function takes request from department queue and send to execute thread
+TaskFunction_t departmentTask(void *dep_id) //argument is speartment_id
+{
+    department_id depar_id = *((department_id *) dep_id);
+    TaskHandle_t policeSRHandle;
+    TaskHandle_t ambulanceSRHandle;
+
+    TaskHandle_t fireSRHandle;
+
+    TaskHandle_t coronaSRHandle;
+
+    BaseType_t retval_SR_thread;
+    request police_req;
+    request ambulance_req;
+    request fire_req;
+    request corona_req;
+    request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
+    int thread_buffer_list[DEPARTMENTS_NUM]={POLICE_SR_THREAD_BUFFER_SIZE, FIRE_SR_THREAD_BUFFER_SIZE, AMBULANCE_SR_THREAD_BUFFER_SIZE,CORONA_SR_THREAD_BUFFER_SIZE};
+    TaskHandle_t department_SR_handles[DEPARTMENTS_NUM]={policeSRHandle, fireSRHandle, ambulanceSRHandle, coronaSRHandle };
+
+
+
+    while (1)
+    {
+        if (xQueueReceive(department_queue_handles_lists[depar_id], (void const*)&departments_req_list[depar_id], QueueTimeoutList[depar_id]) == pdPASS)
+        {
+          switch(depar_id){
+            case FIRE:
+              printf("Got request from fire department!\r\n");
+              break;
+            case AMBULANCE:
+              printf("Got request from ambulance department!\r\n");
+              break;
+            case POLICE:
+              printf("Got request from police department!\r\n");
+              break;
+            case CORONA:
+              printf("Got request from corona department!\r\n");
+              break;
+          }
+          if ((retval_SR_thread = xTaskCreate(
+                    ServiceRoutine,
+                    (const char *)"ServiceRoutineThread",
+                    thread_buffer_list[depar_id],
+                    (void const*)&departments_req_list[depar_id], //request to be passed
+                    department_thread_priority[depar_id],
+                    (const TaskHandle_t *)&department_SR_handles[depar_id])) == pdPASS)
+          {
+              printf("New SR!\r\n");
+          }
+        }
+    }
+}
+
+TaskFunction_t ServiceRoutine(void* req){
+	request* reques = (request*) req ;//
+  department_id depar_id=reques->dep_id;
+  SemaphoreHandle_t department_semaphore= semaphoreList[depar_id];
+
+	int i=0;
+  while (i <reques->requested_vehicles){
+
+    if (xSemaphoreTake(globalSemaphore,0) ==pdPASS && xSemaphoreTake(semaphoreList[depar_id], 0) == pdPASS ){
+      vTaskPrioritySet(NULL, uxTaskPriorityGet(NULL) + 1);// increases prioirity by one
+      i++;
+      totalVehicles--;
+      department_list[POLICE].available_num--;
+      department_list[POLICE].concurrent_num--;
+      /* in case all resources for execution acquired, exectues, releases all semaphores and end task*/
+      if (i==reques->requested_vehicles-1){
+        vTaskDelay(reques->time_to_complete);
+        releaseResources(i, depar_id);
+        vTaskDelete(NULL);
+      }
+    }
+    else{
+      /* in deadlock releases all semaphores acquired and then start again*/
+      releaseResources(i, depar_id);
+      i=0;
+
+
+    }
+  }
+}
+
+
+
+void releaseResources(int i,department_id depar_id){
+  for (int j=0; j<i;j++){
+      xSemaphoreGive(globalSemaphore);
+      xSemaphoreGive(semaphoreList[depar_id]);
+      totalVehicles++;
+      department_list[POLICE].concurrent_num++;
+      department_list[POLICE].available_num++;
+      //to add delay time to break symmetry?
+  }
+}
+
+
+TaskFunction_t generateTask(void *argument)
+{
+  BaseType_t retval_Send_To_Dispatch_Queue=0;
+	while (1) {
+		department_id dep =rand() % DEPARTMENTS_NUM;
+		TickType_t active_time= rand() % XTICKS_MAX;
+		uint8_t vehicle_num_to_dispatch= rand() % MAX_NUM_REQUESTED_VEHICLES;
+		request req= {dep,active_time,vehicle_num_to_dispatch};
+		if ((retval_Send_To_Dispatch_Queue= xQueueSend(DispatchQueueHandle, &req, DISPATCH_QUEUE_TIMEOUT )) == pdPASS){
+			printf("request was put inside dispatch queue!\r\n");
+		}
+	}
+}
+
+
+
+
+
+TaskFunction_t timerCallback(void *argument){
+	printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
+	printf("Dispatcher free size: %d\r\n", dispatch_data.available_num);
+	printf("Dispatcher occupied size: %d\r\n", INIT_DISPATCHER_SIZE-dispatch_data.available_num);
+
+
+
+}
+
+TaskFunction_t loggingStartThread(void *argument)
+{
+
+  TimerHandle_t log_timer  = xTimerCreate("LogTimer", pdMS_TO_TICKS(LOG_TIMER_INTERVAL), pdTRUE, 0, timerCallback);
+  if (log_timer != NULL) {
+    // Start the timer
+    xTimerStart(log_timer, 0);
+  }
+
 }
 
 /**
@@ -563,311 +572,16 @@ void SystemClock_Config(void)
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
-void generateTask(void *argument)
-{
-	while (1){
-		department_id dep =rand() % DEPARTMENTS_NUM;
-		TickType_t active_time= rand() % XTICKS_MAX;
-		uint8_t vehicle_num_to_dispatch= rand() % MAX_NUM_REQUESTED_VEHICLES;
-		request req= {dep,active_time,vehicle_num_to_dispatch};
-		if (osMessageQueuePut(DispatchQueueHandle, &req, DISPATCH_QUEUE_PRIORITY, DISPATCH_QUEUE_TIMEOUT )==osOK){
-			printf("request was put inside dispatch queue!\r\n");
-		}
-	}
-}
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
 
-void dispatchTask(void *argument){
-
-
-	request req;
-	while(1){
-		if (osMessageQueueGet(DispatchQueueHandle, (void*)&req, 0, 0) == osOK){
-			switch(req.dep_id){
-			case (POLICE):
-				osMessageQueuePut(PoliceQueueHandle, &req, 0, 0);
-				printf("Police request was sent to department!\r\n");
-				break;
-
-			case (FIRE):
-				osMessageQueuePut(FireQueueHandle, &req, 0, 0);
-				printf("Fire request was sent to department!\r\n");
-
-				break;
-			case (AMBULANCE):
-				osMessageQueuePut(AmbulanceQueueHandle, &req, 0, 0);
-				printf("Ambulance request was sent to department!\r\n");
-
-				break;
-			case (CORONA):
-				osMessageQueuePut(CoronaQueueHandle, &req, 0, 0);
-				printf("Corona request was sent to department!\r\n");
-
-				break;
-			default:
-				break;
-
-			}
-			osDelay(XTICKS_DELAY_DEPARTMENT_QUEUE);
-		}
-	}
-}
-
-
-void policeTask(void *argument)
-{
-
-
-	request police_req;
-	while (1){
-		if (osMessageQueueGet(PoliceQueueHandle, &police_req, 0, osWaitForever) == osOK){
-
-			osThreadNew(ServiceRoutinePolice, (void*)&police_req, NULL);
-
-
-		}
-
-	}
-
-}
-void ambulanceTask(void *argument)
-{
-
-
-	request ambulance_req;
-	while (1){
-		if (osMessageQueueGet(AmbulanceQueueHandle, &ambulance_req, 0, osWaitForever) == osOK){
-
-			osThreadNew(ServiceRoutineAmbulance, (void* )&ambulance_req, NULL);
-
-
-		}
-
-	}
-
-}
-void fireTask(void *argument)
-{
-
-
-	request fire_req;
-	while (1){
-		if (osMessageQueueGet(FireQueueHandle, &fire_req, 0, osWaitForever) == osOK){
-
-			osThreadNew(ServiceRoutineFire, (void* )&fire_req, NULL);
-
-
-		}
-
-	}
-
-}
-void coronaTask(void *argument)
-{
-
-
-	request corona_req;
-	while (1){
-		if (osMessageQueueGet(CoronaQueueHandle, &corona_req, 0, osWaitForever) == osOK){
-
-			osThreadNew(ServiceRoutineCorona, (void* )&corona_req, NULL);
-
-
-		}
-
-	}
-
-}
-
-
-
-void ServiceRoutinePolice(void* argument){
-	request* police_req = (request*) argument ;//
-	int i=0;
-	while (i<police_req->requested_vehicles){
-		osMutexAcquire(globalMutex,osWaitForever);
-		osMutexAcquire(policeMutex, osWaitForever);
-
-		if (department_list[POLICE].available_num>0 && totalVehicles>0 && department_list[POLICE].concurrent_num>0){
-			i++;
-
-			/*if (osSemaphoreAcquire(PoliceSemaphoreStaticHandle, osWaitForever)==osOK){
-			if (osSemaphoreAcquire(TotalSemaphoreDynamicHandle, osWaitForever)==osOK){*/
-			totalVehicles--;
-			osMutexRelease(globalMutex);
-			department_list[POLICE].available_num--;
-			department_list[POLICE].concurrent_num--;
-			osMutexRelease(policeMutex);
-			if (i==police_req->requested_vehicles-1){
-				osDelay(police_req->time_to_complete);
-				//osSemaphoreRelease(PoliceSemaphoreStaticHandle);
-				//osSemaphoreRelease(TotalSemaphoreDynamicHandle);
-				osMutexAcquire(policeMutex, osWaitForever);
-				osMutexAcquire(globalMutex, osWaitForever);
-
-				totalVehicles++;
-				osMutexRelease(globalMutex);
-				department_list[POLICE].concurrent_num++;
-				department_list[POLICE].available_num++;
-				osMutexRelease(policeMutex);
-
-
-			}
-		}
-		else{
-			osMutexRelease(globalMutex);
-			osMutexRelease(policeMutex);
-		}
-	}
-}
-
-
-void ServiceRoutineFire(void* argument){
-	request * fire_req = (request*) argument ;//
-	int i=0;
-	while (i<fire_req->requested_vehicles){
-		osMutexAcquire(globalMutex,osWaitForever);
-		osMutexAcquire(fireMutex, osWaitForever);
-
-		if (department_list[FIRE].available_num>0 && totalVehicles>0 && department_list[FIRE].concurrent_num>0){
-			i++;
-
-			/*if (osSemaphoreAcquire(PoliceSemaphoreStaticHandle, osWaitForever)==osOK){
-			if (osSemaphoreAcquire(TotalSemaphoreDynamicHandle, osWaitForever)==osOK){*/
-			totalVehicles--;
-			osMutexRelease(globalMutex);
-			department_list[FIRE].available_num--;
-			department_list[FIRE].concurrent_num--;
-			osMutexRelease(fireMutex);
-			if (i==fire_req->requested_vehicles-1){
-				osDelay(fire_req->time_to_complete);
-				//osSemaphoreRelease(PoliceSemaphoreStaticHandle);
-				//osSemaphoreRelease(TotalSemaphoreDynamicHandle);
-				osMutexAcquire(fireMutex, osWaitForever);
-				osMutexAcquire(globalMutex, osWaitForever);
-
-				totalVehicles++;
-				osMutexRelease(globalMutex);
-				department_list[FIRE].concurrent_num++;
-				department_list[FIRE].available_num++;
-				osMutexRelease(fireMutex);
-
-
-			}
-		}
-		else{
-			osMutexRelease(globalMutex);
-			osMutexRelease(fireMutex);
-		}
-	}
-}
-
-void ServiceRoutineAmbulance(void* argument){
-	request* ambulance_req = (request*) argument ;//
-	int i=0;
-	while (i<ambulance_req->requested_vehicles){
-		osMutexAcquire(globalMutex,osWaitForever);
-		osMutexAcquire(ambulanceMutex, osWaitForever);
-
-		if (department_list[AMBULANCE].available_num>0 && totalVehicles>0 && department_list[AMBULANCE].concurrent_num>0){
-			i++;
-
-			/*if (osSemaphoreAcquire(PoliceSemaphoreStaticHandle, osWaitForever)==osOK){
-			if (osSemaphoreAcquire(TotalSemaphoreDynamicHandle, osWaitForever)==osOK){*/
-			totalVehicles--;
-			osMutexRelease(globalMutex);
-			department_list[AMBULANCE].available_num--;
-			department_list[AMBULANCE].concurrent_num--;
-			osMutexRelease(ambulanceMutex);
-			if (i==ambulance_req->requested_vehicles-1){
-				osDelay(ambulance_req->time_to_complete);
-				//osSemaphoreRelease(PoliceSemaphoreStaticHandle);
-				//osSemaphoreRelease(TotalSemaphoreDynamicHandle);
-				osMutexAcquire(ambulanceMutex, osWaitForever);
-				osMutexAcquire(globalMutex, osWaitForever);
-
-				totalVehicles++;
-				osMutexRelease(globalMutex);
-				department_list[AMBULANCE].concurrent_num++;
-				department_list[AMBULANCE].available_num++;
-				osMutexRelease(ambulanceMutex);
-
-
-			}
-		}
-		else{
-			osMutexRelease(globalMutex);
-			osMutexRelease(ambulanceMutex);
-		}
-	}
-}
-
-void ServiceRoutineCorona(void* argument){
-	request* corona_req = (request*) argument ;//
-	int i=0;
-	while (i<corona_req->requested_vehicles){
-		osMutexAcquire(globalMutex,osWaitForever);
-		osMutexAcquire(coronaMutex, osWaitForever);
-
-		if (department_list[CORONA].available_num>0 && totalVehicles>0 && department_list[CORONA].concurrent_num>0){
-			i++;
-
-			/*if (osSemaphoreAcquire(PoliceSemaphoreStaticHandle, osWaitForever)==osOK){
-			if (osSemaphoreAcquire(TotalSemaphoreDynamicHandle, osWaitForever)==osOK){*/
-			totalVehicles--;
-			osMutexRelease(globalMutex);
-			department_list[CORONA].available_num--;
-			department_list[CORONA].concurrent_num--;
-			osMutexRelease(coronaMutex);
-			if (i==corona_req->requested_vehicles-1){
-				osDelay(corona_req->time_to_complete);
-				//osSemaphoreRelease(PoliceSemaphoreStaticHandle);
-				//osSemaphoreRelease(TotalSemaphoreDynamicHandle);
-				osMutexAcquire(coronaMutex, osWaitForever);
-				osMutexAcquire(globalMutex, osWaitForever);
-
-				totalVehicles++;
-				osMutexRelease(globalMutex);
-				department_list[CORONA].concurrent_num++;
-				department_list[CORONA].available_num++;
-				osMutexRelease(coronaMutex);
-
-
-			}
-		}
-		else{
-			osMutexRelease(globalMutex);
-			osMutexRelease(coronaMutex);
-		}
-	}
-}
-
-  /* USER CODE END 5 */
-
-void timerCallback(void *argument){
-	printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
-	printf("Dispatcher free size: %d\r\n", dispatch_data.available_num);
-	printf("Dispatcher occupied size: %d\r\n", INIT_DISPATCHER_SIZE-dispatch_data.available_num);
-
-
-
-}
-/* USER CODE BEGIN Header_loggingStartThread */
-/**
-* @brief Function implementing the loggingThread thread.
-* @param argument: Not used
-* @retval None
-*/
 /* USER CODE END Header_loggingStartThread */
-void loggingStartThread(void *argument)
-{
+//TaskFunction_t loggingStartThread(void *argument)
+//{
   /* USER CODE BEGIN loggingStartThread */
   /* Infinite loop */
-	osTimerId_t log_timer= osTimerNew(timerCallback, osTimerPeriodic , NULL, NULL);
-	osStatus_t status = osTimerStart(log_timer, LOG_TIME_INTERVAL);
+	//osTimerId_t log_timer= osTimerNew(timerCallback, osTimerPeriodic , NULL, NULL);
+	//osStatus_t status = osTimerStart(log_timer, LOG_TIME_INTERVAL);
 
-}
+//}
 
 /* MPU Configuration */
 

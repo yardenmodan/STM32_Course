@@ -10,44 +10,59 @@ extern SPI_HandleTypeDef hspi1;
 extern SPI_HandleTypeDef hspi2;
 extern UART_HandleTypeDef huart3;
 
+extern SPI_HandleTypeDef hspi1;
+extern SPI_HandleTypeDef hspi2;
+extern UART_HandleTypeDef huart3;
+
 #define SPI_1_MASTER &hspi1
 #define SPI_2_SLAVE &hspi2
 #define UART_DEBUG &huart3
 #define PACKET_SIZE 1
 #define BUFF_SIZE 1024
 
-int flag_1=0;
-int flag_2=0;
+int flag_1 = 0;
+int flag_2 = 0;
 
+void ex1() {
+    HAL_StatusTypeDef status;
+    uint8_t msg[BUFF_SIZE] = "AbraKadabra";
+    uint8_t spi1_buff[BUFF_SIZE] = {0};
+    uint8_t spi2_buff[BUFF_SIZE] = {0};
 
-void ex1(){
-	HAL_StatusTypeDef status;
-	uint8_t msg[BUFF_SIZE]="AbraKadabra";
-	uint8_t spi1_buff[BUFF_SIZE]={0};
+    // Send data from master to slave
+    status = HAL_SPI_Transmit(SPI_1_MASTER, msg, BUFF_SIZE, HAL_MAX_DELAY);
+    if (status != HAL_OK) {
+        // Handle the error
+        // Example: printf("SPI Transmit error\n");
+    }
 
-	uint8_t spi2_buff[BUFF_SIZE]={0};
-	HAL_SPI_Receive_IT(SPI_2_SLAVE, spi2_buff, BUFF_SIZE);
+    // Receive data from slave to master
+    status = HAL_SPI_Receive(SPI_1_MASTER, spi1_buff, BUFF_SIZE, HAL_MAX_DELAY);
+    if (status != HAL_OK) {
+        // Handle the error
+        // Example: printf("SPI Receive error\n");
+    }
 
+    while (1) {
+        if (flag_2) {
+            HAL_SPI_Receive_IT(SPI_1_MASTER, spi1_buff, BUFF_SIZE);
+            status = HAL_SPI_Transmit(SPI_2_SLAVE, spi2_buff, BUFF_SIZE, HAL_MAX_DELAY);
+            if (status != HAL_OK) {
+                // Handle the error
+                // Example: printf("SPI Transmit error\n");
+            }
+            flag_2 = 0;
+        }
 
-	HAL_SPI_Transmit(SPI_1_MASTER, msg, BUFF_SIZE,HAL_MAX_DELAY);
-
-
-	while(1){
-		if (flag_2){
-			HAL_SPI_Receive_IT(SPI_1_MASTER, spi1_buff, BUFF_SIZE);
-			HAL_SPI_Transmit(SPI_2_SLAVE, spi2_buff, BUFF_SIZE,HAL_MAX_DELAY);
-
-		//	HAL_SPI_TransmitReceive(SPI_1_MASTER,spi2_buff , spi1_buff,BUFF_SIZE, HAL_MAX_DELAY);
-
-
-
-			flag_2=0;
-		}
-		if (flag_1){
-			HAL_UART_Transmit(UART_DEBUG, spi1_buff, BUFF_SIZE, HAL_MAX_DELAY);
-			flag_1=0;
-		}
-	}
+        if (flag_1) {
+            status = HAL_UART_Transmit(UART_DEBUG, spi1_buff, BUFF_SIZE, HAL_MAX_DELAY);
+            if (status != HAL_OK) {
+                // Handle the error
+                // Example: printf("UART Transmit error\n");
+            }
+            flag_1 = 0;
+        }
+    }
 }
 
 void ex2(){

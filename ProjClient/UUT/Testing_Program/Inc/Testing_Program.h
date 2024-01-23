@@ -18,13 +18,33 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+#define MAX_MSG_SIZE 256
+#define MAX_INCOMING_BUFF_SIZE= MAX_MSG_SIZE+7
+#define TESTID_LEN 4
+#define TRUE 0x01
+#define FALSE 0xFF
 // Define the UART debug port
 extern UART_HandleTypeDef huart3;
 #define UART_DEBUG &huart3
 
 // Define the port number for the server
-#define SERVER_PORT 50007
 
+
+typedef struct  {
+	uint32_t TestID;
+	uint8_t Peripheral;
+	uint8_t iter_num;
+	uint8_t pattern_len;
+	uint8_t str[MAX_MSG_SIZE];
+}packet_from_client;
+
+
+typedef struct  {
+	uint8_t TestID[TESTID_LEN];
+	uint8_t TestResult;
+
+}packet_to_client;
 // Define the lwIP network interface
 extern struct netif gnetif;	//Generic data structure used for all lwIP network interfaces.
 
@@ -35,28 +55,18 @@ extern struct netif gnetif;	//Generic data structure used for all lwIP network i
 #define CARRIAGE_RETURN 13
 
 // Define the maximum length of the incoming packet buffer
-#define MAX_MSG_LEN 1024
-#define BUFF_SIZE MAX_MSG_LEN-7
 
 // Define global variables
 extern uint8_t callback_flag;        			// Flag used to signal when a packet has been received
-extern uint8_t incomming_buffer[MAX_BUF_LEN]; 	// Incoming packet buffer
+extern uint8_t incoming_buffer[MAX_MSG_SIZE+7]; 	// Incoming packet buffer
 extern struct udp_pcb* upcb;         			// UDP protocol control block
 extern ip_addr_t dest_ipaddr;        			// Destination IP address
 extern u16_t dest_port;           			// Destination port number
-extern u16_t incomming_len;
+extern u16_t incoming_len;
 struct udp_pcb;                      			// Forward declaration of the udp_pcb structure
 
 // Define function prototypes
 void udpServer_init();                  // Initialize the UDP server
-void udp_disconnect(struct udp_pcb*);   // Disconnect the UDP server
-err_t udp_send(struct udp_pcb *, struct pbuf *);  // Send a UDP packet
-err_t udp_connect(struct udp_pcb *, const ip_addr_t *, u16_t);  // Connect to a remote host
-struct udp_pcb *udp_new(void);           // Allocate a new udp_pcb structure
-err_t udp_bind(struct udp_pcb *, const ip_addr_t *, u16_t);     // Bind the UDP server to an IP address and port number
-void udp_recv(struct udp_pcb *, void *, void *);                // Receive a UDP packet
-void udp_remove(struct udp_pcb *);
-err_t udp_sendto(struct udp_pcb *, struct pbuf *, const ip_addr_t *, u16_t);  // Send a UDP packet to a specific IP address and port number
-err_t send_packet(struct udp_pcb*, const void*, u16_t, const ip_addr_t*, u16_t);
+
 
 #endif /* INC_RTG_H_ */

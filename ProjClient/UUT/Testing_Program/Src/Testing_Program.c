@@ -4,38 +4,13 @@
 #include "Parsing.h"
 #include "main.h"
 
-#define BUFF_SIZE MAX_MSG_LEN-7
-#define TESTID_LEN 4
-#define TRUE 0x01
-#define FALSE 0xFF
-
-typedef enum{
-	TIMER=1,
-	UART=2,
-	SPI=4,
-	I2C=8,
-	ADC_p=16
-
-}peripheral_t;
 
 
 
-typedef struct packet_from_client {
-	uint8_t TestID[TESTID_LEN];
-	peripheral_t Peripheral;
-	uint8_t iter_num;
-	uint8_t pattern_len;
-	uint8_t str[BUFF_SIZE];
-}packet_from_client;
 
 
-typedef struct packet_to_client {
-	uint8_t TestID[TESTID_LEN];
-	uint8_t TestResult;
 
-}packet_to_client;
 
-#define RETURN_MESSAGE_LENGTH 5
 /*
  *	EVB configuration:
  *	IP: 		192.168.7.2
@@ -45,32 +20,35 @@ typedef struct packet_to_client {
  */
 
 
-uint8_t callback_flag = 0;
-ip_addr_t dest_ipaddr = {0};
-u16_t dest_port = 0;
-struct udp_pcb *upcb;
+
 
 void Testing_Program(void) {
-	uint8_t testing_result= TRUE;
 
-	uint8_t incoming_buf[MAX_MSG_LEN]={0}; // incoming buffer. stores bit string from client
+	const uint8_t TIMER =1;
+	const uint8_t UART=2;
+	const uint8_t SPI=4;
+	const uint8_t I2C = 8;
+	const uint8_t ADC_P = 16;
+
 
 	packet_to_client server_to_client_packet={0};
 	packet_from_client client_to_server_packet={0};
 
-	uint8_t return_from_test_value[BUFF_SIZE]={0}; //returned string from test units
+	uint8_t return_from_test_value[MAX_MSG_SIZE]={0}; //returned string from test units
 
 
 
 	printf("Start of program\r\n");
 	udpServer_init();					//UDP server initialization
 	while (1) {
+		uint8_t testing_result= TRUE;
+
 
 		ethernetif_input(&gnetif);		//Handles the actual reception of bytes from the network interface
 		sys_check_timeouts();			//Handle which checks timeout expiration
-		if(callback_flag == 1){
+		if(callback_flag == 1){			// got packet
 			callback_flag=0;
-			Parsing(&client_to_server_packet, incoming_buf);
+			Parsing(&client_to_server_packet, incoming_buffer);
 			switch ((uint32_t)client_to_server_packet->Peripheral){
 				case (TIMER): //start check from here
 					for (int iter=0; iter<client_to_server_packet->iter_num;i++){

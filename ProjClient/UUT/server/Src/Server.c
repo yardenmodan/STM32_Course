@@ -12,8 +12,8 @@ void udp_receive_callback(void* arg, struct udp_pcb* upcb, struct pbuf* p, const
 	// Store the sender information
 	ip_addr_copy(dest_ipaddr, *addr);
 	dest_port = port;
-	memcpy(incomming_buffer, p->payload, p->len);
-	incomming_len = p->len;
+	memcpy(incoming_buffer, p->payload, p->len);
+	incoming_len = p->len;
 
 	callback_flag = 1;
 	// free the pbuf
