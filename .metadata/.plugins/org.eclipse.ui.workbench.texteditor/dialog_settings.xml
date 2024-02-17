@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="hspi3"/>
+		<item key="selection" value="__io_putchar"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="__io_putchar"/>
+			<item value="MX_USART3_UART_Init"/>
+			<item value="huart3"/>
+			<item value="generate_thread"/>
+			<item value="htim6"/>
+			<item value="port_op"/>
+			<item value="port_opt"/>
+			<item value="departmentTask"/>
+			<item value="department_queue_handles_lists"/>
+			<item value="generated"/>
+			<item value="\n"/>
+			<item value="printf("/>
+			<item value="dispatchTask"/>
 			<item value="hspi3"/>
 			<item value="HAL_UARTEx_RxEventCallback"/>
-			<item value="__HAL_I2C_ENABLE_IT"/>
-			<item value="XferISR"/>
-			<item value="I2C_Enable_IRQ"/>
-			<item value="DIER"/>
-			<item value="dier"/>
-			<item value="sConfig"/>
-			<item value="Size"/>
-			<item value="pinstate"/>
-			<item value="spi2_buff"/>
-			<item value="spi1_buff"/>
-			<item value="i2c"/>
-			<item value="RxCpltCallback"/>
-			<item value="PeriodElapsedCallback"/>
 		</list>
 		<list key="replacehistory">
+			<item value="\r\n"/>
 			<item value="i2c2_buff"/>
 			<item value="i2c1_buff"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1317"/>
-		<item key="DIALOG_Y_ORIGIN" value="477"/>
+		<item key="DIALOG_X_ORIGIN" value="1311"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

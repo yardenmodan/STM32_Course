@@ -10,6 +10,7 @@
 #define SERVER_PORT 8080
 #define CLIENT_PORT 8080
 #define CLOCKS_PER_SEC
+#define TESTID_LEN 4
 
 typedef struct __attribute__((__packed__)) {
     uint32_t TestID;
@@ -29,7 +30,8 @@ typedef enum {
     PERIPHERAL,
     ITER_NUM,
     PATTERN_LEN,
-    STR
+    STR,
+	PACKET_FIELDS_NUM
 } packet_field;
 
 extern UART_HandleTypeDef huart3;
@@ -44,23 +46,23 @@ int main() {
         uint8_t Test_ID_str[11] = {0};
         uint8_t message_len_str[4] = {0};
         uint8_t iter_nums_str[4] = {0};
-        uint8_t Peripheral_num_str[6] = {0};
+        uint8_t Peripheral_name[7] = {0};
         uint8_t str[MAX_MSG_SIZE + 1] = {0};
 
-        uint8_t* field_list[5] = {Test_ID_str, message_len_str, iter_nums_str, Peripheral_num_str, str};
+        uint8_t* field_list[PACKET_FIELDS_NUM] = {Test_ID_str, Peripheral_name, iter_nums_str,message_len_str, str};
         packet_field iter_field = TEST_ID;
-        int iter_str = 0;
 
         // this while loop receives input from user for each packet field
-        while (iter_field != STR) {
-            uint8_t* chosen_field = field_list[iter_field];
-            getUserInput(iter_field, chosen_field, &iter_str);
+        while (iter_field < PACKET_FIELDS_NUM) {
+            uint8_t* chosen_field = &field_list[iter_field];
+            getUserInput(iter_field, chosen_field);
+            iter_field++;
         }
 
         /* ############# translation of strings to packet fields ############## */
 
         packet_from_client msg_packet = {0};
-        translateStringsToPacket(&msg_packet, Test_ID_str, Peripheral_num_str, iter_nums_str, message_len_str, str);
+        translateStringsToPacket(&msg_packet, field_list);
 
         /* ############# pack all fields into struct ############## */
 

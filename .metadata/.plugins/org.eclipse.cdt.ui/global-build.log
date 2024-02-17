@@ -1,685 +1,551 @@
-01:19:07 **** Incremental Build of configuration Debug for project RTconcepts ****
+19:32:30 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39580	    488	  26768	  66836	  10514	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+19:32:36 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39580	    488	  26768	  66836	  10514	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+19:48:29 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39580	    488	  26768	  66836	  10514	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+19:55:33 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:285:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:312:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  312 |   printf("police semaphore count: %d\r\n", uxSemaphoreGetCount(policeSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:317:34: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  317 |   printf("fire semaphore count: %d\r\n", uxSemaphoreGetCount(fireSemaphore));
+      |                                 ~^
+      |                                  |
+      |                                  int
+      |                                 %ld
+../Core/Src/main.c:323:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  323 |   HAL_UART_Transmit(&huart3, "blabla\r\n", strlen("blabla\r\n"), HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:415,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1553 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:324:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  324 |   printf("ambulance semaphore count: %d\r\n", uxSemaphoreGetCount(ambulanceSemaphore));
+      |                                      ~^
+      |                                       |
+      |                                       int
+      |                                      %ld
+../Core/Src/main.c:330:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  330 |   printf("corona semaphore count: %d\r\n", uxSemaphoreGetCount(coronaSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:334:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  334 |   printf("global semaphore count: %d\r\n", uxSemaphoreGetCount(globalSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:371:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:371:44: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:291:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:372:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:372:44: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:298:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                                                  ^~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:374:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:374:42: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:305:51: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                                                   ^~~~~~~~~~~~~~
-      |                                                   |
-      |                                                   void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:376:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:376:40: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:311:53: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(&departmentTask,
-      |                                                     ^~~~~~~~~~~~~~~
-      |                                                     |
-      |                                                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:377:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:377:45: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |                                             ^~~~~~~~~~~~~~
+      |                                             |
+      |                                             void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  317 |           BaseType_t corona_thread = xTaskCreate(&departmentTask,
-      |                                                  ^~~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:378:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:378:42: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:22: warning: unused variable 'corona_thread' [-Wunused-variable]
-  317 |           BaseType_t corona_thread = xTaskCreate(&departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:311:22: warning: unused variable 'ambulnace_thread' [-Wunused-variable]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(&departmentTask,
-      |                      ^~~~~~~~~~~~~~~~
-../Core/Src/main.c:305:22: warning: unused variable 'fire_thread' [-Wunused-variable]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                      ^~~~~~~~~~~
-../Core/Src/main.c:298:22: warning: unused variable 'police_thread' [-Wunused-variable]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:291:22: warning: unused variable 'dispatch_thread' [-Wunused-variable]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:285:22: warning: unused variable 'generate_thread' [-Wunused-variable]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:262:27: warning: unused variable 'semaphoreList' [-Wunused-variable]
-  262 |         SemaphoreHandle_t semaphoreList[DEPARTMENTS_NUM]={policeSemaphore,fireSemaphore,ambulanceSemaphore,coronaSemaphore};
-      |                           ^~~~~~~~~~~~~
+../Core/Src/main.c:378:14: warning: unused variable 'corona_thread' [-Wunused-variable]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:377:14: warning: unused variable 'ambulnace_thread' [-Wunused-variable]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |              ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:376:14: warning: unused variable 'fire_thread' [-Wunused-variable]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |              ^~~~~~~~~~~
+../Core/Src/main.c:374:14: warning: unused variable 'police_thread' [-Wunused-variable]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:372:14: warning: unused variable 'dispatch_thread' [-Wunused-variable]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |              ^~~~~~~~~~~~~~~
+../Core/Src/main.c:371:14: warning: unused variable 'generate_thread' [-Wunused-variable]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |              ^~~~~~~~~~~~~~~
 ../Core/Src/main.c: In function 'dispatchTask':
-../Core/Src/main.c:364:13: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:30:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   29 | #include "timers.h"
-  +++ |+#include <stdio.h>
-   30 | 
-../Core/Src/main.c:364:13: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:364:13: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:722:99: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  722 |             printf("dispatcher got request: dep_id: %d, requested vehicles: %u, time to comlete: %u\r\n", req.dep_id, req.requested_vehicles, req.time_to_complete);
+      |                                                                                                  ~^                                           ~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                   |                                              |
+      |                                                                                                   unsigned int                                   uint32_t {aka long unsigned int}
+      |                                                                                                  %lu
 ../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:410:69: warning: passing argument 2 of 'xQueueReceive' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  410 |         if (xQueueReceive(department_queue_handles_lists[depar_id], (void const*)&departments_req_list[depar_id], QueueTimeoutList[depar_id]) == pdPASS)
-      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:35,
-                 from ../Core/Src/main.c:27:
-../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:868:62: note: expected 'void * const' but argument is of type 'const void *'
-  868 | BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
-      |                                                 ~~~~~~~~~~~~~^~~~~~~~
-../Core/Src/main.c:414:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  414 |               printf("Got request from fire department!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:414:15: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c:427:21: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  427 |                     ServiceRoutine,
-      |                     ^~~~~~~~~~~~~~
-      |                     |
-      |                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:790:17: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  790 |                 ServiceRoutine,
+      |                 ^~~~~~~~~~~~~~
+      |                 |
+      |                 void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:430:21: warning: passing argument 4 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  430 |                     (void const*)&departments_req_list[depar_id], //request to be passed
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:333:70: note: expected 'void * const' but argument is of type 'const void *'
+../Core/Src/main.c:793:17: warning: passing argument 4 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  793 |                 (void const*)&req, //request to be passed
+      |                 ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:333:70: note: expected 'void * const' but argument is of type 'const void *'
   333 |                                                         void * const pvParameters,
       |                                                         ~~~~~~~~~~~~~^~~~~~~~~~~~
-../Core/Src/main.c:432:21: warning: passing argument 6 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  432 |                     (const TaskHandle_t *)&department_SR_handles[depar_id])) == pdPASS)
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:335:78: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock * const*'
+../Core/Src/main.c:795:17: warning: passing argument 6 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  795 |                 (const TaskHandle_t*)&SR_handle_array[sr_handle_index])) == pdPASS) //should i add handles to each of task created?
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:335:78: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock * const*'
   335 |                                                         TaskHandle_t * const pxCreatedTask ) PRIVILEGED_FUNCTION;
       |                                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-../Core/Src/main.c:434:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  434 |               printf("New SR!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:434:15: note: include '<stdio.h>' or provide a declaration of 'printf'
 ../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:443:21: warning: unused variable 'department_semaphore' [-Wunused-variable]
-  443 |   SemaphoreHandle_t department_semaphore= semaphoreList[depar_id];
-      |                     ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'generateTask':
-../Core/Src/main.c:494:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  494 |                         printf("request was put inside dispatch queue!\r\n");
-      |                         ^~~~~~
-../Core/Src/main.c:494:25: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:504:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  504 |         printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
-      |         ^~~~~~
-../Core/Src/main.c:504:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:515:101: warning: passing argument 5 of 'xTimerCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  515 |   TimerHandle_t log_timer  = xTimerCreate("LogTimer", pdMS_TO_TICKS(LOG_TIMER_INTERVAL), pdTRUE, 0, timerCallback);
-      |                                                                                                     ^~~~~~~~~~~~~
-      |                                                                                                     |
-      |                                                                                                     void (* (*)(void *))(void *)
-In file included from ../Core/Src/main.c:29:
-../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:232:89: note: expected 'TimerCallbackFunction_t' {aka 'void (*)(struct tmrTimerControl *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  232 |                                                                 TimerCallbackFunction_t pxCallbackFunction ) PRIVILEGED_FUNCTION;
-      |                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:212:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
-  212 | static void MPU_Initialize(void);
-      |             ^~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:469:1: warning: control reaches end of non-void function [-Wreturn-type]
-  469 | }
-      | ^
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:510:1: warning: control reaches end of non-void function [-Wreturn-type]
-  510 | }
-      | ^
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:521:1: warning: control reaches end of non-void function [-Wreturn-type]
-  521 | }
-      | ^
-At top level:
-../Core/Src/main.c:588:6: warning: 'MPU_Config' defined but not used [-Wunused-function]
-  588 | void MPU_Config(void)
-      |      ^~~~~~~~~~
-../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:402:13: warning: 'police_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:398:13: note: 'police_req' declared here
-  398 |     request police_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'fire_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:400:13: note: 'fire_req' declared here
-  400 |     request fire_req;
-      |             ^~~~~~~~
-../Core/Src/main.c:402:13: warning: 'ambulance_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:399:13: note: 'ambulance_req' declared here
-  399 |     request ambulance_req;
-      |             ^~~~~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'corona_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:401:13: note: 'corona_req' declared here
-  401 |     request corona_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'policeSRHandle' is used uninitialized [-Wuninitialized]
-  404 |     TaskHandle_t department_SR_handles[DEPARTMENTS_NUM]={policeSRHandle, fireSRHandle, ambulanceSRHandle, coronaSRHandle };
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'fireSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'ambulanceSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'coronaSRHandle' is used uninitialized [-Wuninitialized]
-arm-none-eabi-gcc -o "RTconcepts.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTconcepts.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RTconcepts.elf
- 
-arm-none-eabi-size   RTconcepts.elf 
-arm-none-eabi-objdump -h -S  RTconcepts.elf  > "RTconcepts.list"
-   text	   data	    bss	    dec	    hex	filename
-  20504	    164	  20772	  41440	   a1e0	RTconcepts.elf
-Finished building: default.size.stdout
- 
-Finished building: RTconcepts.list
- 
-01:19:19 **** Incremental Build of configuration Debug for project RTconcepts ****
-make -j8 all 
-arm-none-eabi-size   RTconcepts.elf 
-   text	   data	    bss	    dec	    hex	filename
-  20504	    164	  20772	  41440	   a1e0	RTconcepts.elf
-Finished building: default.size.stdout
- 
-01:20:16 **** Incremental Build of configuration Debug for project RTconcepts ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:285:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:291:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:298:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                                                  ^~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:305:51: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                                                   ^~~~~~~~~~~~~~
+../Core/Src/main.c:819:51: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  819 |     printf("requested cars: %d, sempahoreglobal: %d, concurrentsemaphore: %d", reques->requested_vehicles, uxSemaphoreGetCount(globalSemaphore), uxSemaphoreGetCount(department_semaphore));
+      |                                                  ~^
       |                                                   |
-      |                                                   void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+      |                                                   int
+      |                                                  %ld
+../Core/Src/main.c:819:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  819 |     printf("requested cars: %d, sempahoreglobal: %d, concurrentsemaphore: %d", reques->requested_vehicles, uxSemaphoreGetCount(globalSemaphore), uxSemaphoreGetCount(department_semaphore));
+      |                                                                           ~^
+      |                                                                            |
+      |                                                                            int
+      |                                                                           %ld
+../Core/Src/main.c:824:83: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  824 |             printf("global semaphore and depar semaphore were taken! priority is %d\r\n", uxTaskPriorityGet(NULL));
+      |                                                                                  ~^       ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                   |       |
+      |                                                                                   int     UBaseType_t {aka long unsigned int}
+      |                                                                                  %ld
+../Core/Src/main.c:837:21: warning: unused variable 'glob_semaphore_count_before_4' [-Wunused-variable]
+  837 |                 int glob_semaphore_count_before_4 = uxSemaphoreGetCount(globalSemaphore);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:827:17: warning: unused variable 'glob_semaphore_count_before_3' [-Wunused-variable]
+  827 |             int glob_semaphore_count_before_3 = uxSemaphoreGetCount(globalSemaphore);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:845:17: warning: unused variable 'glob_semaphore_count_before_5' [-Wunused-variable]
+  845 |             int glob_semaphore_count_before_5 = uxSemaphoreGetCount(globalSemaphore);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:822:13: warning: unused variable 'glob_semaphore_count_before_2' [-Wunused-variable]
+  822 |         int glob_semaphore_count_before_2 = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:814:9: warning: unused variable 'glob_semaphore_count_before_1' [-Wunused-variable]
+  814 |     int glob_semaphore_count_before_1 = uxSemaphoreGetCount(globalSemaphore);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'releaseResources':
+../Core/Src/main.c:866:70: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  866 |         printf("released resources of %d department: totalVehicles: %d, concurrent num: %d, availble num: %d\r\n", depar_id, totalVehicles, department_list[depar_id].concurrent_num, department_list[depar_id].available_num);
+      |                                                                     ~^                                                       ~~~~~~~~~~~~~
+      |                                                                      |                                                       |
+      |                                                                      int                                                     uint32_t {aka long unsigned int}
+      |                                                                     %ld
+../Core/Src/main.c:860:13: warning: unused variable 'glob_semahpore_count_after' [-Wunused-variable]
+  860 |         int glob_semahpore_count_after = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:858:13: warning: unused variable 'glob_semaphore_count_before' [-Wunused-variable]
+  858 |         int glob_semaphore_count_before = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'generateTask':
+../Core/Src/main.c:909:107: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  909 |             printf("generated request. request was put inside main queue! request: dep: %d, active time: %u, vehicle num: %u\r\n", dep, active_time, vehicle_num_to_dispatch);
+      |                                                                                                          ~^                             ~~~~~~~~~~~
+      |                                                                                                           |                             |
+      |                                                                                                           unsigned int                  uint32_t {aka long unsigned int}
+      |                                                                                                          %lu
+../Core/Src/main.c: In function 'ServiceRoutine':
+../Core/Src/main.c:852:1: warning: control reaches end of non-void function [-Wreturn-type]
+  852 | }
+      | ^
+arm-none-eabi-gcc -o "freeRTOS_final_project.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\freeRTOS_final_project\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="freeRTOS_final_project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: freeRTOS_final_project.elf
+ 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+arm-none-eabi-objdump -h -S freeRTOS_final_project.elf  > "freeRTOS_final_project.list"
+   text	   data	    bss	    dec	    hex	filename
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+Finished building: freeRTOS_final_project.list
+ 
+20:16:07 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+20:26:04 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:312:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  312 |   printf("police semaphore count: %d\r\n", uxSemaphoreGetCount(policeSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:317:34: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  317 |   printf("fire semaphore count: %d\r\n", uxSemaphoreGetCount(fireSemaphore));
+      |                                 ~^
+      |                                  |
+      |                                  int
+      |                                 %ld
+../Core/Src/main.c:323:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  323 |   HAL_UART_Transmit(&huart3, "blabla\r\n", strlen("blabla\r\n"), HAL_MAX_DELAY);
+      |                              ^~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:415,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1553 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:324:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  324 |   printf("ambulance semaphore count: %d\r\n", uxSemaphoreGetCount(ambulanceSemaphore));
+      |                                      ~^
+      |                                       |
+      |                                       int
+      |                                      %ld
+../Core/Src/main.c:330:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  330 |   printf("corona semaphore count: %d\r\n", uxSemaphoreGetCount(coronaSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:334:36: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  334 |   printf("global semaphore count: %d\r\n", uxSemaphoreGetCount(globalSemaphore));
+      |                                   ~^
+      |                                    |
+      |                                    int
+      |                                   %ld
+../Core/Src/main.c:371:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:371:44: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:311:53: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(departmentTask,
-      |                                                     ^~~~~~~~~~~~~~
-      |                                                     |
-      |                                                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:372:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:372:44: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  317 |           BaseType_t corona_thread = xTaskCreate(departmentTask,
-      |                                                  ^~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:374:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:374:42: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:22: warning: unused variable 'corona_thread' [-Wunused-variable]
-  317 |           BaseType_t corona_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:311:22: warning: unused variable 'ambulnace_thread' [-Wunused-variable]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~~~~
-../Core/Src/main.c:305:22: warning: unused variable 'fire_thread' [-Wunused-variable]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                      ^~~~~~~~~~~
-../Core/Src/main.c:298:22: warning: unused variable 'police_thread' [-Wunused-variable]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:291:22: warning: unused variable 'dispatch_thread' [-Wunused-variable]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:285:22: warning: unused variable 'generate_thread' [-Wunused-variable]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:262:27: warning: unused variable 'semaphoreList' [-Wunused-variable]
-  262 |         SemaphoreHandle_t semaphoreList[DEPARTMENTS_NUM]={policeSemaphore,fireSemaphore,ambulanceSemaphore,coronaSemaphore};
-      |                           ^~~~~~~~~~~~~
+../Core/Src/main.c:376:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:376:40: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/main.c:377:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:377:45: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |                                             ^~~~~~~~~~~~~~
+      |                                             |
+      |                                             void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/main.c:378:3: warning: type defaults to 'int' in type name [-Wimplicit-int]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |   ^~~~~~~~~~
+../Core/Src/main.c:378:42: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+../Core/Src/main.c:378:14: warning: unused variable 'corona_thread' [-Wunused-variable]
+  378 |   BaseType_t corona_thread = xTaskCreate(departmentTask, (const char * const)"coronaThread", (const)CORONA_THREAD_BUFFER_SIZE, (void *)corona_depar, (UBaseType_t)CORONA_THREAD_PRIORITY, (TaskHandle_t * const)&coronaThreadHandle);
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:377:14: warning: unused variable 'ambulnace_thread' [-Wunused-variable]
+  377 |   BaseType_t ambulnace_thread = xTaskCreate(departmentTask, (const char * const)"ambulanceThread", (const)AMBULANCE_THREAD_BUFFER_SIZE, (void *)ambulance_depar, (UBaseType_t)AMBULANCE_THREAD_PRIORITY, (TaskHandle_t * const)&ambulanceThreadHandle);
+      |              ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:376:14: warning: unused variable 'fire_thread' [-Wunused-variable]
+  376 |   BaseType_t fire_thread = xTaskCreate(departmentTask, (const char * const)"fireThread", (const)FIRE_THREAD_BUFFER_SIZE, (void *)fire_depar, (UBaseType_t)FIRE_THREAD_PRIORITY, (TaskHandle_t * const)&fireThreadHandle);
+      |              ^~~~~~~~~~~
+../Core/Src/main.c:374:14: warning: unused variable 'police_thread' [-Wunused-variable]
+  374 |   BaseType_t police_thread = xTaskCreate(departmentTask, (const char * const)"policeThread", (const)POLICE_THREAD_BUFFER_SIZE, (void *)police_depar,(UBaseType_t)POLICE_THREAD_PRIORITY, (TaskHandle_t * const)&policeThreadHandle);
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:372:14: warning: unused variable 'dispatch_thread' [-Wunused-variable]
+  372 |   BaseType_t dispatch_thread = xTaskCreate(dispatchTask, (const char * const)"dispatchThread", (const)DISPATCH_THREAD_BUFFER_SIZE, NULL, DISPATCH_THREAD_PRIORITY, (TaskHandle_t * const)&dispatchThreadHandle);
+      |              ^~~~~~~~~~~~~~~
+../Core/Src/main.c:371:14: warning: unused variable 'generate_thread' [-Wunused-variable]
+  371 |   BaseType_t generate_thread = xTaskCreate(generateTask, (const char * const)"generateThread", (const)GENERATE_THREAD_BUFFER_SIZE, NULL, GENERATE_THREAD_PRIORITY, (TaskHandle_t * const)&generateThreadHandle);
+      |              ^~~~~~~~~~~~~~~
 ../Core/Src/main.c: In function 'dispatchTask':
-../Core/Src/main.c:364:13: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:30:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   29 | #include "timers.h"
-  +++ |+#include <stdio.h>
-   30 | 
-../Core/Src/main.c:364:13: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:364:13: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:722:99: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  722 |             printf("dispatcher got request: dep_id: %d, requested vehicles: %u, time to comlete: %u\r\n", req.dep_id, req.requested_vehicles, req.time_to_complete);
+      |                                                                                                  ~^                                           ~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                   |                                              |
+      |                                                                                                   unsigned int                                   uint32_t {aka long unsigned int}
+      |                                                                                                  %lu
 ../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:410:69: warning: passing argument 2 of 'xQueueReceive' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  410 |         if (xQueueReceive(department_queue_handles_lists[depar_id], (void const*)&departments_req_list[depar_id], QueueTimeoutList[depar_id]) == pdPASS)
-      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:35,
-                 from ../Core/Src/main.c:27:
-../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:868:62: note: expected 'void * const' but argument is of type 'const void *'
-  868 | BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
-      |                                                 ~~~~~~~~~~~~~^~~~~~~~
-../Core/Src/main.c:414:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  414 |               printf("Got request from fire department!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:414:15: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c:427:21: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  427 |                     ServiceRoutine,
-      |                     ^~~~~~~~~~~~~~
-      |                     |
-      |                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
+../Core/Src/main.c:790:17: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  790 |                 ServiceRoutine,
+      |                 ^~~~~~~~~~~~~~
+      |                 |
+      |                 void (* (*)(void *))(void *)
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
   330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
       |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:430:21: warning: passing argument 4 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  430 |                     (void const*)&departments_req_list[depar_id], //request to be passed
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:333:70: note: expected 'void * const' but argument is of type 'const void *'
+../Core/Src/main.c:793:17: warning: passing argument 4 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  793 |                 (void const*)&req, //request to be passed
+      |                 ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:333:70: note: expected 'void * const' but argument is of type 'const void *'
   333 |                                                         void * const pvParameters,
       |                                                         ~~~~~~~~~~~~~^~~~~~~~~~~~
-../Core/Src/main.c:432:21: warning: passing argument 6 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  432 |                     (const TaskHandle_t *)&department_SR_handles[depar_id])) == pdPASS)
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:335:78: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock * const*'
+../Core/Src/main.c:795:17: warning: passing argument 6 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  795 |                 (const TaskHandle_t*)&SR_handle_array[sr_handle_index])) == pdPASS) //should i add handles to each of task created?
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
+                 from ../Core/Src/main.c:22:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/freeRTOS_final_project/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:335:78: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock * const*'
   335 |                                                         TaskHandle_t * const pxCreatedTask ) PRIVILEGED_FUNCTION;
       |                                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-../Core/Src/main.c:434:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  434 |               printf("New SR!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:434:15: note: include '<stdio.h>' or provide a declaration of 'printf'
 ../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:443:21: warning: unused variable 'department_semaphore' [-Wunused-variable]
-  443 |   SemaphoreHandle_t department_semaphore= semaphoreList[depar_id];
-      |                     ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'generateTask':
-../Core/Src/main.c:494:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  494 |                         printf("request was put inside dispatch queue!\r\n");
-      |                         ^~~~~~
-../Core/Src/main.c:494:25: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:504:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  504 |         printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
-      |         ^~~~~~
-../Core/Src/main.c:504:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:515:101: warning: passing argument 5 of 'xTimerCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  515 |   TimerHandle_t log_timer  = xTimerCreate("LogTimer", pdMS_TO_TICKS(LOG_TIMER_INTERVAL), pdTRUE, 0, timerCallback);
-      |                                                                                                     ^~~~~~~~~~~~~
-      |                                                                                                     |
-      |                                                                                                     void (* (*)(void *))(void *)
-In file included from ../Core/Src/main.c:29:
-../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:232:89: note: expected 'TimerCallbackFunction_t' {aka 'void (*)(struct tmrTimerControl *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  232 |                                                                 TimerCallbackFunction_t pxCallbackFunction ) PRIVILEGED_FUNCTION;
-      |                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:212:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
-  212 | static void MPU_Initialize(void);
-      |             ^~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:469:1: warning: control reaches end of non-void function [-Wreturn-type]
-  469 | }
-      | ^
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:510:1: warning: control reaches end of non-void function [-Wreturn-type]
-  510 | }
-      | ^
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:521:1: warning: control reaches end of non-void function [-Wreturn-type]
-  521 | }
-      | ^
-At top level:
-../Core/Src/main.c:588:6: warning: 'MPU_Config' defined but not used [-Wunused-function]
-  588 | void MPU_Config(void)
-      |      ^~~~~~~~~~
-../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:402:13: warning: 'police_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:398:13: note: 'police_req' declared here
-  398 |     request police_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'fire_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:400:13: note: 'fire_req' declared here
-  400 |     request fire_req;
-      |             ^~~~~~~~
-../Core/Src/main.c:402:13: warning: 'ambulance_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:399:13: note: 'ambulance_req' declared here
-  399 |     request ambulance_req;
-      |             ^~~~~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'corona_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:401:13: note: 'corona_req' declared here
-  401 |     request corona_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'policeSRHandle' is used uninitialized [-Wuninitialized]
-  404 |     TaskHandle_t department_SR_handles[DEPARTMENTS_NUM]={policeSRHandle, fireSRHandle, ambulanceSRHandle, coronaSRHandle };
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'fireSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'ambulanceSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'coronaSRHandle' is used uninitialized [-Wuninitialized]
-arm-none-eabi-gcc -o "RTconcepts.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTconcepts.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RTconcepts.elf
- 
-arm-none-eabi-size   RTconcepts.elf 
-arm-none-eabi-objdump -h -S  RTconcepts.elf  > "RTconcepts.list"
-   text	   data	    bss	    dec	    hex	filename
-  20504	    164	  20772	  41440	   a1e0	RTconcepts.elf
-Finished building: default.size.stdout
- 
-Finished building: RTconcepts.list
- 
-01:21:56 **** Incremental Build of configuration Debug for project RTconcepts ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:285:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:291:52: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                                                    ^~~~~~~~~~~~
-      |                                                    |
-      |                                                    void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:298:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                                                  ^~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:305:51: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                                                   ^~~~~~~~~~~~~~
+../Core/Src/main.c:819:51: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  819 |     printf("requested cars: %d, sempahoreglobal: %d, concurrentsemaphore: %d", reques->requested_vehicles, uxSemaphoreGetCount(globalSemaphore), uxSemaphoreGetCount(department_semaphore));
+      |                                                  ~^
       |                                                   |
-      |                                                   void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:311:53: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(departmentTask,
-      |                                                     ^~~~~~~~~~~~~~
-      |                                                     |
-      |                                                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:50: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  317 |           BaseType_t corona_thread = xTaskCreate(departmentTask,
-      |                                                  ^~~~~~~~~~~~~~
-      |                                                  |
-      |                                                  void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:317:22: warning: unused variable 'corona_thread' [-Wunused-variable]
-  317 |           BaseType_t corona_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:311:22: warning: unused variable 'ambulnace_thread' [-Wunused-variable]
-  311 |           BaseType_t ambulnace_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~~~~
-../Core/Src/main.c:305:22: warning: unused variable 'fire_thread' [-Wunused-variable]
-  305 |           BaseType_t fire_thread = xTaskCreate(   departmentTask,
-      |                      ^~~~~~~~~~~
-../Core/Src/main.c:298:22: warning: unused variable 'police_thread' [-Wunused-variable]
-  298 |           BaseType_t police_thread = xTaskCreate(departmentTask,
-      |                      ^~~~~~~~~~~~~
-../Core/Src/main.c:291:22: warning: unused variable 'dispatch_thread' [-Wunused-variable]
-  291 |           BaseType_t dispatch_thread = xTaskCreate(dispatchTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:285:22: warning: unused variable 'generate_thread' [-Wunused-variable]
-  285 |           BaseType_t generate_thread = xTaskCreate(generateTask,
-      |                      ^~~~~~~~~~~~~~~
-../Core/Src/main.c:262:27: warning: unused variable 'semaphoreList' [-Wunused-variable]
-  262 |         SemaphoreHandle_t semaphoreList[DEPARTMENTS_NUM]={policeSemaphore,fireSemaphore,ambulanceSemaphore,coronaSemaphore};
-      |                           ^~~~~~~~~~~~~
-../Core/Src/main.c: In function 'dispatchTask':
-../Core/Src/main.c:364:13: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:30:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   29 | #include "timers.h"
-  +++ |+#include <stdio.h>
-   30 | 
-../Core/Src/main.c:364:13: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  364 |             printf("Fire request was sent to department!\r\n");
-      |             ^~~~~~
-../Core/Src/main.c:364:13: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:410:69: warning: passing argument 2 of 'xQueueReceive' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  410 |         if (xQueueReceive(department_queue_handles_lists[depar_id], (void const*)&departments_req_list[depar_id], QueueTimeoutList[depar_id]) == pdPASS)
-      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:35,
-                 from ../Core/Src/main.c:27:
-../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:868:62: note: expected 'void * const' but argument is of type 'const void *'
-  868 | BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
-      |                                                 ~~~~~~~~~~~~~^~~~~~~~
-../Core/Src/main.c:414:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  414 |               printf("Got request from fire department!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:414:15: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c:427:21: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  427 |                     ServiceRoutine,
-      |                     ^~~~~~~~~~~~~~
-      |                     |
-      |                     void (* (*)(void *))(void *)
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:330:48: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  330 |         BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-      |                                 ~~~~~~~~~~~~~~~^~~~~~~~~~
-../Core/Src/main.c:430:21: warning: passing argument 4 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  430 |                     (void const*)&departments_req_list[depar_id], //request to be passed
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:333:70: note: expected 'void * const' but argument is of type 'const void *'
-  333 |                                                         void * const pvParameters,
-      |                                                         ~~~~~~~~~~~~~^~~~~~~~~~~~
-../Core/Src/main.c:432:21: warning: passing argument 6 of 'xTaskCreate' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  432 |                     (const TaskHandle_t *)&department_SR_handles[depar_id])) == pdPASS)
-      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:127,
-                 from ../Core/Src/main.c:23:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:335:78: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct tskTaskControlBlock * const*'
-  335 |                                                         TaskHandle_t * const pxCreatedTask ) PRIVILEGED_FUNCTION;
-      |                                                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-../Core/Src/main.c:434:15: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  434 |               printf("New SR!\r\n");
-      |               ^~~~~~
-../Core/Src/main.c:434:15: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:443:21: warning: unused variable 'department_semaphore' [-Wunused-variable]
-  443 |   SemaphoreHandle_t department_semaphore= semaphoreList[depar_id];
-      |                     ^~~~~~~~~~~~~~~~~~~~
+      |                                                   int
+      |                                                  %ld
+../Core/Src/main.c:819:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  819 |     printf("requested cars: %d, sempahoreglobal: %d, concurrentsemaphore: %d", reques->requested_vehicles, uxSemaphoreGetCount(globalSemaphore), uxSemaphoreGetCount(department_semaphore));
+      |                                                                           ~^
+      |                                                                            |
+      |                                                                            int
+      |                                                                           %ld
+../Core/Src/main.c:824:83: warning: format '%d' expects argument of type 'int', but argument 2 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  824 |             printf("global semaphore and depar semaphore were taken! priority is %d\r\n", uxTaskPriorityGet(NULL));
+      |                                                                                  ~^       ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                   |       |
+      |                                                                                   int     UBaseType_t {aka long unsigned int}
+      |                                                                                  %ld
+../Core/Src/main.c:837:21: warning: unused variable 'glob_semaphore_count_before_4' [-Wunused-variable]
+  837 |                 int glob_semaphore_count_before_4 = uxSemaphoreGetCount(globalSemaphore);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:827:17: warning: unused variable 'glob_semaphore_count_before_3' [-Wunused-variable]
+  827 |             int glob_semaphore_count_before_3 = uxSemaphoreGetCount(globalSemaphore);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:845:17: warning: unused variable 'glob_semaphore_count_before_5' [-Wunused-variable]
+  845 |             int glob_semaphore_count_before_5 = uxSemaphoreGetCount(globalSemaphore);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:822:13: warning: unused variable 'glob_semaphore_count_before_2' [-Wunused-variable]
+  822 |         int glob_semaphore_count_before_2 = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:814:9: warning: unused variable 'glob_semaphore_count_before_1' [-Wunused-variable]
+  814 |     int glob_semaphore_count_before_1 = uxSemaphoreGetCount(globalSemaphore);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'releaseResources':
+../Core/Src/main.c:866:70: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  866 |         printf("released resources of %d department: totalVehicles: %d, concurrent num: %d, availble num: %d\r\n", depar_id, totalVehicles, department_list[depar_id].concurrent_num, department_list[depar_id].available_num);
+      |                                                                     ~^                                                       ~~~~~~~~~~~~~
+      |                                                                      |                                                       |
+      |                                                                      int                                                     uint32_t {aka long unsigned int}
+      |                                                                     %ld
+../Core/Src/main.c:860:13: warning: unused variable 'glob_semahpore_count_after' [-Wunused-variable]
+  860 |         int glob_semahpore_count_after = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:858:13: warning: unused variable 'glob_semaphore_count_before' [-Wunused-variable]
+  858 |         int glob_semaphore_count_before = uxSemaphoreGetCount(globalSemaphore);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../Core/Src/main.c: In function 'generateTask':
-../Core/Src/main.c:494:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  494 |                         printf("request was put inside dispatch queue!\r\n");
-      |                         ^~~~~~
-../Core/Src/main.c:494:25: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:504:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  504 |         printf("Dispatcher initial size: %d\r\n", INIT_DISPATCHER_SIZE);
-      |         ^~~~~~
-../Core/Src/main.c:504:9: note: include '<stdio.h>' or provide a declaration of 'printf'
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:515:101: warning: passing argument 5 of 'xTimerCreate' from incompatible pointer type [-Wincompatible-pointer-types]
-  515 |   TimerHandle_t log_timer  = xTimerCreate("LogTimer", pdMS_TO_TICKS(LOG_TIMER_INTERVAL), pdTRUE, 0, timerCallback);
-      |                                                                                                     ^~~~~~~~~~~~~
-      |                                                                                                     |
-      |                                                                                                     void (* (*)(void *))(void *)
-In file included from ../Core/Src/main.c:29:
-../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:232:89: note: expected 'TimerCallbackFunction_t' {aka 'void (*)(struct tmrTimerControl *)'} but argument is of type 'void (* (*)(void *))(void *)'
-  232 |                                                                 TimerCallbackFunction_t pxCallbackFunction ) PRIVILEGED_FUNCTION;
-      |                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-../Core/Src/main.c: At top level:
-../Core/Src/main.c:212:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
-  212 | static void MPU_Initialize(void);
-      |             ^~~~~~~~~~~~~~
+../Core/Src/main.c:909:107: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  909 |             printf("generated request. request was put inside main queue! request: dep: %d, active time: %u, vehicle num: %u\r\n", dep, active_time, vehicle_num_to_dispatch);
+      |                                                                                                          ~^                             ~~~~~~~~~~~
+      |                                                                                                           |                             |
+      |                                                                                                           unsigned int                  uint32_t {aka long unsigned int}
+      |                                                                                                          %lu
 ../Core/Src/main.c: In function 'ServiceRoutine':
-../Core/Src/main.c:469:1: warning: control reaches end of non-void function [-Wreturn-type]
-  469 | }
+../Core/Src/main.c:852:1: warning: control reaches end of non-void function [-Wreturn-type]
+  852 | }
       | ^
-../Core/Src/main.c: In function 'timerCallback':
-../Core/Src/main.c:510:1: warning: control reaches end of non-void function [-Wreturn-type]
-  510 | }
-      | ^
-../Core/Src/main.c: In function 'loggingStartThread':
-../Core/Src/main.c:521:1: warning: control reaches end of non-void function [-Wreturn-type]
-  521 | }
-      | ^
-At top level:
-../Core/Src/main.c:588:6: warning: 'MPU_Config' defined but not used [-Wunused-function]
-  588 | void MPU_Config(void)
-      |      ^~~~~~~~~~
-../Core/Src/main.c: In function 'departmentTask':
-../Core/Src/main.c:402:13: warning: 'police_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:398:13: note: 'police_req' declared here
-  398 |     request police_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'fire_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:400:13: note: 'fire_req' declared here
-  400 |     request fire_req;
-      |             ^~~~~~~~
-../Core/Src/main.c:402:13: warning: 'ambulance_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:399:13: note: 'ambulance_req' declared here
-  399 |     request ambulance_req;
-      |             ^~~~~~~~~~~~~
-../Core/Src/main.c:402:13: warning: 'corona_req' is used uninitialized [-Wuninitialized]
-  402 |     request departments_req_list[DEPARTMENTS_NUM]={police_req,fire_req,ambulance_req,corona_req};
-      |             ^~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:401:13: note: 'corona_req' declared here
-  401 |     request corona_req;
-      |             ^~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'policeSRHandle' is used uninitialized [-Wuninitialized]
-  404 |     TaskHandle_t department_SR_handles[DEPARTMENTS_NUM]={policeSRHandle, fireSRHandle, ambulanceSRHandle, coronaSRHandle };
-      |                  ^~~~~~~~~~~~~~~~~~~~~
-../Core/Src/main.c:404:18: warning: 'fireSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'ambulanceSRHandle' is used uninitialized [-Wuninitialized]
-../Core/Src/main.c:404:18: warning: 'coronaSRHandle' is used uninitialized [-Wuninitialized]
-arm-none-eabi-gcc -o "RTconcepts.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\RTconcepts\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTconcepts.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RTconcepts.elf
+arm-none-eabi-gcc -o "freeRTOS_final_project.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\freeRTOS_final_project\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="freeRTOS_final_project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: freeRTOS_final_project.elf
  
-arm-none-eabi-size   RTconcepts.elf 
-arm-none-eabi-objdump -h -S  RTconcepts.elf  > "RTconcepts.list"
+arm-none-eabi-size  freeRTOS_final_project.elf 
+arm-none-eabi-objdump -h -S freeRTOS_final_project.elf  > "freeRTOS_final_project.list"
    text	   data	    bss	    dec	    hex	filename
-  20504	    164	  20772	  41440	   a1e0	RTconcepts.elf
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
 Finished building: default.size.stdout
  
-Finished building: RTconcepts.list
+Finished building: freeRTOS_final_project.list
+ 
+08:03:13 **** Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+08:43:39 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
+Finished building: default.size.stdout
+ 
+08:44:53 **** Incremental Build of configuration Debug for project freeRTOS_final_project ****
+make -j8 all 
+arm-none-eabi-size  freeRTOS_final_project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39588	    488	  26768	  66844	  1051c	freeRTOS_final_project.elf
+Finished building: default.size.stdout
  

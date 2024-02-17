@@ -104,7 +104,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ethernetif_input(&gnetif); // if there is a packet pay attention
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

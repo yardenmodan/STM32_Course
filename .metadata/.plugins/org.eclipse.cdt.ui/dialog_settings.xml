@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/DMA_HW/Inc}"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\freeRTOS_final_project\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -9,7 +9,7 @@
 		<item key="askReindex.detail" value="0"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
-		<item key="size.width" value="753"/>
+		<item key="size.width" value="763"/>
 		<item key="size.height" value="203"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">

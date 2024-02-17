@@ -1,0 +1,4 @@
+2024-02-10 19:04:12,346 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-02-10 19:04:12,480 [INFO] UserAuth:179 - activating auth plugin
+2024-02-10 19:04:12,621 [INFO] UserAuth:393 - Internet connection configuration mode: 1
+2024-02-10 19:04:37,643 [INFO] WebApp:203 - error found : CONNECTION_TIMED_OUT
