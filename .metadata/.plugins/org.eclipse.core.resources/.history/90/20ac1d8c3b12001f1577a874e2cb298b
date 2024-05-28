@@ -1,0 +1,107 @@
+
+#include "main.h"
+#include "adc_testing.h"
+#include "stm32f7xx_hal.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "main.h"
+#include "Testing_Program.h"
+
+extern ADC_HandleTypeDef hadc1;
+extern DAC_HandleTypeDef hdac;
+
+#define ADC_1 &hadc1
+#define DAC_1 &hdac
+#define PACKET_SIZE 1
+#define DEC_BASE 10
+
+
+//int adc_flag=0;
+
+//#include "main.h" // Include necessary header files
+
+// ... (other function prototypes and definitions)
+
+volatile uint32_t adc_converted_value; // Shared variable for storing ADC result
+
+
+
+void adc_testing(uint8_t *str_in, uint8_t *return_from_test_value) {
+  uint32_t num = (uint32_t)strtol((const uint8_t *)str_in, NULL, 10);
+
+  // Assuming proper DAC configuration elsewhere
+  HAL_StatusTypeDef status = HAL_DAC_SetValue(DAC_1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, num);
+  HAL_StatusTypeDef status2 = HAL_DAC_Start(DAC_1, DAC_CHANNEL_1);
+
+  if (status != HAL_OK || status2 != HAL_OK) {
+    // Handle DAC errors (optional)
+  }
+
+  // Configure ADC with interrupt for conversion completion (replace with actual function)
+  if (HAL_ADC_Start(&hadc1) != HAL_OK) {
+    // Handle ADC start error (optional)
+  }
+
+  // Wait for ADC conversion to complete (replace with a timeout mechanism for safety)
+ // while (HAL_ADC_GetState(&hadc1) != HAL_ADC_STATE_READY) {}
+
+  // Now you can use the converted value in adc_converted_value
+  // ... (process or convert adc_converted_value as needed)
+  adc_converted_value=HAL_ADC_GetValue(&hadc1);
+  // Optionally, convert and store to return_from_test_value (ensure buffer size is sufficient)
+  int num_chars = snprintf((char *)return_from_test_value, sizeof(return_from_test_value), "%u", adc_converted_value);
+  if (num_chars >= sizeof(return_from_test_value)) {
+    // Handle potential buffer overflow (optional)
+  }
+
+  return;
+}
+//
+//void adc_testing(uint8_t * str_in, uint8_t* return_from_test_value) {
+//
+//	uint32_t adcValue=0; //= HAL_ADC_GetValue(ADC_1);
+//	uint32_t num= (uint32_t)strtol((const uint8_t *)str_in, NULL, 10);
+//
+//	HAL_StatusTypeDef status= HAL_DAC_SetValue(DAC_1, DAC_CHANNEL_1, DAC_ALIGN_12B_R,(uint32_t) num);
+//	HAL_StatusTypeDef status2= HAL_DAC_Start(DAC_1, DAC_CHANNEL_1);
+//
+//
+//
+//	HAL_ADC_Start_DMA(ADC_1, (uint32_t*)&adcValue, sizeof(adcValue) );
+//	while(1){
+//
+//
+//		if (adc_flag) {
+//			adc_flag=0;
+//			uint32_t val= HAL_ADC_GetValue(ADC_1);
+//			itoa(adcValue, (uint8_t*)return_from_test_value, DEC_BASE);
+//			return;
+//
+//
+//		}
+//
+//	}
+//}
+//
+//void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef* hadc)
+//{
+//   // Make sure it's the correct ADC instance
+//
+//    adc_flag=1;
+//    // Process ADC data (adcValue)
+//
+//}
+
+//void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+//{
+//   // Make sure it's the correct ADC instance
+//
+//    adc_flag=1;
+//    // Process ADC data (adcValue)
+//
+//}
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
+  // This function is called when the ADC conversion is complete
+  adc_converted_value = HAL_ADC_GetValue(hadc); // Read the converted value
+}

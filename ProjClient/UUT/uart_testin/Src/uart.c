@@ -12,16 +12,16 @@ extern UART_HandleTypeDef huart2;
 #define UART_2 &huart2
 #define UART_5 &huart5
 
-uint16_t Size=0;
+uint16_t Size=BUFF_SIZE;
 int uart2_flag_callback=0;
 int uart5_flag_callback=0;
 
 void uart_testing(uint8_t * str_in, uint8_t* return_from_test_value)
 {
-
+	HAL_StatusTypeDef status;
 	uint8_t buff_5[BUFF_SIZE]={0};
 	uint8_t buff_2[BUFF_SIZE]={0};
-	status= HAL_UARTEx_ReceiveToIdle_DMA(UART_5, buff_5, Size);
+	status = HAL_UARTEx_ReceiveToIdle_DMA(UART_5, buff_5, Size);
 	if(status != HAL_OK)
 	{
 		printf("UART_5 Transmit failed with status: %d", status);

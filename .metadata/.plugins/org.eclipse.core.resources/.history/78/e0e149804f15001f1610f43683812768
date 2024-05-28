@@ -1,0 +1,99 @@
+#include "main.h"
+#include "spi_testing.h"
+#include "Testing_Program.h"
+#include "stm32f7xx_hal.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+extern SPI_HandleTypeDef hspi1;
+extern SPI_HandleTypeDef hspi2;
+#define BUFF_SIZE 256
+#define SPI_MASTER &hspi1
+#define SPI_SLAVE &hspi2
+
+int spi_master_callback=0;
+int spi_slave_callback=0;
+void spi_testing(uint8_t * str_in, uint8_t* return_from_test_value)
+{
+	HAL_StatusTypeDef status;
+	uint8_t buff[BUFF_SIZE]={0};
+	status= HAL_SPI_Receive_DMA(SPI_SLAVE ,buff , BUFF_SIZE);
+	if(status != HAL_OK){
+		//printf("SPI Receive failed with status: %d", status);
+		return;
+	}
+	status= HAL_SPI_Transmit_IT(SPI_MASTER, str_in,BUFF_SIZE);
+	if(status != HAL_OK)
+
+	{
+		//printf("SPI MASTER Transmit failed with status: %d", status);
+		return;
+	}
+
+
+	while(1){
+		if(spi_slave_callback)
+		{
+
+			spi_slave_callback = 0;
+			//hspi1.Instance->SR &=~((uint32_t)0x01);
+			//hspi1.Instance->SR &=~(((uint32_t)0x01)<<6);
+			//hspi1.ErrorCode=0x00UL;
+			//uint32_t dummy = 0;
+			//HAL_SPI_Receive(&hspi1, &dummy, 4, HAL_MAX_DELAY);
+
+			status=HAL_SPI_Transmit_DMA(SPI_SLAVE,buff,BUFF_SIZE);
+			if(status != HAL_OK)
+				{
+					//printf("SPI_MASTER Receive failed with status: %d", status);
+				}
+			status = HAL_SPI_Receive_DMA(SPI_MASTER, return_from_test_value, BUFF_SIZE);
+		   // __HAL_SPI_ENABLE_IT(SPI_MASTER, SPI_IT_RXNE  | SPI_IT_ERR);
+			// להסתכל מה כל פונקציה עושה ולהפוך סדר שוב פעם
+			if(status != HAL_OK)
+			{
+				//printf("SPI_MASTER Receive failed with status: %d", status);
+			}
+
+
+			//status = HAL_SPI_Transmit_DMA(SPI_SLAVE, buff, BUFF_SIZE);
+		//	if(status != HAL_OK)
+			//{
+				//printf("SPI_SLAVE TRANSMIT failed with status: %d", status);
+		//	}
+
+		}
+		if(spi_master_callback)
+		{
+			return return_from_test_value;
+
+		}
+
+	}
+
+
+}
+
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi)
+
+{
+
+
+	if (hspi==SPI_MASTER){
+		spi_master_callback=1;
+	}
+
+	if (hspi==SPI_SLAVE){
+		spi_slave_callback=1;
+
+	}
+
+
+}
+
+HAL_SPI_ErrorCallback(SPI_HandleTypeDef *hspi){
+	//printf("there was spi fault. please check ErrorCode register in hspi");
+
+}
+

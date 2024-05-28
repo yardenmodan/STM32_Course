@@ -1,0 +1,58 @@
+
+#include "main.h"
+#include "adc_testing.h"
+#include "stm32f7xx_hal.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "main.h"
+#include "Testing_Program.h"
+
+extern ADC_HandleTypeDef hadc1;
+extern DAC_HandleTypeDef hdac;
+extern UART_HandleTypeDef huart3;
+
+#define UART_DEBUG &huart3
+
+#define ADC_1 &hadc1
+#define DAC_1 &hdac
+#define PACKET_SIZE 1
+#define DEC_BASE 10
+
+
+
+
+
+volatile uint32_t adc_converted_value; // Shared variable for storing ADC result
+
+
+
+void adc_testing(uint8_t *str_in, uint8_t *return_from_test_value) {
+  uint32_t num = (uint32_t)strtol((const uint8_t *)str_in, NULL, 10);
+
+  HAL_StatusTypeDef status = HAL_DAC_SetValue(DAC_1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, num);
+  HAL_StatusTypeDef status2 = HAL_DAC_Start(DAC_1, DAC_CHANNEL_1);
+
+  if (status != HAL_OK || status2 != HAL_OK) {
+	  HAL_UART_Transmit(UART_DEBUG, "Failed to SetValue and Start DAC!\r\n",
+			  sizeof("Failed to SetValue and Start DAC!\r\n)"), HAL_MAX_DELAY);
+  }
+
+  if (HAL_ADC_Start_DMA(ADC_1, &adc_converted_value,sizeof(adc_converted_value) ) != HAL_OK) {
+	  HAL_UART_Transmit(UART_DEBUG, "Failed to start DAC!\r\n",
+		  sizeof("Failed to start DAC!\r\n)"), HAL_MAX_DELAY);
+  }
+
+
+  int num_chars = snprintf((char *)return_from_test_value, sizeof(return_from_test_value), "%u", adc_converted_value);
+  if (num_chars >= sizeof(return_from_test_value)) {
+  	  HAL_UART_Transmit(UART_DEBUG, "Couldn't fit all characters to array!\r\n",
+  		  sizeof("Couldn't fit all characters to array!\r\n"), HAL_MAX_DELAY);
+  }
+  return;
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
+  // This function is called when the ADC conversion is complete
+  adc_converted_value = HAL_ADC_GetValue(hadc); // Read the converted value
+}

@@ -1,0 +1,2 @@
+../UUT/timer_testing/Src/timer_testing.c:24:6:timer_testing	2
+../UUT/timer_testing/Src/timer_testing.c:89:6:HAL_TIM_PeriodElapsedCallback	2

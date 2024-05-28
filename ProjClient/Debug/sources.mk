@@ -24,6 +24,7 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/Components/lan8742 \
 Drivers/STM32F7xx_HAL_Driver/Src \
 LWIP/App \
 LWIP/Target \
@@ -34,4 +35,11 @@ Middlewares/Third_Party/LwIP/src/core/ipv4 \
 Middlewares/Third_Party/LwIP/src/core/ipv6 \
 Middlewares/Third_Party/LwIP/src/netif \
 Middlewares/Third_Party/LwIP/src/netif/ppp \
+UUT/Testing_Program/Src \
+UUT/adc_testing/Src \
+UUT/i2c_testing/Src \
+UUT/server/Src \
+UUT/spi_testing/Src \
+UUT/timer_testing/Src \
+UUT/uart_testin/Src \
 

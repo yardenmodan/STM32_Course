@@ -56,17 +56,20 @@
 
 /* External variables --------------------------------------------------------*/
 extern ETH_HandleTypeDef heth;
+extern DMA_HandleTypeDef hdma_adc1;
 extern ADC_HandleTypeDef hadc1;
 extern DAC_HandleTypeDef hdac;
+extern DMA_HandleTypeDef hdma_i2c2_rx;
 extern DMA_HandleTypeDef hdma_i2c2_tx;
 extern I2C_HandleTypeDef hi2c2;
 extern I2C_HandleTypeDef hi2c4;
-extern RTC_HandleTypeDef hrtc;
+extern DMA_HandleTypeDef hdma_spi1_rx;
 extern DMA_HandleTypeDef hdma_spi1_tx;
+extern DMA_HandleTypeDef hdma_spi2_rx;
 extern DMA_HandleTypeDef hdma_spi2_tx;
 extern SPI_HandleTypeDef hspi1;
 extern SPI_HandleTypeDef hspi2;
-extern TIM_HandleTypeDef htim6;
+extern TIM_HandleTypeDef htim7;
 extern DMA_HandleTypeDef hdma_uart5_rx;
 extern DMA_HandleTypeDef hdma_usart2_rx;
 extern UART_HandleTypeDef huart5;
@@ -214,20 +217,6 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles RTC wake-up interrupt through EXTI line 22.
-  */
-void RTC_WKUP_IRQHandler(void)
-{
-  /* USER CODE BEGIN RTC_WKUP_IRQn 0 */
-
-  /* USER CODE END RTC_WKUP_IRQn 0 */
-  HAL_RTCEx_WakeUpTimerIRQHandler(&hrtc);
-  /* USER CODE BEGIN RTC_WKUP_IRQn 1 */
-
-  /* USER CODE END RTC_WKUP_IRQn 1 */
-}
-
-/**
   * @brief This function handles DMA1 stream0 global interrupt.
   */
 void DMA1_Stream0_IRQHandler(void)
@@ -239,6 +228,34 @@ void DMA1_Stream0_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Stream0_IRQn 1 */
 
   /* USER CODE END DMA1_Stream0_IRQn 1 */
+}
+
+/**
+  * @brief This function handles DMA1 stream2 global interrupt.
+  */
+void DMA1_Stream2_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Stream2_IRQn 0 */
+
+  /* USER CODE END DMA1_Stream2_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_i2c2_rx);
+  /* USER CODE BEGIN DMA1_Stream2_IRQn 1 */
+
+  /* USER CODE END DMA1_Stream2_IRQn 1 */
+}
+
+/**
+  * @brief This function handles DMA1 stream3 global interrupt.
+  */
+void DMA1_Stream3_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Stream3_IRQn 0 */
+
+  /* USER CODE END DMA1_Stream3_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_spi2_rx);
+  /* USER CODE BEGIN DMA1_Stream3_IRQn 1 */
+
+  /* USER CODE END DMA1_Stream3_IRQn 1 */
 }
 
 /**
@@ -295,6 +312,20 @@ void I2C2_EV_IRQHandler(void)
   /* USER CODE BEGIN I2C2_EV_IRQn 1 */
 
   /* USER CODE END I2C2_EV_IRQn 1 */
+}
+
+/**
+  * @brief This function handles I2C2 error interrupt.
+  */
+void I2C2_ER_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C2_ER_IRQn 0 */
+
+  /* USER CODE END I2C2_ER_IRQn 0 */
+  HAL_I2C_ER_IRQHandler(&hi2c2);
+  /* USER CODE BEGIN I2C2_ER_IRQn 1 */
+
+  /* USER CODE END I2C2_ER_IRQn 1 */
 }
 
 /**
@@ -376,10 +407,51 @@ void TIM6_DAC_IRQHandler(void)
 
   /* USER CODE END TIM6_DAC_IRQn 0 */
   HAL_DAC_IRQHandler(&hdac);
-  HAL_TIM_IRQHandler(&htim6);
   /* USER CODE BEGIN TIM6_DAC_IRQn 1 */
 
   /* USER CODE END TIM6_DAC_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM7 global interrupt.
+  */
+void TIM7_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM7_IRQn 0 */
+
+  /* USER CODE END TIM7_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim7);
+  /* USER CODE BEGIN TIM7_IRQn 1 */
+
+  /* USER CODE END TIM7_IRQn 1 */
+}
+
+/**
+  * @brief This function handles DMA2 stream0 global interrupt.
+  */
+void DMA2_Stream0_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA2_Stream0_IRQn 0 */
+
+  /* USER CODE END DMA2_Stream0_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_adc1);
+  /* USER CODE BEGIN DMA2_Stream0_IRQn 1 */
+
+  /* USER CODE END DMA2_Stream0_IRQn 1 */
+}
+
+/**
+  * @brief This function handles DMA2 stream2 global interrupt.
+  */
+void DMA2_Stream2_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA2_Stream2_IRQn 0 */
+
+  /* USER CODE END DMA2_Stream2_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_spi1_rx);
+  /* USER CODE BEGIN DMA2_Stream2_IRQn 1 */
+
+  /* USER CODE END DMA2_Stream2_IRQn 1 */
 }
 
 /**
@@ -422,6 +494,20 @@ void I2C4_EV_IRQHandler(void)
   /* USER CODE BEGIN I2C4_EV_IRQn 1 */
 
   /* USER CODE END I2C4_EV_IRQn 1 */
+}
+
+/**
+  * @brief This function handles I2C4 error interrupt.
+  */
+void I2C4_ER_IRQHandler(void)
+{
+  /* USER CODE BEGIN I2C4_ER_IRQn 0 */
+
+  /* USER CODE END I2C4_ER_IRQn 0 */
+  HAL_I2C_ER_IRQHandler(&hi2c4);
+  /* USER CODE BEGIN I2C4_ER_IRQn 1 */
+
+  /* USER CODE END I2C4_ER_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

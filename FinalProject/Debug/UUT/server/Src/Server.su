@@ -1,0 +1,3 @@
+../UUT/server/Src/Server.c:21:6:udp_receive_callback	24	static
+../UUT/server/Src/Server.c:42:7:send_packet	32	static
+../UUT/server/Src/Server.c:66:6:udpServer_init	16	static

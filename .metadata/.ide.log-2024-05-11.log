@@ -1,0 +1,1306 @@
+2024-05-18 02:04:18,978 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1052446384 Bytes (1073741824)
+2024-05-18 02:04:54,988 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1051441376 Bytes (1073741824)
+2024-05-18 02:04:55,699 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1050194704 Bytes (1073741824)
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CRC
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-18 02:04:58,250 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2024-05-18 02:04:58,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 02:04:58,258 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 02:04:58,259 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-05-18 02:04:58,259 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DAC
+2024-05-18 02:04:58,259 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2024-05-18 02:04:58,260 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-18 02:04:58,260 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-05-18 02:04:58,264 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,292 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 02:04:58,292 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,292 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,292 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,292 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,292 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,292 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,292 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,293 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,294 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,325 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:04:58,333 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,486 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 02:04:58,486 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,486 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:04:58,486 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,486 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,486 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,486 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,487 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,488 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,489 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,489 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,489 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 02:04:58,489 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,490 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,490 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,490 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,491 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,494 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,494 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,494 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,494 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,495 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,495 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,496 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,497 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,497 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,497 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,497 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,498 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,499 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,516 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,516 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,516 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,516 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,517 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,518 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:04:58,522 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:04:58,523 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:05:01,754 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp_save
+2024-05-18 02:05:01,988 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp
+2024-05-18 02:05:02,157 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp_save
+2024-05-18 02:05:02,395 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp
+2024-05-18 02:05:02,778 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp_save
+2024-05-18 02:05:03,275 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp
+2024-05-18 02:05:03,307 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp_save
+2024-05-18 02:05:03,522 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp
+2024-05-18 02:05:03,600 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp_save
+2024-05-18 02:05:03,816 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp
+2024-05-18 02:05:03,852 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp_save
+2024-05-18 02:05:04,058 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp
+2024-05-18 02:05:13,287 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 02:05:13,339 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp_save
+2024-05-18 02:05:13,497 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp
+2024-05-18 02:05:14,306 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp_save
+2024-05-18 02:05:14,463 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp
+2024-05-18 02:05:14,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp_save
+2024-05-18 02:05:15,191 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp
+2024-05-18 02:05:15,237 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 02:05:15,353 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c_save
+2024-05-18 02:05:16,391 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c
+2024-05-18 02:05:16,428 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h_save
+2024-05-18 02:05:16,555 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h
+2024-05-18 02:05:16,602 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h_save
+2024-05-18 02:05:16,930 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h
+2024-05-18 02:05:16,985 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c_save
+2024-05-18 02:05:17,951 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c
+2024-05-18 02:05:17,998 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h_save
+2024-05-18 02:05:18,148 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h
+2024-05-18 02:05:18,235 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c_save
+2024-05-18 02:05:19,467 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c
+2024-05-18 02:05:19,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h_save
+2024-05-18 02:05:19,694 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h
+2024-05-18 02:05:19,772 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c_save
+2024-05-18 02:05:20,249 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c
+2024-05-18 02:05:20,281 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp_save
+2024-05-18 02:05:21,190 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp
+2024-05-18 02:05:21,244 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-05-18 02:05:21,377 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h
+2024-05-18 02:05:21,416 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-05-18 02:05:21,418 [WARN] CodeGenerator:3939 - IP not found : null
+2024-05-18 02:05:21,475 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h_save
+2024-05-18 02:05:21,617 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h
+2024-05-18 02:05:21,664 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c_save
+2024-05-18 02:05:21,958 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c
+2024-05-18 02:05:31,757 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 2917mS.
+2024-05-18 02:05:31,784 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-05-18 02:05:35,381 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-05-18 02:05:55,318 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 23534mS.
+2024-05-18 02:05:55,320 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-05-18 02:05:56,305 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-05-18 02:35:11,935 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:35:24,596 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:35:26,480 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:35:35,458 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:35:37,104 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:35:39,164 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:39:41,362 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:41:44,511 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:41:48,807 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:41:49,167 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:41:49,489 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:42:35,817 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:42:50,453 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:43:00,711 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:54:15,852 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1066059104 Bytes (1073741824)
+2024-05-18 02:54:17,421 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1058433160 Bytes (1073741824)
+2024-05-18 02:54:18,104 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1062652496 Bytes (1073741824)
+2024-05-18 02:54:21,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 02:54:21,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 02:54:21,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2024-05-18 02:54:21,566 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CRC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DAC
+2024-05-18 02:54:21,567 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2024-05-18 02:54:21,572 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-18 02:54:21,572 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-05-18 02:54:21,575 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,598 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,598 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 02:54:21,598 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 02:54:21,598 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,599 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,600 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,631 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:54:21,637 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:54:21,756 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,756 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,756 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 02:54:21,756 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 02:54:21,756 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,756 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,756 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:54:21,756 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:54:21,756 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,757 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,758 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,758 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,758 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 02:54:21,758 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 02:54:21,758 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,758 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,758 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:54:21,758 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,759 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,762 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,762 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,762 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 02:54:21,762 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 02:54:21,762 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,762 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,762 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,762 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,762 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,763 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,764 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,765 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,766 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,777 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,778 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 02:54:21,782 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 02:54:21,782 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 02:54:21,782 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:54:21,782 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,782 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,782 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 02:54:21,782 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 02:54:21,783 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:21,784 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 02:54:24,924 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp_save
+2024-05-18 02:54:25,244 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp
+2024-05-18 02:54:25,349 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp_save
+2024-05-18 02:54:25,555 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp
+2024-05-18 02:54:25,771 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp_save
+2024-05-18 02:54:25,934 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp
+2024-05-18 02:54:25,943 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp_save
+2024-05-18 02:54:26,064 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp
+2024-05-18 02:54:26,075 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp_save
+2024-05-18 02:54:26,263 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp
+2024-05-18 02:54:26,275 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp_save
+2024-05-18 02:54:26,494 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp
+2024-05-18 02:54:35,356 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 02:54:35,387 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp_save
+2024-05-18 02:54:35,532 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp
+2024-05-18 02:54:36,227 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp_save
+2024-05-18 02:54:36,366 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp
+2024-05-18 02:54:36,375 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp_save
+2024-05-18 02:54:36,533 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp
+2024-05-18 02:54:36,553 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 02:54:36,636 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c_save
+2024-05-18 02:54:37,534 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c
+2024-05-18 02:54:37,558 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h_save
+2024-05-18 02:54:38,328 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h
+2024-05-18 02:54:38,363 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h_save
+2024-05-18 02:54:38,663 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h
+2024-05-18 02:54:38,700 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c_save
+2024-05-18 02:54:39,539 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c
+2024-05-18 02:54:39,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h_save
+2024-05-18 02:54:39,655 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h
+2024-05-18 02:54:39,722 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c_save
+2024-05-18 02:54:40,756 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c
+2024-05-18 02:54:40,779 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h_save
+2024-05-18 02:54:40,908 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h
+2024-05-18 02:54:40,960 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c_save
+2024-05-18 02:54:41,959 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c
+2024-05-18 02:54:41,979 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp_save
+2024-05-18 02:54:42,075 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp
+2024-05-18 02:54:42,115 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-05-18 02:54:42,312 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h
+2024-05-18 02:54:43,123 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-05-18 02:54:43,129 [WARN] CodeGenerator:3939 - IP not found : null
+2024-05-18 02:54:43,164 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h_save
+2024-05-18 02:54:43,335 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h
+2024-05-18 02:54:43,363 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c_save
+2024-05-18 02:54:44,402 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c
+2024-05-18 02:54:55,420 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 2393mS.
+2024-05-18 02:54:55,447 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-05-18 02:54:59,993 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-05-18 02:55:31,877 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 36430mS.
+2024-05-18 02:55:31,879 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-05-18 02:55:31,939 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-05-18 02:57:27,011 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:57:27,256 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:36,551 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:36,835 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:40,928 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:41,330 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:47,360 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:58:47,772 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:59:18,650 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2024-05-18 02:59:18,802 [INFO] I2cTimingTraitement:330 - 0x00808CD2
+2024-05-18 02:59:19,373 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:19,387 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:20,126 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:20,130 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:21,439 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:21,445 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:21,509 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:21,520 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:22,260 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:22,268 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:22,349 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:22,361 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 02:59:35,554 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:59:50,328 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:59:53,155 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 02:59:55,184 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:09:15,470 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:09:26,935 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:09:29,714 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:09:53,627 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:10:05,534 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:10:06,975 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:10:08,060 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:10:31,854 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:10:33,718 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-05-18 03:15:41,701 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1067798336 Bytes (1073741824)
+2024-05-18 03:15:43,406 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1061908352 Bytes (1073741824)
+2024-05-18 03:15:44,219 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 1063081408 Bytes (1073741824)
+2024-05-18 03:16:00,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 03:16:00,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-18 03:16:00,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CRC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DAC
+2024-05-18 03:16:00,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2024-05-18 03:16:00,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-18 03:16:00,486 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-05-18 03:16:00,490 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-05-18 03:16:00,523 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:00,524 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream0
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:00,524 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:00,524 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 03:16:00,524 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:00,525 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:00,526 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:00,556 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-05-18 03:16:00,573 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,476 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 03:16:01,476 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream2
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,476 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 03:16:01,476 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,476 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,476 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,476 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,477 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,478 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,478 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream3
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_3
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,479 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,480 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream3
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,483 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,484 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,486 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream4
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,486 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_0
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,486 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,486 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,487 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,488 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,488 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,488 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,499 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream0
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,499 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,499 [INFO] Argument:325 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 03:16:01,499 [INFO] Argument:335 - Argument : Modevalue: DMA_CIRCULAR
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,500 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-05-18 03:16:01,506 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 03:16:01,506 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream5
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : Initvalue: null
+2024-05-18 03:16:01,506 [INFO] Argument:327 - 	 sub Args: 
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 03:16:01,506 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,506 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,506 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-05-18 03:16:01,506 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,506 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : Statevalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : Statevalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-05-18 03:16:01,507 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:01,508 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-05-18 03:16:17,855 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp_save
+2024-05-18 03:16:18,746 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp
+2024-05-18 03:16:18,863 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp_save
+2024-05-18 03:16:19,820 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp
+2024-05-18 03:16:20,025 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp_save
+2024-05-18 03:16:20,972 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp
+2024-05-18 03:16:20,982 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp_save
+2024-05-18 03:16:21,077 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp
+2024-05-18 03:16:21,088 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp_save
+2024-05-18 03:16:21,980 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp
+2024-05-18 03:16:21,990 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp_save
+2024-05-18 03:16:22,821 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp
+2024-05-18 03:16:35,623 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 03:16:35,654 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp_save
+2024-05-18 03:16:36,555 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp
+2024-05-18 03:16:37,945 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp_save
+2024-05-18 03:16:38,071 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp
+2024-05-18 03:16:38,079 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp_save
+2024-05-18 03:16:38,178 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp
+2024-05-18 03:16:38,197 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-05-18 03:16:38,262 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c_save
+2024-05-18 03:16:39,169 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c
+2024-05-18 03:16:39,182 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h_save
+2024-05-18 03:16:39,983 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h
+2024-05-18 03:16:40,007 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h_save
+2024-05-18 03:16:41,048 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h
+2024-05-18 03:16:41,078 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c_save
+2024-05-18 03:16:41,995 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c
+2024-05-18 03:16:42,021 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h_save
+2024-05-18 03:16:42,893 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h
+2024-05-18 03:16:43,302 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c_save
+2024-05-18 03:16:44,442 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c
+2024-05-18 03:16:44,469 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h_save
+2024-05-18 03:16:45,348 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h
+2024-05-18 03:16:45,402 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c_save
+2024-05-18 03:16:46,675 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c
+2024-05-18 03:16:46,697 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp_save
+2024-05-18 03:16:46,835 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp
+2024-05-18 03:16:46,886 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-05-18 03:16:47,779 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h
+2024-05-18 03:16:47,849 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-05-18 03:16:47,852 [WARN] CodeGenerator:3939 - IP not found : null
+2024-05-18 03:16:47,887 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h_save
+2024-05-18 03:16:48,805 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h
+2024-05-18 03:16:48,832 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c_save
+2024-05-18 03:16:49,922 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c
+2024-05-18 03:17:18,156 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 2059mS.
+2024-05-18 03:17:18,184 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-05-18 03:17:34,351 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-05-18 03:20:28,751 [INFO] ToolchainGenerator:570 - stack trace : java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.st.microxplorer.plugins.projectmanager.model.ToolchainGenerator.CallMethod(ToolchainGenerator.java:370)
+	at com.st.microxplorer.plugins.projectmanager.model.ToolchainGenerator.update(ToolchainGenerator.java:564)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:4691)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createProject(ProjectBuilder.java:996)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createProject(ProjectBuilder.java:624)
+	at com.st.microxplorer.plugins.projectmanager.engine.MainProjectManager.startGenerateCode(MainProjectManager.java:1406)
+	at com.st.microxplorer.plugins.projectmanager.engine.MainProjectManager$3.onCommandEntered(MainProjectManager.java:258)
+	at com.st.components.util.CommandLineManager$3.run(CommandLineManager.java:175)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:308)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.xml/com.sun.org.apache.xpath.internal.XPath.<init>(XPath.java:203)
+	at java.xml/com.sun.org.apache.xpath.internal.jaxp.XPathImpl.eval(XPathImpl.java:120)
+	at java.xml/com.sun.org.apache.xpath.internal.jaxp.XPathImpl.evaluate(XPathImpl.java:135)
+	at com.st.stm32cube.ide.common.services.mx.core.scratchfile.parser.CubeScratchFileVxParserAbstract.getStringSetItemFromRoot(CubeScratchFileVxParserAbstract.java:362)
+	at com.st.stm32cube.ide.common.services.mx.core.scratchfile.parser.CubeScratchFileV3Parser.getConfigs(CubeScratchFileV3Parser.java:271)
+	at com.st.stm32cube.ide.common.services.mx.core.scratchfile.CubeScratchFileParserIdeAdapter.getConfigs(CubeScratchFileParserIdeAdapter.java:354)
+	at com.st.stm32cube.ide.common.services.mx.core.scratchfile.CubeScratchFileParserIdeAdapter.multiProjectSourceEntryDescriptionAdapter(CubeScratchFileParserIdeAdapter.java:931)
+	at com.st.stm32cube.ide.common.services.mx.core.scratchfile.CubeScratchFileParserIdeAdapter.getSourceEntries(CubeScratchFileParserIdeAdapter.java:268)
+	at com.st.stm32cube.ide.common.services.adapted.core.build.BuildUpdateRcpServiceProcess.doBuildUpdate(BuildUpdateRcpServiceProcess.java:297)
+	at com.st.stm32cube.ide.common.services.adapted.core.build.BuildUpdateRcpServiceProcess.doBuildUpdate(BuildUpdateRcpServiceProcess.java:165)
+	at com.st.stm32cube.ide.common.services.adapted.core.build.BuildUpdateRcpServiceProcess.run(BuildUpdateRcpServiceProcess.java:130)
+	at com.st.stm32cube.ide.common.services.mx.core.build.BuildUpdateRcpService.doBuildUpdate(BuildUpdateRcpService.java:260)
+	at com.st.stm32cube.ide.common.services.mx.core.build.BuildUpdateRcpService.run(BuildUpdateRcpService.java:253)
+	at com.st.stm32cube.ide.common.services.mx.update.MxUpdateProjectRcpService.run(MxUpdateProjectRcpService.java:130)
+	at com.st.stm32cube.ide.mcu.ide.process.MxIdePlugInProjectGeneratorAbstract.doExecute(MxIdePlugInProjectGeneratorAbstract.java:386)
+	at com.st.stm32cube.ide.mcu.ide.process.MxIdePlugInProjectGeneratorAbstract.doUpdate(MxIdePlugInProjectGeneratorAbstract.java:253)
+	at com.st.stm32cube.ide.mcu.ide.process.MxIdePlugInProjectGeneratorAbstract.update(MxIdePlugInProjectGeneratorAbstract.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.st.microxplorer.plugins.projectmanager.model.ToolchainGenerator.CallMethod(ToolchainGenerator.java:370)
+	at com.st.microxplorer.plugins.projectmanager.model.ToolchainGenerator.update(ToolchainGenerator.java:564)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createToolChainFolders(ProjectBuilder.java:4691)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createProject(ProjectBuilder.java:996)
+	at com.st.microxplorer.plugins.projectmanager.engine.ProjectBuilder.createProject(ProjectBuilder.java:624)
+	at com.st.microxplorer.plugins.projectmanager.engine.MainProjectManager.startGenerateCode(MainProjectManager.java:1406)
+	at com.st.microxplorer.plugins.projectmanager.engine.MainProjectManager$3.onCommandEntered(MainProjectManager.java:258)
+	at com.st.components.util.CommandLineManager$3.run(CommandLineManager.java:175)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:308)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+
+2024-05-18 03:20:28,780 [INFO] ToolchainGenerator:571 - [Project Generator] Problem in the update of the project
+2024-05-18 03:20:28,783 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 190598mS.
+2024-05-18 03:20:28,784 [ERROR] ProjectBuilder:4753 - Error in Project Generation

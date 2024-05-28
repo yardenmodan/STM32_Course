@@ -24,9 +24,17 @@
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
+extern DMA_HandleTypeDef hdma_adc1;
+
+extern DMA_HandleTypeDef hdma_i2c2_rx;
+
 extern DMA_HandleTypeDef hdma_i2c2_tx;
 
+extern DMA_HandleTypeDef hdma_spi1_rx;
+
 extern DMA_HandleTypeDef hdma_spi1_tx;
+
+extern DMA_HandleTypeDef hdma_spi2_rx;
 
 extern DMA_HandleTypeDef hdma_spi2_tx;
 
@@ -105,12 +113,31 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
-    PA0/WKUP     ------> ADC1_IN0
+    PA3     ------> ADC1_IN3
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0;
+    GPIO_InitStruct.Pin = GPIO_PIN_3;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    /* ADC1 DMA Init */
+    /* ADC1 Init */
+    hdma_adc1.Instance = DMA2_Stream0;
+    hdma_adc1.Init.Channel = DMA_CHANNEL_0;
+    hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_adc1.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+    hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+    hdma_adc1.Init.Mode = DMA_NORMAL;
+    hdma_adc1.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_adc1.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_adc1) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(hadc,DMA_Handle,hdma_adc1);
 
     /* ADC1 interrupt Init */
     HAL_NVIC_SetPriority(ADC_IRQn, 0, 0);
@@ -139,9 +166,12 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     __HAL_RCC_ADC1_CLK_DISABLE();
 
     /**ADC1 GPIO Configuration
-    PA0/WKUP     ------> ADC1_IN0
+    PA3     ------> ADC1_IN3
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_3);
+
+    /* ADC1 DMA DeInit */
+    HAL_DMA_DeInit(hadc->DMA_Handle);
 
     /* ADC1 interrupt DeInit */
     HAL_NVIC_DisableIRQ(ADC_IRQn);
@@ -254,14 +284,7 @@ void HAL_DAC_MspDeInit(DAC_HandleTypeDef* hdac)
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_4);
 
     /* DAC interrupt DeInit */
-  /* USER CODE BEGIN DAC:TIM6_DAC_IRQn disable */
-    /**
-    * Uncomment the line below to disable the "TIM6_DAC_IRQn" interrupt
-    * Be aware, disabling shared interrupt may affect other IPs
-    */
-    /* HAL_NVIC_DisableIRQ(TIM6_DAC_IRQn); */
-  /* USER CODE END DAC:TIM6_DAC_IRQn disable */
-
+    HAL_NVIC_DisableIRQ(TIM6_DAC_IRQn);
   /* USER CODE BEGIN DAC_MspDeInit 1 */
 
   /* USER CODE END DAC_MspDeInit 1 */
@@ -310,6 +333,24 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     __HAL_RCC_I2C2_CLK_ENABLE();
 
     /* I2C2 DMA Init */
+    /* I2C2_RX Init */
+    hdma_i2c2_rx.Instance = DMA1_Stream2;
+    hdma_i2c2_rx.Init.Channel = DMA_CHANNEL_7;
+    hdma_i2c2_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_i2c2_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_i2c2_rx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_i2c2_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_i2c2_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_i2c2_rx.Init.Mode = DMA_NORMAL;
+    hdma_i2c2_rx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_i2c2_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_i2c2_rx) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(hi2c,hdmarx,hdma_i2c2_rx);
+
     /* I2C2_TX Init */
     hdma_i2c2_tx.Instance = DMA1_Stream7;
     hdma_i2c2_tx.Init.Channel = DMA_CHANNEL_7;
@@ -331,6 +372,8 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     /* I2C2 interrupt Init */
     HAL_NVIC_SetPriority(I2C2_EV_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(I2C2_EV_IRQn);
+    HAL_NVIC_SetPriority(I2C2_ER_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(I2C2_ER_IRQn);
   /* USER CODE BEGIN I2C2_MspInit 1 */
 
   /* USER CODE END I2C2_MspInit 1 */
@@ -367,6 +410,8 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
     /* I2C4 interrupt Init */
     HAL_NVIC_SetPriority(I2C4_EV_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(I2C4_EV_IRQn);
+    HAL_NVIC_SetPriority(I2C4_ER_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(I2C4_ER_IRQn);
   /* USER CODE BEGIN I2C4_MspInit 1 */
 
   /* USER CODE END I2C4_MspInit 1 */
@@ -399,10 +444,12 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
     HAL_GPIO_DeInit(GPIOF, GPIO_PIN_1);
 
     /* I2C2 DMA DeInit */
+    HAL_DMA_DeInit(hi2c->hdmarx);
     HAL_DMA_DeInit(hi2c->hdmatx);
 
     /* I2C2 interrupt DeInit */
     HAL_NVIC_DisableIRQ(I2C2_EV_IRQn);
+    HAL_NVIC_DisableIRQ(I2C2_ER_IRQn);
   /* USER CODE BEGIN I2C2_MspDeInit 1 */
 
   /* USER CODE END I2C2_MspDeInit 1 */
@@ -425,6 +472,7 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
 
     /* I2C4 interrupt DeInit */
     HAL_NVIC_DisableIRQ(I2C4_EV_IRQn);
+    HAL_NVIC_DisableIRQ(I2C4_ER_IRQn);
   /* USER CODE BEGIN I2C4_MspDeInit 1 */
 
   /* USER CODE END I2C4_MspDeInit 1 */
@@ -458,9 +506,6 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef* hrtc)
 
     /* Peripheral clock enable */
     __HAL_RCC_RTC_ENABLE();
-    /* RTC interrupt Init */
-    HAL_NVIC_SetPriority(RTC_WKUP_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(RTC_WKUP_IRQn);
   /* USER CODE BEGIN RTC_MspInit 1 */
 
   /* USER CODE END RTC_MspInit 1 */
@@ -483,9 +528,6 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* hrtc)
   /* USER CODE END RTC_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_RTC_DISABLE();
-
-    /* RTC interrupt DeInit */
-    HAL_NVIC_DisableIRQ(RTC_WKUP_IRQn);
   /* USER CODE BEGIN RTC_MspDeInit 1 */
 
   /* USER CODE END RTC_MspDeInit 1 */
@@ -514,18 +556,10 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     __HAL_RCC_GPIOB_CLK_ENABLE();
     /**SPI1 GPIO Configuration
     PA5     ------> SPI1_SCK
-    PA6     ------> SPI1_MISO
     PA15     ------> SPI1_NSS
     PB5     ------> SPI1_MOSI
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_5;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_15;
+    GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_15;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -540,6 +574,24 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /* SPI1 DMA Init */
+    /* SPI1_RX Init */
+    hdma_spi1_rx.Instance = DMA2_Stream2;
+    hdma_spi1_rx.Init.Channel = DMA_CHANNEL_3;
+    hdma_spi1_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_spi1_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_spi1_rx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_spi1_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_spi1_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_spi1_rx.Init.Mode = DMA_NORMAL;
+    hdma_spi1_rx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_spi1_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_spi1_rx) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(hspi,hdmarx,hdma_spi1_rx);
+
     /* SPI1_TX Init */
     hdma_spi1_tx.Instance = DMA2_Stream3;
     hdma_spi1_tx.Init.Channel = DMA_CHANNEL_3;
@@ -577,25 +629,17 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     __HAL_RCC_GPIOB_CLK_ENABLE();
     /**SPI2 GPIO Configuration
     PC2     ------> SPI2_MISO
-    PC3     ------> SPI2_MOSI
     PB10     ------> SPI2_SCK
     PB12     ------> SPI2_NSS
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3;
+    GPIO_InitStruct.Pin = GPIO_PIN_2;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-    GPIO_InitStruct.Pin = GPIO_PIN_10;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-    GPIO_InitStruct.Alternate = GPIO_AF5_SPI2;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-    GPIO_InitStruct.Pin = GPIO_PIN_12;
+    GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_12;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -603,6 +647,24 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
     /* SPI2 DMA Init */
+    /* SPI2_RX Init */
+    hdma_spi2_rx.Instance = DMA1_Stream3;
+    hdma_spi2_rx.Init.Channel = DMA_CHANNEL_0;
+    hdma_spi2_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_spi2_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_spi2_rx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_spi2_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_spi2_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_spi2_rx.Init.Mode = DMA_NORMAL;
+    hdma_spi2_rx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_spi2_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_spi2_rx) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(hspi,hdmarx,hdma_spi2_rx);
+
     /* SPI2_TX Init */
     hdma_spi2_tx.Instance = DMA1_Stream4;
     hdma_spi2_tx.Init.Channel = DMA_CHANNEL_0;
@@ -622,7 +684,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     __HAL_LINKDMA(hspi,hdmatx,hdma_spi2_tx);
 
     /* SPI2 interrupt Init */
-    HAL_NVIC_SetPriority(SPI2_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(SPI2_IRQn, 1, 0);
     HAL_NVIC_EnableIRQ(SPI2_IRQn);
   /* USER CODE BEGIN SPI2_MspInit 1 */
 
@@ -649,15 +711,15 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
 
     /**SPI1 GPIO Configuration
     PA5     ------> SPI1_SCK
-    PA6     ------> SPI1_MISO
     PA15     ------> SPI1_NSS
     PB5     ------> SPI1_MOSI
     */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_15);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5|GPIO_PIN_15);
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_5);
 
     /* SPI1 DMA DeInit */
+    HAL_DMA_DeInit(hspi->hdmarx);
     HAL_DMA_DeInit(hspi->hdmatx);
 
     /* SPI1 interrupt DeInit */
@@ -676,15 +738,15 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
 
     /**SPI2 GPIO Configuration
     PC2     ------> SPI2_MISO
-    PC3     ------> SPI2_MOSI
     PB10     ------> SPI2_SCK
     PB12     ------> SPI2_NSS
     */
-    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_2|GPIO_PIN_3);
+    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_2);
 
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_10|GPIO_PIN_12);
 
     /* SPI2 DMA DeInit */
+    HAL_DMA_DeInit(hspi->hdmarx);
     HAL_DMA_DeInit(hspi->hdmatx);
 
     /* SPI2 interrupt DeInit */
@@ -704,19 +766,19 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* hspi)
 */
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 {
-  if(htim_base->Instance==TIM6)
+  if(htim_base->Instance==TIM7)
   {
-  /* USER CODE BEGIN TIM6_MspInit 0 */
+  /* USER CODE BEGIN TIM7_MspInit 0 */
 
-  /* USER CODE END TIM6_MspInit 0 */
+  /* USER CODE END TIM7_MspInit 0 */
     /* Peripheral clock enable */
-    __HAL_RCC_TIM6_CLK_ENABLE();
-    /* TIM6 interrupt Init */
-    HAL_NVIC_SetPriority(TIM6_DAC_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
-  /* USER CODE BEGIN TIM6_MspInit 1 */
+    __HAL_RCC_TIM7_CLK_ENABLE();
+    /* TIM7 interrupt Init */
+    HAL_NVIC_SetPriority(TIM7_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(TIM7_IRQn);
+  /* USER CODE BEGIN TIM7_MspInit 1 */
 
-  /* USER CODE END TIM6_MspInit 1 */
+  /* USER CODE END TIM7_MspInit 1 */
   }
 
 }
@@ -729,26 +791,19 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 */
 void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* htim_base)
 {
-  if(htim_base->Instance==TIM6)
+  if(htim_base->Instance==TIM7)
   {
-  /* USER CODE BEGIN TIM6_MspDeInit 0 */
+  /* USER CODE BEGIN TIM7_MspDeInit 0 */
 
-  /* USER CODE END TIM6_MspDeInit 0 */
+  /* USER CODE END TIM7_MspDeInit 0 */
     /* Peripheral clock disable */
-    __HAL_RCC_TIM6_CLK_DISABLE();
+    __HAL_RCC_TIM7_CLK_DISABLE();
 
-    /* TIM6 interrupt DeInit */
-  /* USER CODE BEGIN TIM6:TIM6_DAC_IRQn disable */
-    /**
-    * Uncomment the line below to disable the "TIM6_DAC_IRQn" interrupt
-    * Be aware, disabling shared interrupt may affect other IPs
-    */
-    /* HAL_NVIC_DisableIRQ(TIM6_DAC_IRQn); */
-  /* USER CODE END TIM6:TIM6_DAC_IRQn disable */
+    /* TIM7 interrupt DeInit */
+    HAL_NVIC_DisableIRQ(TIM7_IRQn);
+  /* USER CODE BEGIN TIM7_MspDeInit 1 */
 
-  /* USER CODE BEGIN TIM6_MspDeInit 1 */
-
-  /* USER CODE END TIM6_MspDeInit 1 */
+  /* USER CODE END TIM7_MspDeInit 1 */
   }
 
 }
@@ -810,7 +865,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     hdma_uart5_rx.Init.MemInc = DMA_MINC_ENABLE;
     hdma_uart5_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
     hdma_uart5_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
-    hdma_uart5_rx.Init.Mode = DMA_NORMAL;
+    hdma_uart5_rx.Init.Mode = DMA_CIRCULAR;
     hdma_uart5_rx.Init.Priority = DMA_PRIORITY_LOW;
     hdma_uart5_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
     if (HAL_DMA_Init(&hdma_uart5_rx) != HAL_OK)

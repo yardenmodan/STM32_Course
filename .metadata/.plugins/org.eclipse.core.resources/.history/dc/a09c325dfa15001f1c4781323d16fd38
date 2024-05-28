@@ -1,0 +1,83 @@
+#include "main.h"
+#include "i2c_testing.h"
+#define BUFF_SIZE 256
+extern I2C_HandleTypeDef hi2c2;
+extern I2C_HandleTypeDef hi2c4;
+extern UART_HandleTypeDef huart3;
+#define UART_DEBUG &huart3
+int i2c_master_callback;
+int i2c_slave_callback;
+#define I2C_MASTER &hi2c2
+#define I2C_SLAVE &hi2c4
+
+void i2c_testing(uint8_t * str_in, uint8_t* return_from_test_value)
+{
+
+	int i2c_slave_callback=0;
+	int i2c_master_callback=0;
+
+	uint8_t buff_5[BUFF_SIZE]={0};
+	HAL_StatusTypeDef status= HAL_I2C_Slave_Receive_IT(I2C_SLAVE, buff_5, BUFF_SIZE);
+	if(status != HAL_OK)
+	{
+		printf("I2C_SLAVE Receive failed with status: %d", status);
+		return;
+	}
+	status= HAL_I2C_Master_Transmit_IT(I2C_MASTER, 0,str_in, BUFF_SIZE);
+	if(status != HAL_OK)
+	{
+		printf("I2C_MASTER Transmit failed with status: %d", status);
+		return;
+	}
+
+
+	while(1){
+		if(i2c_slave_callback)
+		{
+			i2c_slave_callback = 0;
+
+			status = HAL_I2C_Slave_Transmit_IT(I2C_SLAVE, buff_5, BUFF_SIZE);
+			if(status != HAL_OK)
+			{
+				printf("I2C SLAVE failed with status: %d", status);
+			}
+			status= HAL_I2C_Slave_Receive_IT(I2C_MASTER,return_from_test_value , BUFF_SIZE);
+			if(status != HAL_OK)
+			{
+				printf("I2C_MASTER Receive failed with status: %d", status);
+				return;
+			}
+
+
+		}
+		if(i2c_master_callback)
+		{
+			return;
+		}
+
+	}
+
+
+}
+
+void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
+
+{
+
+
+	if (hi2c==I2C_SLAVE){
+		i2c_master_callback=1;
+	}
+
+	if (hi2c==I2C_MASTER){
+		i2c_slave_callback=1;
+
+	}
+
+}
+
+void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c){
+	HAL_UART_Transmit(UART_DEBUG, "there was error in spi ! \r\n", sizeof("there was error in spi ! \r\n"),HAL_MAX_DELAY);
+
+
+}

@@ -1,0 +1,4 @@
+../UUT/spi_testing/Src/spi_testing.c:19:6:spi_testing	5
+../UUT/spi_testing/Src/spi_testing.c:79:6:HAL_SPI_TxCpltCallback	2
+../UUT/spi_testing/Src/spi_testing.c:94:6:HAL_SPI_RxCpltCallback	3
+../UUT/spi_testing/Src/spi_testing.c:112:1:HAL_SPI_ErrorCallback	1

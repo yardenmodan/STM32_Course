@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="__io_putchar"/>
+		<item key="selection" value="RTC"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="__io_putchar"/>
-			<item value="MX_USART3_UART_Init"/>
-			<item value="huart3"/>
-			<item value="generate_thread"/>
-			<item value="htim6"/>
-			<item value="port_op"/>
-			<item value="port_opt"/>
-			<item value="departmentTask"/>
-			<item value="department_queue_handles_lists"/>
-			<item value="generated"/>
-			<item value="\n"/>
-			<item value="printf("/>
-			<item value="dispatchTask"/>
-			<item value="hspi3"/>
-			<item value="HAL_UARTEx_RxEventCallback"/>
+			<item value="RTC"/>
+			<item value="IRQ"/>
+			<item value="irq"/>
+			<item value="HAL_ADC"/>
+			<item value="HAL_DAC"/>
+			<item value="interrupt"/>
+			<item value="interu"/>
+			<item value="interupt"/>
+			<item value="Start"/>
+			<item value="START"/>
+			<item value="IT"/>
+			<item value="DAC"/>
+			<item value="ADC"/>
+			<item value="CHANNEL"/>
+			<item value="DMA"/>
 		</list>
 		<list key="replacehistory">
 			<item value="\r\n"/>

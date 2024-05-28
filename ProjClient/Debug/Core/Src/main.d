@@ -21,6 +21,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
@@ -68,13 +70,22 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h \
  ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
+ ../LWIP/Target/ethernetif.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/Testing_Program/Inc/Testing_Program.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
- ../LWIP/Target/ethernetif.h
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/err.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/timer_testing/Inc/timer_testing.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/uart_testin/Inc/uart.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/adc_testing/Inc/adc_testing.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/spi_testing/Inc/spi_testing.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/i2c_testing/Inc/i2c_testing.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -98,6 +109,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
@@ -145,10 +158,19 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h:
 ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h:
+../LWIP/Target/ethernetif.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/Testing_Program/Inc/Testing_Program.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h:
-../LWIP/Target/ethernetif.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/err.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/timer_testing/Inc/timer_testing.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/uart_testin/Inc/uart.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/adc_testing/Inc/adc_testing.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/spi_testing/Inc/spi_testing.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/ProjClient/UUT/i2c_testing/Inc/i2c_testing.h:

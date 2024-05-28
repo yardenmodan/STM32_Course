@@ -23,6 +23,8 @@ LWIP/App/lwip.o: ../LWIP/App/lwip.c ../LWIP/App/lwip.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
@@ -67,11 +69,6 @@ LWIP/App/lwip.o: ../LWIP/App/lwip.c ../LWIP/App/lwip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h \
  ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
  ../LWIP/Target/ethernetif.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/init.h
@@ -101,6 +98,8 @@ LWIP/App/lwip.o: ../LWIP/App/lwip.c ../LWIP/App/lwip.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
@@ -145,11 +144,6 @@ LWIP/App/lwip.o: ../LWIP/App/lwip.c ../LWIP/App/lwip.h \
 ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h:
 ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/ip.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h:
-../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h:
 ../LWIP/Target/ethernetif.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/init.h:

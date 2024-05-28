@@ -1,0 +1,95 @@
+2024-04-23 00:02:34,140 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,427 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,427 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,427 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,428 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,428 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,428 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,428 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,428 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,429 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,516 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-04-23 00:02:34,528 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-23 00:04:00,518 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 721982312 Bytes (1073741824)
+2024-04-23 00:04:01,821 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 756585680 Bytes (1073741824)
+2024-04-23 00:04:02,329 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 794711384 Bytes (1073741824)
+2024-04-23 00:04:03,096 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F7
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CRC
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2024-04-23 00:04:03,097 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-04-23 00:04:03,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-04-23 00:04:03,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-04-23 00:04:03,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DAC
+2024-04-23 00:04:03,098 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: UART
+2024-04-23 00:04:03,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-23 00:04:03,099 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2024-04-23 00:04:03,102 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-04-23 00:04:03,133 [WARN] IP:2119 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2024-04-23 00:04:03,138 [WARN] IP:2119 - LWIP_NETIF_HOSTNAME not found: check if there is a RefParameter without a condition.
+2024-04-23 00:04:03,936 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp_save
+2024-04-23 00:04:04,903 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\license.tmp
+2024-04-23 00:04:05,098 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp_save
+2024-04-23 00:04:05,335 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\gpio.tmp
+2024-04-23 00:04:05,660 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp_save
+2024-04-23 00:04:05,851 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_vars.tmp
+2024-04-23 00:04:05,870 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp_save
+2024-04-23 00:04:06,009 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_inc.tmp
+2024-04-23 00:04:06,040 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp_save
+2024-04-23 00:04:06,246 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_HalInit.tmp
+2024-04-23 00:04:06,268 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp_save
+2024-04-23 00:04:06,433 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\eth_Msp.tmp
+2024-04-23 00:04:09,014 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-04-23 00:04:09,056 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp_save
+2024-04-23 00:04:09,199 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\cortex.tmp
+2024-04-23 00:04:09,481 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp_save
+2024-04-23 00:04:09,626 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma.tmp
+2024-04-23 00:04:09,642 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp_save
+2024-04-23 00:04:09,711 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\dma_GV.tmp
+2024-04-23 00:04:09,728 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-04-23 00:04:09,775 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c_save
+2024-04-23 00:04:09,945 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.c
+2024-04-23 00:04:09,970 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h_save
+2024-04-23 00:04:10,111 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\App\lwip.h
+2024-04-23 00:04:10,140 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h_save
+2024-04-23 00:04:10,528 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\lwipopts.h
+2024-04-23 00:04:10,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c_save
+2024-04-23 00:04:10,720 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.c
+2024-04-23 00:04:10,754 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h_save
+2024-04-23 00:04:10,866 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\LWIP\Target\ethernetif.h
+2024-04-23 00:04:10,925 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c_save
+2024-04-23 00:04:11,122 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_it.c
+2024-04-23 00:04:11,160 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h_save
+2024-04-23 00:04:11,260 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_it.h
+2024-04-23 00:04:11,314 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c_save
+2024-04-23 00:04:11,604 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\stm32f7xx_hal_msp.c
+2024-04-23 00:04:11,628 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp_save
+2024-04-23 00:04:11,717 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\MXTmpFiles\system.tmp
+2024-04-23 00:04:11,766 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-04-23 00:04:11,920 [INFO] CodeEngine:335 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\stm32f7xx_hal_conf.h
+2024-04-23 00:04:12,001 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-04-23 00:04:12,003 [WARN] CodeGenerator:3939 - IP not found : null
+2024-04-23 00:04:12,042 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h_save
+2024-04-23 00:04:12,217 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Inc\main.h
+2024-04-23 00:04:12,245 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c_save
+2024-04-23 00:04:12,640 [INFO] CodeEngine:279 - Generated code: C:\Users\yarde\STM32CubeIDE\workspace_1.13.1\ProjClient\Core\Src\main.c
+2024-04-23 00:04:15,408 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 1749mS.
+2024-04-23 00:04:15,438 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-04-23 00:04:15,815 [INFO] ConfigFileManager:1495 - The Die is : DIE449
+2024-04-23 00:04:15,830 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-04-23 00:04:15,846 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-04-23 00:04:15,858 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-04-23 00:04:15,876 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-04-23 00:04:15,897 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-04-23 00:04:15,911 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

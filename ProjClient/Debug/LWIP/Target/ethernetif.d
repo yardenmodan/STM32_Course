@@ -21,6 +21,8 @@ LWIP/Target/ethernetif.o: ../LWIP/Target/ethernetif.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
@@ -68,7 +70,7 @@ LWIP/Target/ethernetif.o: ../LWIP/Target/ethernetif.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip4.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/ethip6.h \
- ../LWIP/Target/ethernetif.h
+ ../LWIP/Target/ethernetif.h ../Drivers/BSP/Components/lan8742/lan8742.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -92,6 +94,8 @@ LWIP/Target/ethernetif.o: ../LWIP/Target/ethernetif.c ../Core/Inc/main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dac_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
@@ -140,3 +144,4 @@ LWIP/Target/ethernetif.o: ../LWIP/Target/ethernetif.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/etharp.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/ethip6.h:
 ../LWIP/Target/ethernetif.h:
+../Drivers/BSP/Components/lan8742/lan8742.h:

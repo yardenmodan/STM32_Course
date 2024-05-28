@@ -22,7 +22,12 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Testing_Program.h"
+#include "timer_testing.h"
+#include "uart.h"
+#include "adc_testing.h"
+#include "spi_testing.h"
+#include "i2c_testing.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,7 +37,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define BUFF_SIZE 1024
+//#define BUFF_SIZE 1024
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -42,6 +47,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
 
 CRC_HandleTypeDef hcrc;
 
@@ -49,16 +55,19 @@ DAC_HandleTypeDef hdac;
 
 I2C_HandleTypeDef hi2c2;
 I2C_HandleTypeDef hi2c4;
+DMA_HandleTypeDef hdma_i2c2_rx;
 DMA_HandleTypeDef hdma_i2c2_tx;
 
 RTC_HandleTypeDef hrtc;
 
 SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef hspi2;
+DMA_HandleTypeDef hdma_spi1_rx;
 DMA_HandleTypeDef hdma_spi1_tx;
+DMA_HandleTypeDef hdma_spi2_rx;
 DMA_HandleTypeDef hdma_spi2_tx;
 
-TIM_HandleTypeDef htim6;
+TIM_HandleTypeDef htim7;
 
 UART_HandleTypeDef huart5;
 UART_HandleTypeDef huart2;
@@ -77,15 +86,15 @@ static void MX_DMA_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
-static void MX_SPI2_Init(void);
 static void MX_I2C2_Init(void);
-static void MX_ADC1_Init(void);
 static void MX_DAC_Init(void);
 static void MX_I2C4_Init(void);
-static void MX_RTC_Init(void);
-static void MX_TIM6_Init(void);
 static void MX_UART5_Init(void);
 static void MX_CRC_Init(void);
+static void MX_ADC1_Init(void);
+static void MX_TIM7_Init(void);
+static void MX_SPI2_Init(void);
+static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -127,16 +136,16 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USART2_UART_Init();
   MX_SPI1_Init();
-  MX_SPI2_Init();
   MX_I2C2_Init();
-  MX_ADC1_Init();
   MX_DAC_Init();
   MX_I2C4_Init();
-  MX_RTC_Init();
-  MX_TIM6_Init();
   MX_UART5_Init();
   MX_LWIP_Init();
   MX_CRC_Init();
+  MX_ADC1_Init();
+  MX_TIM7_Init();
+  MX_SPI2_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -145,11 +154,77 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ethernetif_input(&gnetif);
+	  Testing_Program();
+//	  const uint8_t message[256]="abrakadabra!";
+//	  uint8_t return_from_test_value[256]={0};
+//	  return_from_test_value[255]='1';
+//	  for (int iter=0; iter<3;iter++){
+//		i2c_testing(message, return_from_test_value);
+//		int testing_result= (strcmp(message,return_from_test_value)!=0)? 0 : 1 ;
+//		if (testing_result==0){
+//			printf("I2C test failed!\n");
+//			break;
+//
+//
+//		}
+//	  }
+
+//	  uint32_t return_from_timer_value=0;
+//	  const uint8_t interval[20]="10";
+//	  for (int iter=0; iter<3;iter++){
+//		  timer_testing( interval,&return_from_timer_value);
+//		  int required_time=atoi(interval);
+//		  int testing_result= ((uint32_t)required_time!=return_from_timer_value)? FALSE : TRUE ;
+//		  if (testing_result==FALSE){
+//
+//			  printf("TIMER test failed!\n");
+//			  break;
+//
+//
+//			}
+//
+//	}
+//	break;
+	 //Testing_Program();
+	 // uint8_t new_interval[]="100";
+	 // uint32_t return_from_test_value=0;
+	 // timer_testing(new_interval, &return_from_test_value);
+  //}
+	// uint8_t str_in[]="14";
+	 //uint8_t return_from_test_value[30]={0};
+//	 // Testing_Program();
+//	 for (int iter=0; iter<3;iter++){
+//		uart_testing(str_in, return_from_test_value);
+//		int testing_result= (strcmp(return_from_test_value,str_in)!=0)? 0 : 1 ;
+//		if (testing_result==0){
+//			printf("UART test failed!\n");
+//			break;
+//
+//
+//
+//		}
+//	  for (int iter=0; iter<3;iter++){
+//		 uint8_t str_in[]="14";
+//		 uint8_t return_from_test_value[30]={0};
+//
+//		adc_testing(str_in, return_from_test_value);
+//		printf("bla");
+//
+//		int testing_result= (strcmp(str_in,return_from_test_value)!=0)? 0 : 1 ;
+//		if (testing_result==0){
+//			printf("ADC test failed!\n");
+//			break;
+
+
+
+//
+
+
+  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+
   /* USER CODE END 3 */
 }
 
@@ -233,7 +308,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 1;
-  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.DMAContinuousRequests = ENABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
@@ -242,7 +317,7 @@ static void MX_ADC1_Init(void)
 
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_0;
+  sConfig.Channel = ADC_CHANNEL_3;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
@@ -343,7 +418,7 @@ static void MX_I2C2_Init(void)
   /* USER CODE END I2C2_Init 1 */
   hi2c2.Instance = I2C2;
   hi2c2.Init.Timing = 0x00808CD2;
-  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.OwnAddress1 = 2;
   hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
   hi2c2.Init.OwnAddress2 = 0;
@@ -482,7 +557,7 @@ static void MX_RTC_Init(void)
 
   /** Enable the WakeUp
   */
-  if (HAL_RTCEx_SetWakeUpTimer_IT(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
+  if (HAL_RTCEx_SetWakeUpTimer(&hrtc, 0, RTC_WAKEUPCLOCK_RTCCLK_DIV16) != HAL_OK)
   {
     Error_Handler();
   }
@@ -510,18 +585,18 @@ static void MX_SPI1_Init(void)
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
-  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.Direction = SPI_DIRECTION_1LINE;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
-  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_ENABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi1.Init.CRCPolynomial = 7;
-  hspi1.Init.CRCLength = SPI_CRC_LENGTH_16BIT;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
   if (HAL_SPI_Init(&hspi1) != HAL_OK)
   {
     Error_Handler();
@@ -550,16 +625,16 @@ static void MX_SPI2_Init(void)
   /* SPI2 parameter configuration*/
   hspi2.Instance = SPI2;
   hspi2.Init.Mode = SPI_MODE_SLAVE;
-  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi2.Init.Direction = SPI_DIRECTION_1LINE;
   hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi2.Init.NSS = SPI_NSS_HARD_INPUT;
   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
-  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_ENABLE;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi2.Init.CRCPolynomial = 7;
-  hspi2.Init.CRCLength = SPI_CRC_LENGTH_8BIT;
+  hspi2.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
   hspi2.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
   if (HAL_SPI_Init(&hspi2) != HAL_OK)
   {
@@ -572,40 +647,40 @@ static void MX_SPI2_Init(void)
 }
 
 /**
-  * @brief TIM6 Initialization Function
+  * @brief TIM7 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_TIM6_Init(void)
+static void MX_TIM7_Init(void)
 {
 
-  /* USER CODE BEGIN TIM6_Init 0 */
+  /* USER CODE BEGIN TIM7_Init 0 */
 
-  /* USER CODE END TIM6_Init 0 */
+  /* USER CODE END TIM7_Init 0 */
 
   TIM_MasterConfigTypeDef sMasterConfig = {0};
 
-  /* USER CODE BEGIN TIM6_Init 1 */
+  /* USER CODE BEGIN TIM7_Init 1 */
 
-  /* USER CODE END TIM6_Init 1 */
-  htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 1999;
-  htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 35999;
-  htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
-  if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
+  /* USER CODE END TIM7_Init 1 */
+  htim7.Instance = TIM7;
+  htim7.Init.Prescaler = 36000-1;
+  htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim7.Init.Period = 65535;
+  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
   {
     Error_Handler();
   }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim7, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();
   }
-  /* USER CODE BEGIN TIM6_Init 2 */
+  /* USER CODE BEGIN TIM7_Init 2 */
 
-  /* USER CODE END TIM6_Init 2 */
+  /* USER CODE END TIM7_Init 2 */
 
 }
 
@@ -728,6 +803,12 @@ static void MX_DMA_Init(void)
   /* DMA1_Stream0_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream0_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream0_IRQn);
+  /* DMA1_Stream2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream2_IRQn);
+  /* DMA1_Stream3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream3_IRQn);
   /* DMA1_Stream4_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
@@ -737,6 +818,12 @@ static void MX_DMA_Init(void)
   /* DMA1_Stream7_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Stream7_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream7_IRQn);
+  /* DMA2_Stream0_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
+  /* DMA2_Stream2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
   /* DMA2_Stream3_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA2_Stream3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA2_Stream3_IRQn);

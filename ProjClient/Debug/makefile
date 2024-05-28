@@ -9,6 +9,13 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include UUT/uart_testin/Src/subdir.mk
+-include UUT/timer_testing/Src/subdir.mk
+-include UUT/spi_testing/Src/subdir.mk
+-include UUT/server/Src/subdir.mk
+-include UUT/i2c_testing/Src/subdir.mk
+-include UUT/adc_testing/Src/subdir.mk
+-include UUT/Testing_Program/Src/subdir.mk
 -include Middlewares/Third_Party/LwIP/src/netif/ppp/subdir.mk
 -include Middlewares/Third_Party/LwIP/src/netif/subdir.mk
 -include Middlewares/Third_Party/LwIP/src/core/ipv6/subdir.mk
@@ -19,6 +26,7 @@ RM := rm -rf
 -include LWIP/Target/subdir.mk
 -include LWIP/App/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
+-include Drivers/BSP/Components/lan8742/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
