@@ -155,69 +155,7 @@ int main(void)
   while (1)
   {
 	  Testing_Program();
-//	  const uint8_t message[256]="abrakadabra!";
-//	  uint8_t return_from_test_value[256]={0};
-//	  return_from_test_value[255]='1';
-//	  for (int iter=0; iter<3;iter++){
-//		i2c_testing(message, return_from_test_value);
-//		int testing_result= (strcmp(message,return_from_test_value)!=0)? 0 : 1 ;
-//		if (testing_result==0){
-//			printf("I2C test failed!\n");
-//			break;
-//
-//
-//		}
-//	  }
 
-//	  uint32_t return_from_timer_value=0;
-//	  const uint8_t interval[20]="10";
-//	  for (int iter=0; iter<3;iter++){
-//		  timer_testing( interval,&return_from_timer_value);
-//		  int required_time=atoi(interval);
-//		  int testing_result= ((uint32_t)required_time!=return_from_timer_value)? FALSE : TRUE ;
-//		  if (testing_result==FALSE){
-//
-//			  printf("TIMER test failed!\n");
-//			  break;
-//
-//
-//			}
-//
-//	}
-//	break;
-	 //Testing_Program();
-	 // uint8_t new_interval[]="100";
-	 // uint32_t return_from_test_value=0;
-	 // timer_testing(new_interval, &return_from_test_value);
-  //}
-	// uint8_t str_in[]="14";
-	 //uint8_t return_from_test_value[30]={0};
-//	 // Testing_Program();
-//	 for (int iter=0; iter<3;iter++){
-//		uart_testing(str_in, return_from_test_value);
-//		int testing_result= (strcmp(return_from_test_value,str_in)!=0)? 0 : 1 ;
-//		if (testing_result==0){
-//			printf("UART test failed!\n");
-//			break;
-//
-//
-//
-//		}
-//	  for (int iter=0; iter<3;iter++){
-//		 uint8_t str_in[]="14";
-//		 uint8_t return_from_test_value[30]={0};
-//
-//		adc_testing(str_in, return_from_test_value);
-//		printf("bla");
-//
-//		int testing_result= (strcmp(str_in,return_from_test_value)!=0)? 0 : 1 ;
-//		if (testing_result==0){
-//			printf("ADC test failed!\n");
-//			break;
-
-
-
-//
 
 
   }
