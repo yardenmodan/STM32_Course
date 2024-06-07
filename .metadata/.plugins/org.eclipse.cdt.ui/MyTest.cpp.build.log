@@ -1,0 +1,10 @@
+19:48:08 **** Incremental Build of configuration Debug for project MyTest.cpp ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\MyTest.cpp.o" "..\\src\\MyTest.cpp.cpp" 
+..\src\MyTest.cpp.cpp:9:10: fatal error: gtest/gtest.h: No such file or directory
+    9 | #include <gtest/gtest.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+19:48:08 Build Failed. 1 errors, 0 warnings. (took 130ms)
+

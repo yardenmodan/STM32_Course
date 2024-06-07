@@ -1,0 +1,14 @@
+src/gtest-filepath.o: \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/googletest/googletest/src/gtest-filepath.cc \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-filepath.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-port.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/custom/gtest-port.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-port-arch.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-string.h \
+ C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/gtest-message.h
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-filepath.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-port.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/custom/gtest-port.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-port-arch.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/internal/gtest-string.h:
+C:/Users/yarde/STM32CubeIDE/workspace_1.13.1/GPS_Interface_Embedded_Linux/Test/googletest/include/gtest/gtest-message.h:

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;GPS_Interface_Embedded_Linux/GPS/Src/GPS.c&apos; to &apos;GPS.ccp&apos;" description="Rename resource &apos;GPS.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="GPS/Src/GPS.c" name="GPS.ccp" stamp="1717191746468" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;GPS_Interface_Embedded_Linux/GPS/Src/GPS.ccp&apos; to &apos;GPS.cpp&apos;" description="Rename resource &apos;GPS.ccp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="GPS/Src/GPS.ccp" name="GPS.cpp" stamp="1717191763181" updateReferences="true"/>
+</session>

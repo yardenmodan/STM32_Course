@@ -1,0 +1,11 @@
+doxygen/doxygen_new_line_after_brief=true
+doxygen/doxygen_use_brief_tag=false
+doxygen/doxygen_use_javadoc_tags=true
+doxygen/doxygen_use_pre_tag=false
+doxygen/doxygen_use_structural_commands=false
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.959042297.759229249/CWD/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.959042297.759229249/CWD/operation=replace
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.959042297.759229249/CWD/value=C\:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.959042297.759229249/append=true
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.959042297.759229249/appendContributed=true

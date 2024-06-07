@@ -1,0 +1,1909 @@
+21:27:34 **** Incremental Build of configuration UnitTest for project GPS_Interface_Embedded_Linux ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\GPS\\Inc" -I../Core/Inc "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\googletest\\googlemock\\include" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\googletest\\googletest\\include" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\GPS\\Inc" -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Core\\Inc" "-IC:\\msys64\\mingw64\\include" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Common" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Testing" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Core\\Inc" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Drivers\\STM32F7xx_HAL_Driver\\Inc\\Legacy" -I/GPS_Interface_Embedded_Linux/Drivers/STM32F7xx_HAL_Driver/Inc "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Drivers\\CMSIS\\Device\\ST\\STM32F7xx\\Include" "-IC:\\Users\\yarde\\STM32CubeIDE\\workspace_1.13.1\\GPS_Interface_Embedded_Linux\\Drivers\\CMSIS\\Include" -O0 -g3 -Wall -c -fmessage-length=0 -o "Drivers\\STM32F7xx_HAL_Driver\\Src\\stm32f7xx_hal_crc.o" "..\\Drivers\\STM32F7xx_HAL_Driver\\Src\\stm32f7xx_hal_crc.c" 
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:145:3: error: #error "Please select first the target STM32F7xx device used in your application (in stm32f7xx.h file)"
+  145 |  #error "Please select first the target STM32F7xx device used in your application (in stm32f7xx.h file)"
+      |   ^~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:31,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:47:3: error: unknown type name 'uint32_t'
+   47 |   uint32_t PLLState;   /*!< The new state of the PLL.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:50:3: error: unknown type name 'uint32_t'
+   50 |   uint32_t PLLSource;  /*!< RCC_PLLSource: PLL entry clock source.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:53:3: error: unknown type name 'uint32_t'
+   53 |   uint32_t PLLM;       /*!< PLLM: Division factor for PLL VCO input clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:56:3: error: unknown type name 'uint32_t'
+   56 |   uint32_t PLLN;       /*!< PLLN: Multiplication factor for PLL VCO output clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:59:3: error: unknown type name 'uint32_t'
+   59 |   uint32_t PLLP;       /*!< PLLP: Division factor for main system clock (SYSCLK).
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:62:3: error: unknown type name 'uint32_t'
+   62 |   uint32_t PLLQ;       /*!< PLLQ: Division factor for OTG FS, SDMMC and RNG clocks.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:76:3: error: unknown type name 'uint32_t'
+   76 |   uint32_t PLLI2SN;    /*!< Specifies the multiplication factor for PLLI2S VCO output clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:80:3: error: unknown type name 'uint32_t'
+   80 |   uint32_t PLLI2SR;    /*!< Specifies the division factor for I2S clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:84:3: error: unknown type name 'uint32_t'
+   84 |   uint32_t PLLI2SQ;    /*!< Specifies the division factor for SAI1 clock.
+      |   ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:31,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:101:3: error: unknown type name 'uint32_t'
+  101 |   uint32_t PLLSAIN;    /*!< Specifies the multiplication factor for PLLI2S VCO output clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:105:3: error: unknown type name 'uint32_t'
+  105 |   uint32_t PLLSAIQ;    /*!< Specifies the division factor for SAI1 clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:116:3: error: unknown type name 'uint32_t'
+  116 |   uint32_t PLLSAIP;    /*!< Specifies the division factor for 48MHz clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:126:3: error: unknown type name 'uint32_t'
+  126 |   uint32_t PeriphClockSelection; /*!< The Extended Clock to be configured.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:135:3: error: unknown type name 'uint32_t'
+  135 |   uint32_t PLLI2SDivQ;           /*!< Specifies the PLLI2S division factor for SAI1 clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:139:3: error: unknown type name 'uint32_t'
+  139 |   uint32_t PLLSAIDivQ;           /*!< Specifies the PLLI2S division factor for SAI1 clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:143:3: error: unknown type name 'uint32_t'
+  143 |   uint32_t PLLSAIDivR;           /*!< Specifies the PLLSAI division factor for LTDC clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:146:3: error: unknown type name 'uint32_t'
+  146 |   uint32_t RTCClockSelection;      /*!< Specifies RTC Clock source Selection.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:149:3: error: unknown type name 'uint32_t'
+  149 |   uint32_t I2sClockSelection;      /*!< Specifies I2S Clock source Selection.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:152:3: error: unknown type name 'uint32_t'
+  152 |   uint32_t TIMPresSelection;      /*!< Specifies TIM Clock Prescalers Selection.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:155:3: error: unknown type name 'uint32_t'
+  155 |   uint32_t Sai1ClockSelection;     /*!< Specifies SAI1 Clock Prescalers Selection
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:158:3: error: unknown type name 'uint32_t'
+  158 |   uint32_t Sai2ClockSelection;     /*!< Specifies SAI2 Clock Prescalers Selection
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:161:3: error: unknown type name 'uint32_t'
+  161 |   uint32_t Usart1ClockSelection; /*!< USART1 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:164:3: error: unknown type name 'uint32_t'
+  164 |   uint32_t Usart2ClockSelection; /*!< USART2 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:167:3: error: unknown type name 'uint32_t'
+  167 |   uint32_t Usart3ClockSelection; /*!< USART3 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:170:3: error: unknown type name 'uint32_t'
+  170 |   uint32_t Uart4ClockSelection;  /*!< UART4 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:173:3: error: unknown type name 'uint32_t'
+  173 |   uint32_t Uart5ClockSelection;  /*!< UART5 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:176:3: error: unknown type name 'uint32_t'
+  176 |   uint32_t Usart6ClockSelection;  /*!< USART6 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:179:3: error: unknown type name 'uint32_t'
+  179 |   uint32_t Uart7ClockSelection;  /*!< UART7 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:182:3: error: unknown type name 'uint32_t'
+  182 |   uint32_t Uart8ClockSelection;  /*!< UART8 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:185:3: error: unknown type name 'uint32_t'
+  185 |   uint32_t I2c1ClockSelection;   /*!< I2C1 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:188:3: error: unknown type name 'uint32_t'
+  188 |   uint32_t I2c2ClockSelection;   /*!< I2C2 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:191:3: error: unknown type name 'uint32_t'
+  191 |   uint32_t I2c3ClockSelection;   /*!< I2C3 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:194:3: error: unknown type name 'uint32_t'
+  194 |   uint32_t I2c4ClockSelection;   /*!< I2C4 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:197:3: error: unknown type name 'uint32_t'
+  197 |   uint32_t Lptim1ClockSelection;   /*!< Specifies LPTIM1 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:200:3: error: unknown type name 'uint32_t'
+  200 |   uint32_t CecClockSelection;      /*!< CEC clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:203:3: error: unknown type name 'uint32_t'
+  203 |   uint32_t Clk48ClockSelection;    /*!< Specifies 48Mhz clock source used by USB OTG FS, RNG and SDMMC
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:206:3: error: unknown type name 'uint32_t'
+  206 |   uint32_t Sdmmc1ClockSelection;     /*!< SDMMC1 clock source
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:3208:1: error: unknown type name 'uint32_t'
+ 3208 | uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk);
+      | ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:31,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:31,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:3208:37: error: unknown type name 'uint32_t'
+ 3208 | uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk);
+      |                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:3208:37: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:52:3: error: unknown type name 'uint32_t'
+   52 |   uint32_t OscillatorType;       /*!< The oscillators to be configured.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:55:3: error: unknown type name 'uint32_t'
+   55 |   uint32_t HSEState;             /*!< The new state of the HSE.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:58:3: error: unknown type name 'uint32_t'
+   58 |   uint32_t LSEState;             /*!< The new state of the LSE.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:61:3: error: unknown type name 'uint32_t'
+   61 |   uint32_t HSIState;             /*!< The new state of the HSI.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:64:3: error: unknown type name 'uint32_t'
+   64 |   uint32_t HSICalibrationValue;   /*!< The HSI calibration trimming value (default is RCC_HSICALIBRATION_DEFAULT).
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:67:3: error: unknown type name 'uint32_t'
+   67 |   uint32_t LSIState;             /*!< The new state of the LSI.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:79:3: error: unknown type name 'uint32_t'
+   79 |   uint32_t ClockType;             /*!< The clock to be configured.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:82:3: error: unknown type name 'uint32_t'
+   82 |   uint32_t SYSCLKSource;          /*!< The clock source (SYSCLKS) used as system clock.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:85:3: error: unknown type name 'uint32_t'
+   85 |   uint32_t AHBCLKDivider;         /*!< The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK).
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:88:3: error: unknown type name 'uint32_t'
+   88 |   uint32_t APB1CLKDivider;        /*!< The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK).
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:91:3: error: unknown type name 'uint32_t'
+   91 |   uint32_t APB2CLKDivider;        /*!< The APB2 clock (PCLK2) divider. This clock is derived from the AHB clock (HCLK).
+      |   ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1137:78: error: unknown type name 'uint32_t'
+ 1137 | HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency);
+      |                                                                              ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:32:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   31 | #include "stm32f7xx_hal_rcc_ex.h"
+  +++ |+#include <stdint.h>
+   32 | 
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:28: error: unknown type name 'uint32_t'
+ 1146 | void     HAL_RCC_MCOConfig(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv);
+      |                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:28: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:47: error: unknown type name 'uint32_t'
+ 1146 | void     HAL_RCC_MCOConfig(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv);
+      |                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:47: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:71: error: unknown type name 'uint32_t'
+ 1146 | void     HAL_RCC_MCOConfig(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv);
+      |                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1146:71: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1149:1: error: unknown type name 'uint32_t'
+ 1149 | uint32_t HAL_RCC_GetSysClockFreq(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1149:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1150:1: error: unknown type name 'uint32_t'
+ 1150 | uint32_t HAL_RCC_GetHCLKFreq(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1150:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1151:1: error: unknown type name 'uint32_t'
+ 1151 | uint32_t HAL_RCC_GetPCLK1Freq(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1151:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1152:1: error: unknown type name 'uint32_t'
+ 1152 | uint32_t HAL_RCC_GetPCLK2Freq(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1152:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1154:72: error: unknown type name 'uint32_t'
+ 1154 | void     HAL_RCC_GetClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t *pFLatency);
+      |                                                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:1154:72: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:275,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:54:3: error: unknown type name 'uint32_t'
+   54 |   uint32_t Line;                    /*!<  Exti line number */
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:63:3: error: unknown type name 'uint32_t'
+   63 |   uint32_t Line;      /*!< The Exti line to be configured. This parameter
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:65:3: error: unknown type name 'uint32_t'
+   65 |   uint32_t Mode;      /*!< The Exit Mode to be configured for a core.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:67:3: error: unknown type name 'uint32_t'
+   67 |   uint32_t Trigger;   /*!< The Exti Trigger to be configured. This parameter
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:69:3: error: unknown type name 'uint32_t'
+   69 |   uint32_t GPIOSel;   /*!< The Exti GPIO multiplexer selection to be configured.
+      |   ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:275,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:281:65: error: unknown type name 'uint32_t'
+  281 | HAL_StatusTypeDef HAL_EXTI_GetHandle(EXTI_HandleTypeDef *hexti, uint32_t ExtiLine);
+      |                                                                 ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:275,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:275,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:292:1: error: unknown type name 'uint32_t'
+  292 | uint32_t HAL_EXTI_GetPending(EXTI_HandleTypeDef *hexti, uint32_t Edge);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:292:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:292:57: error: unknown type name 'uint32_t'
+  292 | uint32_t HAL_EXTI_GetPending(EXTI_HandleTypeDef *hexti, uint32_t Edge);
+      |                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:292:57: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:293:55: error: unknown type name 'uint32_t'
+  293 | void HAL_EXTI_ClearPending(EXTI_HandleTypeDef *hexti, uint32_t Edge);
+      |                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:293:55: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:279,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:48:3: error: unknown type name 'uint32_t'
+   48 |   uint32_t Pin;       /*!< Specifies the GPIO pins to be configured.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:51:3: error: unknown type name 'uint32_t'
+   51 |   uint32_t Mode;      /*!< Specifies the operating mode for the selected pins.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:54:3: error: unknown type name 'uint32_t'
+   54 |   uint32_t Pull;      /*!< Specifies the Pull-up or Pull-Down activation for the selected pins.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:57:3: error: unknown type name 'uint32_t'
+   57 |   uint32_t Speed;     /*!< Specifies the speed for the selected pins.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:60:3: error: unknown type name 'uint32_t'
+   60 |   uint32_t Alternate;  /*!< Peripheral to be connected to the selected pins.
+      |   ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:279,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:223:21: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  223 | void  HAL_GPIO_Init(GPIO_TypeDef  *GPIOx, GPIO_InitTypeDef *GPIO_Init);
+      |                     ^~~~~~~~~~~~
+      |                     GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:224:23: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  224 | void  HAL_GPIO_DeInit(GPIO_TypeDef  *GPIOx, uint32_t GPIO_Pin);
+      |                       ^~~~~~~~~~~~
+      |                       GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:224:45: error: unknown type name 'uint32_t'
+  224 | void  HAL_GPIO_DeInit(GPIO_TypeDef  *GPIOx, uint32_t GPIO_Pin);
+      |                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:213:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  212 | #include "stm32f7xx_hal_gpio_ex.h"
+  +++ |+#include <stdint.h>
+  213 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:233:32: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  233 | GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                                ^~~~~~~~~~~~
+      |                                GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:233:53: error: unknown type name 'uint16_t'
+  233 | GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:233:53: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:234:24: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  234 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                        ^~~~~~~~~~~~
+      |                        GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:234:45: error: unknown type name 'uint16_t'
+  234 | void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+      |                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:234:45: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:235:25: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  235 | void HAL_GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                         ^~~~~~~~~~~~
+      |                         GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:235:46: error: unknown type name 'uint16_t'
+  235 | void HAL_GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:235:46: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:236:36: error: unknown type name 'GPIO_TypeDef'; did you mean 'GPIO_InitTypeDef'?
+  236 | HAL_StatusTypeDef HAL_GPIO_LockPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                                    ^~~~~~~~~~~~
+      |                                    GPIO_InitTypeDef
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:236:57: error: unknown type name 'uint16_t'
+  236 | HAL_StatusTypeDef HAL_GPIO_LockPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+      |                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:236:57: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:237:31: error: unknown type name 'uint16_t'
+  237 | void HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin);
+      |                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:237:31: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:238:29: error: unknown type name 'uint16_t'
+  238 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
+      |                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:238:29: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:50:3: error: unknown type name 'uint32_t'
+   50 |   uint32_t Channel;              /*!< Specifies the channel used for the specified stream.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:53:3: error: unknown type name 'uint32_t'
+   53 |   uint32_t Direction;            /*!< Specifies if the data will be transferred from memory to peripheral,
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:57:3: error: unknown type name 'uint32_t'
+   57 |   uint32_t PeriphInc;            /*!< Specifies whether the Peripheral address register should be incremented or not.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:60:3: error: unknown type name 'uint32_t'
+   60 |   uint32_t MemInc;               /*!< Specifies whether the memory address register should be incremented or not.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:63:3: error: unknown type name 'uint32_t'
+   63 |   uint32_t PeriphDataAlignment;  /*!< Specifies the Peripheral data width.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:66:3: error: unknown type name 'uint32_t'
+   66 |   uint32_t MemDataAlignment;     /*!< Specifies the Memory data width.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:69:3: error: unknown type name 'uint32_t'
+   69 |   uint32_t Mode;                 /*!< Specifies the operation mode of the DMAy Streamx.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:74:3: error: unknown type name 'uint32_t'
+   74 |   uint32_t Priority;             /*!< Specifies the software priority for the DMAy Streamx.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:77:3: error: unknown type name 'uint32_t'
+   77 |   uint32_t FIFOMode;             /*!< Specifies if the FIFO mode or Direct mode will be used for the specified stream.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:82:3: error: unknown type name 'uint32_t'
+   82 |   uint32_t FIFOThreshold;        /*!< Specifies the FIFO threshold level.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:85:3: error: unknown type name 'uint32_t'
+   85 |   uint32_t MemBurst;             /*!< Specifies the Burst transfer configuration for the memory transfers.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:91:3: error: unknown type name 'uint32_t'
+   91 |   uint32_t PeriphBurst;          /*!< Specifies the Burst transfer configuration for the peripheral transfers.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:139:3: error: unknown type name 'DMA_Stream_TypeDef'
+  139 |   DMA_Stream_TypeDef         *Instance;                                                    /*!< Register base address                  */
+      |   ^~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:145:3: error: unknown type name '__IO'
+  145 |   __IO HAL_DMA_StateTypeDef  State;                                                        /*!< DMA transfer state                     */
+      |   ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:145:30: error: expected ':', ',', ';', '}' or '__attribute__' before 'State'
+  145 |   __IO HAL_DMA_StateTypeDef  State;                                                        /*!< DMA transfer state                     */
+      |                              ^~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:613,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:71: error: unknown type name 'uint32_t'
+  111 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:92: error: unknown type name 'uint32_t'
+  111 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:92: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:113: error: unknown type name 'uint32_t'
+  111 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:113: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:613,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:140: error: unknown type name 'uint32_t'
+  111 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                                                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:111:140: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:74: error: unknown type name 'uint32_t'
+  112 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:95: error: unknown type name 'uint32_t'
+  112 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:95: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:116: error: unknown type name 'uint32_t'
+  112 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:116: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:143: error: unknown type name 'uint32_t'
+  112 | HAL_StatusTypeDef HAL_DMAEx_MultiBufferStart_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t SecondMemAddress, uint32_t DataLength);
+      |                                                                                                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:112:143: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:113:67: error: unknown type name 'uint32_t'
+  113 | HAL_StatusTypeDef HAL_DMAEx_ChangeMemory(DMA_HandleTypeDef *hdma, uint32_t Address, HAL_DMA_MemoryTypeDef memory);
+      |                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:113:67: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:636:59: error: unknown type name 'uint32_t'
+  636 | HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:614:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  613 | #include "stm32f7xx_hal_dma_ex.h"
+  +++ |+#include <stdint.h>
+  614 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:636:80: error: unknown type name 'uint32_t'
+  636 | HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:636:80: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:636:101: error: unknown type name 'uint32_t'
+  636 | HAL_StatusTypeDef HAL_DMA_Start (DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:636:101: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:61: error: unknown type name 'uint32_t'
+  637 | HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:61: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:82: error: unknown type name 'uint32_t'
+  637 | HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:82: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:103: error: unknown type name 'uint32_t'
+  637 | HAL_StatusTypeDef HAL_DMA_Start_IT(DMA_HandleTypeDef *hdma, uint32_t SrcAddress, uint32_t DstAddress, uint32_t DataLength);
+      |                                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:637:103: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:640:112: error: unknown type name 'uint32_t'
+  640 | HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, HAL_DMA_LevelCompleteTypeDef CompleteLevel, uint32_t Timeout);
+      |                                                                                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:640:112: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:283,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:654:1: error: unknown type name 'uint32_t'
+  654 | uint32_t             HAL_DMA_GetError(DMA_HandleTypeDef *hdma);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:654:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:287,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:260:35: error: unknown type name 'uint32_t'
+  260 | void HAL_NVIC_SetPriorityGrouping(uint32_t PriorityGroup);
+      |                                   ^~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:287,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:287,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:261:27: error: unknown type name 'IRQn_Type'
+  261 | void HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority);
+      |                           ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:261:43: error: unknown type name 'uint32_t'
+  261 | void HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority);
+      |                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:261:43: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:261:69: error: unknown type name 'uint32_t'
+  261 | void HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority);
+      |                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:261:69: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:262:25: error: unknown type name 'IRQn_Type'
+  262 | void HAL_NVIC_EnableIRQ(IRQn_Type IRQn);
+      |                         ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:263:26: error: unknown type name 'IRQn_Type'
+  263 | void HAL_NVIC_DisableIRQ(IRQn_Type IRQn);
+      |                          ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:265:1: error: unknown type name 'uint32_t'
+  265 | uint32_t HAL_SYSTICK_Config(uint32_t TicksNumb);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:265:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:265:29: error: unknown type name 'uint32_t'
+  265 | uint32_t HAL_SYSTICK_Config(uint32_t TicksNumb);
+      |                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:265:29: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:279:1: error: unknown type name 'uint32_t'
+  279 | uint32_t HAL_NVIC_GetPriorityGrouping(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:279:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:27: error: unknown type name 'IRQn_Type'
+  280 | void HAL_NVIC_GetPriority(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority);
+      |                           ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:43: error: unknown type name 'uint32_t'
+  280 | void HAL_NVIC_GetPriority(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority);
+      |                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:43: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:67: error: unknown type name 'uint32_t'
+  280 | void HAL_NVIC_GetPriority(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority);
+      |                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:67: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:95: error: unknown type name 'uint32_t'
+  280 | void HAL_NVIC_GetPriority(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority);
+      |                                                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:280:95: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:281:1: error: unknown type name 'uint32_t'
+  281 | uint32_t HAL_NVIC_GetPendingIRQ(IRQn_Type IRQn);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:281:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:281:33: error: unknown type name 'IRQn_Type'
+  281 | uint32_t HAL_NVIC_GetPendingIRQ(IRQn_Type IRQn);
+      |                                 ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:282:29: error: unknown type name 'IRQn_Type'
+  282 | void HAL_NVIC_SetPendingIRQ(IRQn_Type IRQn);
+      |                             ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:283:31: error: unknown type name 'IRQn_Type'
+  283 | void HAL_NVIC_ClearPendingIRQ(IRQn_Type IRQn);
+      |                               ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:284:1: error: unknown type name 'uint32_t'
+  284 | uint32_t HAL_NVIC_GetActive(IRQn_Type IRQn);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:284:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:284:29: error: unknown type name 'IRQn_Type'
+  284 | uint32_t HAL_NVIC_GetActive(IRQn_Type IRQn);
+      |                             ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:285:34: error: unknown type name 'uint32_t'
+  285 | void HAL_SYSTICK_CLKSourceConfig(uint32_t CLKSource);
+      |                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:285:34: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:60:3: error: unknown type name 'uint8_t'
+   60 |   uint8_t DefaultPolynomialUse;       /*!< This parameter is a value of @ref CRC_Default_Polynomial and indicates if default polynomial is used.
+      |   ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:68:3: error: unknown type name 'uint8_t'
+   68 |   uint8_t DefaultInitValueUse;        /*!< This parameter is a value of @ref CRC_Default_InitValue_Use and indicates if default init value is used.
+      |   ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:73:3: error: unknown type name 'uint32_t'
+   73 |   uint32_t GeneratingPolynomial;      /*!< Set CRC generating polynomial as a 7, 8, 16 or 32-bit long value for a polynomial degree
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:79:3: error: unknown type name 'uint32_t'
+   79 |   uint32_t CRCLength;                 /*!< This parameter is a value of @ref CRC_Polynomial_Sizes and indicates CRC length.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:86:3: error: unknown type name 'uint32_t'
+   86 |   uint32_t InitValue;                 /*!< Init value to initiate CRC computation. No need to specify it if DefaultInitValueUse
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:89:3: error: unknown type name 'uint32_t'
+   89 |   uint32_t InputDataInversionMode;    /*!< This parameter is a value of @ref CRCEx_Input_Data_Inversion and specifies input data inversion mode.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:99:3: error: unknown type name 'uint32_t'
+   99 |   uint32_t OutputDataInversionMode;   /*!< This parameter is a value of @ref CRCEx_Output_Data_Inversion and specifies output data (i.e. CRC) inversion mode.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:111:3: error: unknown type name 'CRC_TypeDef'
+  111 |   CRC_TypeDef                 *Instance;   /*!< Register base address        */
+      |   ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:117:3: error: unknown type name '__IO'
+  117 |   __IO HAL_CRC_StateTypeDef   State;       /*!< CRC communication state      */
+      |   ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:117:31: error: expected ':', ',', ';', '}' or '__attribute__' before 'State'
+  117 |   __IO HAL_CRC_StateTypeDef   State;       /*!< CRC communication state      */
+      |                               ^~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:288,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:126:69: error: unknown type name 'uint32_t'
+  126 | HAL_StatusTypeDef HAL_CRCEx_Polynomial_Set(CRC_HandleTypeDef *hcrc, uint32_t Pol, uint32_t PolyLength);
+      |                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:126:83: error: unknown type name 'uint32_t'
+  126 | HAL_StatusTypeDef HAL_CRCEx_Polynomial_Set(CRC_HandleTypeDef *hcrc, uint32_t Pol, uint32_t PolyLength);
+      |                                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:126:83: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:127:73: error: unknown type name 'uint32_t'
+  127 | HAL_StatusTypeDef HAL_CRCEx_Input_Data_Reverse(CRC_HandleTypeDef *hcrc, uint32_t InputReverseMode);
+      |                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:127:73: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:128:74: error: unknown type name 'uint32_t'
+  128 | HAL_StatusTypeDef HAL_CRCEx_Output_Data_Reverse(CRC_HandleTypeDef *hcrc, uint32_t OutputReverseMode);
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:128:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:311:1: error: unknown type name 'uint32_t'
+  311 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:289:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  288 | #include "stm32f7xx_hal_crc_ex.h"
+  +++ |+#include <stdint.h>
+  289 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:311:54: error: unknown type name 'uint32_t'
+  311 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      |                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:311:54: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:311:74: error: unknown type name 'uint32_t'
+  311 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:311:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:1: error: unknown type name 'uint32_t'
+  312 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:53: error: unknown type name 'uint32_t'
+  312 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      |                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:53: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:73: error: unknown type name 'uint32_t'
+  312 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength);
+      |                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:312:73: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:59:3: error: unknown type name '__IO'
+   59 |   __IO FLASH_ProcedureTypeDef ProcedureOnGoing;   /* Internal variable to indicate which procedure is ongoing or not in IT context */
+      |   ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:59:31: error: expected ':', ',', ';', '}' or '__attribute__' before 'ProcedureOnGoing'
+   59 |   __IO FLASH_ProcedureTypeDef ProcedureOnGoing;   /* Internal variable to indicate which procedure is ongoing or not in IT context */
+      |                               ^~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:302,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:47:3: error: unknown type name 'uint32_t'
+   47 |   uint32_t TypeErase;   /*!< Mass erase or sector Erase.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:55:3: error: unknown type name 'uint32_t'
+   55 |   uint32_t Sector;      /*!< Initial FLASH sector to erase when Mass erase is disabled
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:58:3: error: unknown type name 'uint32_t'
+   58 |   uint32_t NbSectors;   /*!< Number of sectors to be erased.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:61:3: error: unknown type name 'uint32_t'
+   61 |   uint32_t VoltageRange;/*!< The device voltage range which defines the erase parallelism
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:71:3: error: unknown type name 'uint32_t'
+   71 |   uint32_t OptionType;   /*!< Option byte to be configured.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:74:3: error: unknown type name 'uint32_t'
+   74 |   uint32_t WRPState;     /*!< Write protection activation or deactivation.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:77:3: error: unknown type name 'uint32_t'
+   77 |   uint32_t WRPSector;    /*!< Specifies the sector(s) to be write protected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:80:3: error: unknown type name 'uint32_t'
+   80 |   uint32_t RDPLevel;     /*!< Set the read protection level.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:83:3: error: unknown type name 'uint32_t'
+   83 |   uint32_t BORLevel;     /*!< Set the BOR Level.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:86:3: error: unknown type name 'uint32_t'
+   86 |   uint32_t USERConfig;   /*!< Program the FLASH User Option Byte: WWDG_SW / IWDG_SW / RST_STOP / RST_STDBY /
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:90:3: error: unknown type name 'uint32_t'
+   90 |   uint32_t BootAddr0;    /*!< Boot base address when Boot pin = 0.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:93:3: error: unknown type name 'uint32_t'
+   93 |   uint32_t BootAddr1;    /*!< Boot base address when Boot pin = 1.
+      |   ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:302,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:522:73: error: unknown type name 'uint32_t'
+  522 | HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *SectorError);
+      |                                                                         ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:302,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:302,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:679:25: error: unknown type name 'uint32_t'
+  679 | void FLASH_Erase_Sector(uint32_t Sector, uint8_t VoltageRange);
+      |                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:679:25: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:679:42: error: unknown type name 'uint8_t'
+  679 | void FLASH_Erase_Sector(uint32_t Sector, uint8_t VoltageRange);
+      |                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:679:42: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:331,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:312:37: error: unknown type name 'uint32_t'
+  312 | HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:303:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  302 | #include "stm32f7xx_hal_flash_ex.h"
+  +++ |+#include <stdint.h>
+  303 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:312:59: error: unknown type name 'uint32_t'
+  312 | HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:312:59: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:312:77: error: unknown type name 'uint64_t'
+  312 | HAL_StatusTypeDef HAL_FLASH_Program(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:312:77: note: 'uint64_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:40: error: unknown type name 'uint32_t'
+  313 | HAL_StatusTypeDef HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:40: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:62: error: unknown type name 'uint32_t'
+  313 | HAL_StatusTypeDef HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:62: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:80: error: unknown type name 'uint64_t'
+  313 | HAL_StatusTypeDef HAL_FLASH_Program_IT(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+      |                                                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:313:80: note: 'uint64_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:317:39: error: unknown type name 'uint32_t'
+  317 | void HAL_FLASH_EndOfOperationCallback(uint32_t ReturnValue);
+      |                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:317:39: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:318:39: error: unknown type name 'uint32_t'
+  318 | void HAL_FLASH_OperationErrorCallback(uint32_t ReturnValue);
+      |                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:318:39: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:341:1: error: unknown type name 'uint32_t'
+  341 | uint32_t HAL_FLASH_GetError(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:341:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:342:46: error: unknown type name 'uint32_t'
+  342 | HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout);
+      |                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:342:46: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:355,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:49:3: error: unknown type name 'uint32_t'
+   49 |   uint32_t Timing;              /*!< Specifies the I2C_TIMINGR_register value.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:53:3: error: unknown type name 'uint32_t'
+   53 |   uint32_t OwnAddress1;         /*!< Specifies the first device own address.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:56:3: error: unknown type name 'uint32_t'
+   56 |   uint32_t AddressingMode;      /*!< Specifies if 7-bit or 10-bit addressing mode is selected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:59:3: error: unknown type name 'uint32_t'
+   59 |   uint32_t DualAddressMode;     /*!< Specifies if dual addressing mode is selected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:62:3: error: unknown type name 'uint32_t'
+   62 |   uint32_t OwnAddress2;         /*!< Specifies the second device own address if dual addressing mode is selected
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:65:3: error: unknown type name 'uint32_t'
+   65 |   uint32_t OwnAddress2Masks;    /*!< Specifies the acknowledge mask address second device own address if dual addressing
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:69:3: error: unknown type name 'uint32_t'
+   69 |   uint32_t GeneralCallMode;     /*!< Specifies if general call mode is selected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:72:3: error: unknown type name 'uint32_t'
+   72 |   uint32_t NoStretchMode;       /*!< Specifies if nostretch mode is selected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:188:3: error: unknown type name 'I2C_TypeDef'
+  188 |   I2C_TypeDef                *Instance;      /*!< I2C registers base address                */
+      |   ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:192:3: error: unknown type name 'uint8_t'
+  192 |   uint8_t                    *pBuffPtr;      /*!< Pointer to I2C transfer buffer            */
+      |   ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:194:3: error: unknown type name 'uint16_t'
+  194 |   uint16_t                   XferSize;       /*!< I2C transfer size                         */
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:196:3: error: unknown type name '__IO'
+  196 |   __IO uint16_t              XferCount;      /*!< I2C transfer counter                      */
+      |   ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:196:30: error: expected ':', ',', ';', '}' or '__attribute__' before 'XferCount'
+  196 |   __IO uint16_t              XferCount;      /*!< I2C transfer counter                      */
+      |                              ^~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:591,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:355,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:117:73: error: unknown type name 'uint32_t'
+  117 | HAL_StatusTypeDef HAL_I2CEx_ConfigAnalogFilter(I2C_HandleTypeDef *hi2c, uint32_t AnalogFilter);
+      |                                                                         ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:591,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:355,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:591,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:355,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:118:74: error: unknown type name 'uint32_t'
+  118 | HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter);
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:118:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:355,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:625:68: error: unknown type name 'uint16_t'
+  625 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:592:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  591 | #include "stm32f7xx_hal_i2c_ex.h"
+  +++ |+#include <stdint.h>
+  592 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:625:89: error: unknown type name 'uint8_t'
+  625 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:625:89: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:626:43: error: unknown type name 'uint16_t'
+  626 |                                           uint16_t Size, uint32_t Timeout);
+      |                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:626:43: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:626:58: error: unknown type name 'uint32_t'
+  626 |                                           uint16_t Size, uint32_t Timeout);
+      |                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:626:58: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:627:67: error: unknown type name 'uint16_t'
+  627 | HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:627:67: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:627:88: error: unknown type name 'uint8_t'
+  627 | HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                        ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:627:88: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:628:42: error: unknown type name 'uint16_t'
+  628 |                                          uint16_t Size, uint32_t Timeout);
+      |                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:628:42: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:628:57: error: unknown type name 'uint32_t'
+  628 |                                          uint16_t Size, uint32_t Timeout);
+      |                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:628:57: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:629:67: error: unknown type name 'uint8_t'
+  629 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                   ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:629:67: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:629:83: error: unknown type name 'uint16_t'
+  629 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:629:83: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:630:42: error: unknown type name 'uint32_t'
+  630 |                                          uint32_t Timeout);
+      |                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:630:42: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:631:66: error: unknown type name 'uint8_t'
+  631 | HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                  ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:631:66: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:631:82: error: unknown type name 'uint16_t'
+  631 | HAL_StatusTypeDef HAL_I2C_Slave_Receive(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:631:82: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:632:41: error: unknown type name 'uint32_t'
+  632 |                                         uint32_t Timeout);
+      |                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:632:41: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:633:62: error: unknown type name 'uint16_t'
+  633 | HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:633:62: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:633:83: error: unknown type name 'uint16_t'
+  633 | HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:633:83: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:37: error: unknown type name 'uint16_t'
+  634 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:37: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:58: error: unknown type name 'uint8_t'
+  634 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:58: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:74: error: unknown type name 'uint16_t'
+  634 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:74: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:89: error: unknown type name 'uint32_t'
+  634 |                                     uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:634:89: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:635:61: error: unknown type name 'uint16_t'
+  635 | HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:635:61: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:635:82: error: unknown type name 'uint16_t'
+  635 | HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:635:82: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:36: error: unknown type name 'uint16_t'
+  636 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:36: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:57: error: unknown type name 'uint8_t'
+  636 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:57: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:73: error: unknown type name 'uint16_t'
+  636 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:73: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:88: error: unknown type name 'uint32_t'
+  636 |                                    uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:636:88: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:637:66: error: unknown type name 'uint16_t'
+  637 | HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+      |                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:637:66: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:637:87: error: unknown type name 'uint32_t'
+  637 | HAL_StatusTypeDef HAL_I2C_IsDeviceReady(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint32_t Trials,
+      |                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:637:87: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:638:41: error: unknown type name 'uint32_t'
+  638 |                                         uint32_t Timeout);
+      |                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:638:41: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:641:71: error: unknown type name 'uint16_t'
+  641 | HAL_StatusTypeDef HAL_I2C_Master_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:641:71: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:641:92: error: unknown type name 'uint8_t'
+  641 | HAL_StatusTypeDef HAL_I2C_Master_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                            ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:641:92: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:642:46: error: unknown type name 'uint16_t'
+  642 |                                              uint16_t Size);
+      |                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:642:46: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:643:70: error: unknown type name 'uint16_t'
+  643 | HAL_StatusTypeDef HAL_I2C_Master_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:643:70: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:643:91: error: unknown type name 'uint8_t'
+  643 | HAL_StatusTypeDef HAL_I2C_Master_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                           ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:643:91: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:644:45: error: unknown type name 'uint16_t'
+  644 |                                             uint16_t Size);
+      |                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:644:45: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:645:70: error: unknown type name 'uint8_t'
+  645 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                      ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:645:70: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:645:86: error: unknown type name 'uint16_t'
+  645 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:645:86: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:646:69: error: unknown type name 'uint8_t'
+  646 | HAL_StatusTypeDef HAL_I2C_Slave_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                     ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:646:69: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:646:85: error: unknown type name 'uint16_t'
+  646 | HAL_StatusTypeDef HAL_I2C_Slave_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:646:85: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:647:65: error: unknown type name 'uint16_t'
+  647 | HAL_StatusTypeDef HAL_I2C_Mem_Write_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:647:65: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:647:86: error: unknown type name 'uint16_t'
+  647 | HAL_StatusTypeDef HAL_I2C_Mem_Write_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:647:86: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:40: error: unknown type name 'uint16_t'
+  648 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:40: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:61: error: unknown type name 'uint8_t'
+  648 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                             ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:61: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:77: error: unknown type name 'uint16_t'
+  648 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:648:77: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:649:64: error: unknown type name 'uint16_t'
+  649 | HAL_StatusTypeDef HAL_I2C_Mem_Read_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:649:64: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:649:85: error: unknown type name 'uint16_t'
+  649 | HAL_StatusTypeDef HAL_I2C_Mem_Read_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:649:85: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:39: error: unknown type name 'uint16_t'
+  650 |                                       uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:39: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:60: error: unknown type name 'uint8_t'
+  650 |                                       uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                            ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:60: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:76: error: unknown type name 'uint16_t'
+  650 |                                       uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:650:76: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:652:75: error: unknown type name 'uint16_t'
+  652 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:652:75: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:652:96: error: unknown type name 'uint8_t'
+  652 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                                ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:652:96: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:653:50: error: unknown type name 'uint16_t'
+  653 |                                                  uint16_t Size, uint32_t XferOptions);
+      |                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:653:50: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:653:65: error: unknown type name 'uint32_t'
+  653 |                                                  uint16_t Size, uint32_t XferOptions);
+      |                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:653:65: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:654:74: error: unknown type name 'uint16_t'
+  654 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:654:74: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:654:95: error: unknown type name 'uint8_t'
+  654 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                               ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:654:95: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:655:49: error: unknown type name 'uint16_t'
+  655 |                                                 uint16_t Size, uint32_t XferOptions);
+      |                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:655:49: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:655:64: error: unknown type name 'uint32_t'
+  655 |                                                 uint16_t Size, uint32_t XferOptions);
+      |                                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:655:64: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:656:74: error: unknown type name 'uint8_t'
+  656 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:656:74: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:656:90: error: unknown type name 'uint16_t'
+  656 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:656:90: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:657:49: error: unknown type name 'uint32_t'
+  657 |                                                 uint32_t XferOptions);
+      |                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:657:49: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:658:73: error: unknown type name 'uint8_t'
+  658 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:658:73: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:658:89: error: unknown type name 'uint16_t'
+  658 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:658:89: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:659:48: error: unknown type name 'uint32_t'
+  659 |                                                uint32_t XferOptions);
+      |                                                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:659:48: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:662:68: error: unknown type name 'uint16_t'
+  662 | HAL_StatusTypeDef HAL_I2C_Master_Abort_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress);
+      |                                                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:662:68: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:665:72: error: unknown type name 'uint16_t'
+  665 | HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:665:72: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:665:93: error: unknown type name 'uint8_t'
+  665 | HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                             ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:665:93: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:666:47: error: unknown type name 'uint16_t'
+  666 |                                               uint16_t Size);
+      |                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:666:47: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:667:71: error: unknown type name 'uint16_t'
+  667 | HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:667:71: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:667:92: error: unknown type name 'uint8_t'
+  667 | HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                            ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:667:92: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:668:46: error: unknown type name 'uint16_t'
+  668 |                                              uint16_t Size);
+      |                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:668:46: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:669:71: error: unknown type name 'uint8_t'
+  669 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                       ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:669:71: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:669:87: error: unknown type name 'uint16_t'
+  669 | HAL_StatusTypeDef HAL_I2C_Slave_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:669:87: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:670:70: error: unknown type name 'uint8_t'
+  670 | HAL_StatusTypeDef HAL_I2C_Slave_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                      ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:670:70: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:670:86: error: unknown type name 'uint16_t'
+  670 | HAL_StatusTypeDef HAL_I2C_Slave_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size);
+      |                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:670:86: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:671:66: error: unknown type name 'uint16_t'
+  671 | HAL_StatusTypeDef HAL_I2C_Mem_Write_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:671:66: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:671:87: error: unknown type name 'uint16_t'
+  671 | HAL_StatusTypeDef HAL_I2C_Mem_Write_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:671:87: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:41: error: unknown type name 'uint16_t'
+  672 |                                         uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:41: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:62: error: unknown type name 'uint8_t'
+  672 |                                         uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                              ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:62: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:78: error: unknown type name 'uint16_t'
+  672 |                                         uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:672:78: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:673:65: error: unknown type name 'uint16_t'
+  673 | HAL_StatusTypeDef HAL_I2C_Mem_Read_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:673:65: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:673:86: error: unknown type name 'uint16_t'
+  673 | HAL_StatusTypeDef HAL_I2C_Mem_Read_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:673:86: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:40: error: unknown type name 'uint16_t'
+  674 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:40: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:61: error: unknown type name 'uint8_t'
+  674 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                             ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:61: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:77: error: unknown type name 'uint16_t'
+  674 |                                        uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
+      |                                                                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:674:77: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:676:76: error: unknown type name 'uint16_t'
+  676 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:676:76: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:676:97: error: unknown type name 'uint8_t'
+  676 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                                 ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:676:97: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:677:51: error: unknown type name 'uint16_t'
+  677 |                                                   uint16_t Size, uint32_t XferOptions);
+      |                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:677:51: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:677:66: error: unknown type name 'uint32_t'
+  677 |                                                   uint16_t Size, uint32_t XferOptions);
+      |                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:677:66: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:678:75: error: unknown type name 'uint16_t'
+  678 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:678:75: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:678:96: error: unknown type name 'uint8_t'
+  678 | HAL_StatusTypeDef HAL_I2C_Master_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                                ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:678:96: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:679:50: error: unknown type name 'uint16_t'
+  679 |                                                  uint16_t Size, uint32_t XferOptions);
+      |                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:679:50: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:679:65: error: unknown type name 'uint32_t'
+  679 |                                                  uint16_t Size, uint32_t XferOptions);
+      |                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:679:65: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:680:75: error: unknown type name 'uint8_t'
+  680 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                           ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:680:75: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:680:91: error: unknown type name 'uint16_t'
+  680 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:680:91: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:681:50: error: unknown type name 'uint32_t'
+  681 |                                                  uint32_t XferOptions);
+      |                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:681:50: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:682:74: error: unknown type name 'uint8_t'
+  682 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:682:74: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:682:90: error: unknown type name 'uint16_t'
+  682 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Receive_DMA(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size,
+      |                                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:682:90: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:683:49: error: unknown type name 'uint32_t'
+  683 |                                                 uint32_t XferOptions);
+      |                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:683:49: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:698:52: error: unknown type name 'uint8_t'
+  698 | void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, uint16_t AddrMatchCode);
+      |                                                    ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:698:52: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:698:79: error: unknown type name 'uint16_t'
+  698 | void HAL_I2C_AddrCallback(I2C_HandleTypeDef *hi2c, uint8_t TransferDirection, uint16_t AddrMatchCode);
+      |                                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:698:79: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:714:1: error: unknown type name 'uint32_t'
+  714 | uint32_t             HAL_I2C_GetError(I2C_HandleTypeDef *hi2c);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:714:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:375,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:49:3: error: unknown type name 'uint32_t'
+   49 |   uint32_t PVDLevel;   /*!< PVDLevel: Specifies the PVD detection level.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:52:3: error: unknown type name 'uint32_t'
+   52 |   uint32_t Mode;      /*!< Mode: Specifies the operating mode for the selected pins.
+      |   ^~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:285,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:375,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:183:1: error: unknown type name 'uint32_t'
+  183 | uint32_t HAL_PWREx_GetVoltageRange(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:184:51: error: unknown type name 'uint32_t'
+  184 | HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling(uint32_t VoltageScaling);
+      |                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:184:51: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:198:53: error: unknown type name 'uint32_t'
+  198 | HAL_StatusTypeDef HAL_PWREx_EnterUnderDriveSTOPMode(uint32_t Regulator, uint8_t STOPEntry);
+      |                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:198:53: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:198:73: error: unknown type name 'uint8_t'
+  198 | HAL_StatusTypeDef HAL_PWREx_EnterUnderDriveSTOPMode(uint32_t Regulator, uint8_t STOPEntry);
+      |                                                                         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:198:73: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:375,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:313:30: error: unknown type name 'uint32_t'
+  313 | void HAL_PWR_EnableWakeUpPin(uint32_t WakeUpPinPolarity);
+      |                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:286:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  285 | #include "stm32f7xx_hal_pwr_ex.h"
+  +++ |+#include <stdint.h>
+  286 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:314:31: error: unknown type name 'uint32_t'
+  314 | void HAL_PWR_DisableWakeUpPin(uint32_t WakeUpPinx);
+      |                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:314:31: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:317:28: error: unknown type name 'uint32_t'
+  317 | void HAL_PWR_EnterSTOPMode(uint32_t Regulator, uint8_t STOPEntry);
+      |                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:317:28: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:317:48: error: unknown type name 'uint8_t'
+  317 | void HAL_PWR_EnterSTOPMode(uint32_t Regulator, uint8_t STOPEntry);
+      |                                                ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:317:48: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:318:29: error: unknown type name 'uint32_t'
+  318 | void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry);
+      |                             ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:318:29: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:318:49: error: unknown type name 'uint8_t'
+  318 | void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry);
+      |                                                 ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:318:49: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:415,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:48:3: error: unknown type name 'uint32_t'
+   48 |   uint32_t BaudRate;                /*!< This member configures the UART communication baud rate.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:60:3: error: unknown type name 'uint32_t'
+   60 |   uint32_t WordLength;              /*!< Specifies the number of data bits transmitted or received in a frame.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:63:3: error: unknown type name 'uint32_t'
+   63 |   uint32_t StopBits;                /*!< Specifies the number of stop bits transmitted.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:66:3: error: unknown type name 'uint32_t'
+   66 |   uint32_t Parity;                  /*!< Specifies the parity mode.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:73:3: error: unknown type name 'uint32_t'
+   73 |   uint32_t Mode;                    /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:76:3: error: unknown type name 'uint32_t'
+   76 |   uint32_t HwFlowCtl;               /*!< Specifies whether the hardware flow control mode is enabled
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:80:3: error: unknown type name 'uint32_t'
+   80 |   uint32_t OverSampling;            /*!< Specifies whether the Over sampling 8 is enabled or disabled,
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:84:3: error: unknown type name 'uint32_t'
+   84 |   uint32_t OneBitSampling;          /*!< Specifies whether a single sample or three samples' majority vote is selected.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:96:3: error: unknown type name 'uint32_t'
+   96 |   uint32_t AdvFeatureInit;        /*!< Specifies which advanced UART features is initialized. Several
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:101:3: error: unknown type name 'uint32_t'
+  101 |   uint32_t TxPinLevelInvert;      /*!< Specifies whether the TX pin active level is inverted.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:104:3: error: unknown type name 'uint32_t'
+  104 |   uint32_t RxPinLevelInvert;      /*!< Specifies whether the RX pin active level is inverted.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:107:3: error: unknown type name 'uint32_t'
+  107 |   uint32_t DataInvert;            /*!< Specifies whether data are inverted (positive/direct logic
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:111:3: error: unknown type name 'uint32_t'
+  111 |   uint32_t Swap;                  /*!< Specifies whether TX and RX pins are swapped.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:114:3: error: unknown type name 'uint32_t'
+  114 |   uint32_t OverrunDisable;        /*!< Specifies whether the reception overrun detection is disabled.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:117:3: error: unknown type name 'uint32_t'
+  117 |   uint32_t DMADisableonRxError;   /*!< Specifies whether the DMA is disabled in case of reception error.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:120:3: error: unknown type name 'uint32_t'
+  120 |   uint32_t AutoBaudRateEnable;    /*!< Specifies whether auto Baud rate detection is enabled.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:123:3: error: unknown type name 'uint32_t'
+  123 |   uint32_t AutoBaudRateMode;      /*!< If auto Baud rate detection is enabled, specifies how the rate
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:127:3: error: unknown type name 'uint32_t'
+  127 |   uint32_t MSBFirst;              /*!< Specifies whether MSB is sent first on UART line.
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:171:9: error: unknown type name 'uint32_t'
+  171 | typedef uint32_t HAL_UART_StateTypeDef;
+      |         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:195:9: error: unknown type name 'uint32_t'
+  195 | typedef uint32_t HAL_UART_RxTypeTypeDef;
+      |         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:206:9: error: unknown type name 'uint32_t'
+  206 | typedef uint32_t HAL_UART_RxEventTypeTypeDef;
+      |         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:213:3: error: unknown type name 'USART_TypeDef'
+  213 |   USART_TypeDef            *Instance;                /*!< UART registers base address        */
+      |   ^~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:219:9: error: unknown type name 'uint8_t'
+  219 |   const uint8_t            *pTxBuffPtr;              /*!< Pointer to UART Tx transfer Buffer */
+      |         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:221:3: error: unknown type name 'uint16_t'
+  221 |   uint16_t                 TxXferSize;               /*!< UART Tx Transfer size              */
+      |   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:223:3: error: unknown type name '__IO'
+  223 |   __IO uint16_t            TxXferCount;              /*!< UART Tx Transfer Counter           */
+      |   ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:223:28: error: expected ':', ',', ';', '}' or '__attribute__' before 'TxXferCount'
+  223 |   __IO uint16_t            TxXferCount;              /*!< UART Tx Transfer Counter           */
+      |                            ^~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1514,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:415,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:104:63: error: unknown type name 'uint32_t'
+  104 | HAL_StatusTypeDef HAL_RS485Ex_Init(UART_HandleTypeDef *huart, uint32_t Polarity, uint32_t AssertionTime,
+      |                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:1:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /**
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:104:82: error: unknown type name 'uint32_t'
+  104 | HAL_StatusTypeDef HAL_RS485Ex_Init(UART_HandleTypeDef *huart, uint32_t Polarity, uint32_t AssertionTime,
+      |                                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:104:82: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:105:36: error: unknown type name 'uint32_t'
+  105 |                                    uint32_t DeassertionTime);
+      |                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:105:36: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:139:85: error: unknown type name 'uint32_t'
+  139 | HAL_StatusTypeDef HAL_MultiProcessorEx_AddressLength_Set(UART_HandleTypeDef *huart, uint32_t AddressLength);
+      |                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:139:85: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:71: error: unknown type name 'uint8_t'
+  142 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint16_t *RxLen,
+      |                                                                       ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:71: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:87: error: unknown type name 'uint16_t'
+  142 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint16_t *RxLen,
+      |                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:87: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:102: error: unknown type name 'uint16_t'
+  142 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint16_t *RxLen,
+      |                                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:142:102: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:143:44: error: unknown type name 'uint32_t'
+  143 |                                            uint32_t Timeout);
+      |                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:143:44: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:144:74: error: unknown type name 'uint8_t'
+  144 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:144:74: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:144:90: error: unknown type name 'uint16_t'
+  144 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:144:90: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:145:75: error: unknown type name 'uint8_t'
+  145 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                           ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:145:75: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:145:91: error: unknown type name 'uint16_t'
+  145 | HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:145:91: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:415,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1528:59: error: unknown type name 'uint32_t'
+ 1528 | HAL_StatusTypeDef HAL_LIN_Init(UART_HandleTypeDef *huart, uint32_t BreakDetectLength);
+      |                                                           ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1515:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+ 1514 | #include "stm32f7xx_hal_uart_ex.h"
+  +++ |+#include <stdint.h>
+ 1515 | 
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1529:70: error: unknown type name 'uint8_t'
+ 1529 | HAL_StatusTypeDef HAL_MultiProcessor_Init(UART_HandleTypeDef *huart, uint8_t Address, uint32_t WakeUpMethod);
+      |                                                                      ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1529:70: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1529:87: error: unknown type name 'uint32_t'
+ 1529 | HAL_StatusTypeDef HAL_MultiProcessor_Init(UART_HandleTypeDef *huart, uint8_t Address, uint32_t WakeUpMethod);
+      |                                                                                       ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1529:87: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:70: error: unknown type name 'uint8_t'
+ 1553 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                      ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:86: error: unknown type name 'uint16_t'
+ 1553 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                      ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:86: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:101: error: unknown type name 'uint32_t'
+ 1553 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1553:101: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:63: error: unknown type name 'uint8_t'
+ 1554 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:63: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:79: error: unknown type name 'uint16_t'
+ 1554 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:79: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:94: error: unknown type name 'uint32_t'
+ 1554 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                              ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1554:94: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1555:73: error: unknown type name 'uint8_t'
+ 1555 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                         ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1555:89: error: unknown type name 'uint16_t'
+ 1555 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                                         ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1555:89: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1556:66: error: unknown type name 'uint8_t'
+ 1556 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1556:66: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1556:82: error: unknown type name 'uint16_t'
+ 1556 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                  ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1556:82: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1557:74: error: unknown type name 'uint8_t'
+ 1557 | HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                          ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1557:90: error: unknown type name 'uint16_t'
+ 1557 | HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1557:90: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1558:67: error: unknown type name 'uint8_t'
+ 1558 | HAL_StatusTypeDef HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                   ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1558:67: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1558:83: error: unknown type name 'uint16_t'
+ 1558 | HAL_StatusTypeDef HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1558:83: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1580:60: error: unknown type name 'uint16_t'
+ 1580 | void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size);
+      |                                                            ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1580:60: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1591:65: error: unknown type name 'uint32_t'
+ 1591 | void HAL_UART_ReceiverTimeout_Config(UART_HandleTypeDef *huart, uint32_t TimeoutValue);
+      |                                                                 ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1591:65: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1612:1: error: unknown type name 'uint32_t'
+ 1612 | uint32_t              HAL_UART_GetError(const UART_HandleTypeDef *huart);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1612:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1631:74: error: unknown type name 'uint32_t'
+ 1631 | HAL_StatusTypeDef UART_WaitOnFlagUntilTimeout(UART_HandleTypeDef *huart, uint32_t Flag, FlagStatus Status,
+      |                                                                          ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1631:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1632:47: error: unknown type name 'uint32_t'
+ 1632 |                                               uint32_t Tickstart, uint32_t Timeout);
+      |                                               ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1632:47: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1632:67: error: unknown type name 'uint32_t'
+ 1632 |                                               uint32_t Tickstart, uint32_t Timeout);
+      |                                                                   ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1632:67: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1634:68: error: unknown type name 'uint8_t'
+ 1634 | HAL_StatusTypeDef UART_Start_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                    ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1634:68: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1634:84: error: unknown type name 'uint16_t'
+ 1634 | HAL_StatusTypeDef UART_Start_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                    ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1634:84: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1635:69: error: unknown type name 'uint8_t'
+ 1635 | HAL_StatusTypeDef UART_Start_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                     ^~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1635:69: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1635:85: error: unknown type name 'uint16_t'
+ 1635 | HAL_StatusTypeDef UART_Start_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                                     ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:1635:85: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+In file included from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:189:32: error: unknown type name 'uint32_t'
+  189 | HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority);
+      |                                ^~~~~~~~
+In file included from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   29 | #include "stm32f7xx_hal_conf.h"
+  +++ |+#include <stdint.h>
+   30 | 
+In file included from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:198:8: error: unknown type name '__IO'
+  198 | extern __IO uint32_t uwTick;
+      |        ^~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:198:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'uwTick'
+  198 | extern __IO uint32_t uwTick;
+      |                      ^~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:199:8: error: unknown type name 'uint32_t'
+  199 | extern uint32_t uwTickPrio;
+      |        ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:210:16: error: unknown type name 'uint32_t'
+  210 | void HAL_Delay(uint32_t Delay);
+      |                ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:210:16: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:211:1: error: unknown type name 'uint32_t'
+  211 | uint32_t HAL_GetTick(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:211:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:212:1: error: unknown type name 'uint32_t'
+  212 | uint32_t HAL_GetTickPrio(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:212:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:217:1: error: unknown type name 'uint32_t'
+  217 | uint32_t HAL_GetHalVersion(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:217:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:218:1: error: unknown type name 'uint32_t'
+  218 | uint32_t HAL_GetREVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:218:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:219:1: error: unknown type name 'uint32_t'
+  219 | uint32_t HAL_GetDEVID(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:219:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:220:1: error: unknown type name 'uint32_t'
+  220 | uint32_t HAL_GetUIDw0(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:220:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:221:1: error: unknown type name 'uint32_t'
+  221 | uint32_t HAL_GetUIDw1(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:221:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:222:1: error: unknown type name 'uint32_t'
+  222 | uint32_t HAL_GetUIDw2(void);
+      | ^~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:222:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:67:8: error: unknown type name 'uint32_t'
+   67 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength);
+      |        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:67:55: error: unknown type name 'uint8_t'
+   67 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength);
+      |                                                       ^~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:47:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+   46 | #include "stm32f7xx_hal.h"
+  +++ |+#include <stdint.h>
+   47 | 
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:67:74: error: unknown type name 'uint32_t'
+   67 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength);
+      |                                                                          ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:67:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:68:8: error: unknown type name 'uint32_t'
+   68 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength);
+      |        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:68:56: error: unknown type name 'uint16_t'
+   68 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength);
+      |                                                        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:68:56: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:68:76: error: unknown type name 'uint32_t'
+   68 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength);
+      |                                                                            ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:68:76: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: In function 'HAL_CRC_Init':
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:114:11: error: 'CRC_HandleTypeDef' has no member named 'State'
+  114 |   if (hcrc->State == HAL_CRC_STATE_RESET)
+      |           ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:122:7: error: 'CRC_HandleTypeDef' has no member named 'State'
+  122 |   hcrc->State = HAL_CRC_STATE_BUSY;
+      |       ^~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:160:43: error: 'uint8_t' undeclared (first use in this function)
+  160 | #define DEFAULT_POLYNOMIAL_ENABLE       ((uint8_t)0x00U)  /*!< Enable default generating polynomial 0x04C11DB7  */
+      |                                           ^~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:127:42: note: in expansion of macro 'DEFAULT_POLYNOMIAL_ENABLE'
+  127 |   if (hcrc->Init.DefaultPolynomialUse == DEFAULT_POLYNOMIAL_ENABLE)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:160:43: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  160 | #define DEFAULT_POLYNOMIAL_ENABLE       ((uint8_t)0x00U)  /*!< Enable default generating polynomial 0x04C11DB7  */
+      |                                           ^~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:127:42: note: in expansion of macro 'DEFAULT_POLYNOMIAL_ENABLE'
+  127 |   if (hcrc->Init.DefaultPolynomialUse == DEFAULT_POLYNOMIAL_ENABLE)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:160:43: note: each undeclared identifier is reported only once for each function it appears in
+  160 | #define DEFAULT_POLYNOMIAL_ENABLE       ((uint8_t)0x00U)  /*!< Enable default generating polynomial 0x04C11DB7  */
+      |                                           ^~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:127:42: note: in expansion of macro 'DEFAULT_POLYNOMIAL_ENABLE'
+  127 |   if (hcrc->Init.DefaultPolynomialUse == DEFAULT_POLYNOMIAL_ENABLE)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:160:51: error: expected ')' before numeric constant
+  160 | #define DEFAULT_POLYNOMIAL_ENABLE       ((uint8_t)0x00U)  /*!< Enable default generating polynomial 0x04C11DB7  */
+      |                                         ~         ^~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:127:42: note: in expansion of macro 'DEFAULT_POLYNOMIAL_ENABLE'
+  127 |   if (hcrc->Init.DefaultPolynomialUse == DEFAULT_POLYNOMIAL_ENABLE)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:130:29: error: request for member 'POL' in something not a structure or union
+  130 |     WRITE_REG(hcrc->Instance->POL, DEFAULT_CRC32_POLY);
+      |                             ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:30: error: request for member 'CR' in something not a structure or union
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |                              ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:5: note: in expansion of macro 'MODIFY_REG'
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |     ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:30: error: request for member 'CR' in something not a structure or union
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |                              ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:193:66: note: in expansion of macro 'READ_REG'
+  193 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:5: note: in expansion of macro 'MODIFY_REG'
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |     ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:36: error: 'CRC_CR_POLYSIZE' undeclared (first use in this function)
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |                                    ^~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:131:5: note: in expansion of macro 'MODIFY_REG'
+  131 |     MODIFY_REG(hcrc->Instance->CR, CRC_CR_POLYSIZE, CRC_POLYLENGTH_32B);
+      |     ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:136:9: warning: implicit declaration of function 'HAL_CRCEx_Polynomial_Set' [-Wimplicit-function-declaration]
+  136 |     if (HAL_CRCEx_Polynomial_Set(hcrc, hcrc->Init.GeneratingPolynomial, hcrc->Init.CRCLength) != HAL_OK)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:169:50: error: expected ')' before numeric constant
+  169 | #define DEFAULT_INIT_VALUE_ENABLE      ((uint8_t)0x00U) /*!< Enable initial CRC default value  */
+      |                                        ~         ^~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:145:41: note: in expansion of macro 'DEFAULT_INIT_VALUE_ENABLE'
+  145 |   if (hcrc->Init.DefaultInitValueUse == DEFAULT_INIT_VALUE_ENABLE)
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:147:29: error: request for member 'INIT' in something not a structure or union
+  147 |     WRITE_REG(hcrc->Instance->INIT, DEFAULT_CRC_INITVALUE);
+      |                             ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:151:29: error: request for member 'INIT' in something not a structure or union
+  151 |     WRITE_REG(hcrc->Instance->INIT, hcrc->Init.InitValue);
+      |                             ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:28: error: request for member 'CR' in something not a structure or union
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |                            ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:3: note: in expansion of macro 'MODIFY_REG'
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:28: error: request for member 'CR' in something not a structure or union
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |                            ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:193:66: note: in expansion of macro 'READ_REG'
+  193 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:3: note: in expansion of macro 'MODIFY_REG'
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:34: error: 'CRC_CR_REV_IN' undeclared (first use in this function)
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |                                  ^~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:157:3: note: in expansion of macro 'MODIFY_REG'
+  157 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_IN, hcrc->Init.InputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:28: error: request for member 'CR' in something not a structure or union
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |                            ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:33: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:3: note: in expansion of macro 'MODIFY_REG'
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:28: error: request for member 'CR' in something not a structure or union
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |                            ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:193:66: note: in expansion of macro 'READ_REG'
+  193 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:3: note: in expansion of macro 'MODIFY_REG'
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:34: error: 'CRC_CR_REV_OUT' undeclared (first use in this function)
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |                                  ^~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:189:41: note: in definition of macro 'WRITE_REG'
+  189 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:161:3: note: in expansion of macro 'MODIFY_REG'
+  161 |   MODIFY_REG(hcrc->Instance->CR, CRC_CR_REV_OUT, hcrc->Init.OutputDataInversionMode);
+      |   ^~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:168:7: error: 'CRC_HandleTypeDef' has no member named 'State'
+  168 |   hcrc->State = HAL_CRC_STATE_READY;
+      |       ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: In function 'HAL_CRC_DeInit':
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:191:11: error: 'CRC_HandleTypeDef' has no member named 'State'
+  191 |   if (hcrc->State == HAL_CRC_STATE_BUSY)
+      |           ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:197:7: error: 'CRC_HandleTypeDef' has no member named 'State'
+  197 |   hcrc->State = HAL_CRC_STATE_BUSY;
+      |       ^~
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:303,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:232:63: error: request for member 'CR' in something not a structure or union
+  232 | #define __HAL_CRC_DR_RESET(__HANDLE__) ((__HANDLE__)->Instance->CR |= CRC_CR_RESET)
+      |                                                               ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:200:3: note: in expansion of macro '__HAL_CRC_DR_RESET'
+  200 |   __HAL_CRC_DR_RESET(hcrc);
+      |   ^~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:232:71: error: 'CRC_CR_RESET' undeclared (first use in this function)
+  232 | #define __HAL_CRC_DR_RESET(__HANDLE__) ((__HANDLE__)->Instance->CR |= CRC_CR_RESET)
+      |                                                                       ^~~~~~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:200:3: note: in expansion of macro '__HAL_CRC_DR_RESET'
+  200 |   __HAL_CRC_DR_RESET(hcrc);
+      |   ^~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:46:
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:203:27: error: request for member 'IDR' in something not a structure or union
+  203 |   CLEAR_BIT(hcrc->Instance->IDR, CRC_IDR_IDR);
+      |                           ^~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:183:33: note: in definition of macro 'CLEAR_BIT'
+  183 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:203:34: error: 'CRC_IDR_IDR' undeclared (first use in this function)
+  203 |   CLEAR_BIT(hcrc->Instance->IDR, CRC_IDR_IDR);
+      |                                  ^~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:183:43: note: in definition of macro 'CLEAR_BIT'
+  183 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                           ^~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:209:7: error: 'CRC_HandleTypeDef' has no member named 'State'
+  209 |   hcrc->State = HAL_CRC_STATE_RESET;
+      |       ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: At top level:
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:1: error: unknown type name 'uint32_t'
+  287 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      | ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:54: error: unknown type name 'uint32_t'
+  287 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      |                                                      ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:54: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:74: error: unknown type name 'uint32_t'
+  287 | uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      |                                                                          ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:287:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:1: error: unknown type name 'uint32_t'
+  339 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      | ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:1: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:53: error: unknown type name 'uint32_t'
+  339 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      |                                                     ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:53: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:73: error: unknown type name 'uint32_t'
+  339 | uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+      |                                                                         ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:339:73: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: In function 'HAL_CRC_GetState':
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:409:14: error: 'CRC_HandleTypeDef' has no member named 'State'
+  409 |   return hcrc->State;
+      |              ^~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: At top level:
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:432:8: error: unknown type name 'uint32_t'
+  432 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength)
+      |        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:432:55: error: unknown type name 'uint8_t'
+  432 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength)
+      |                                                       ^~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:432:55: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:432:74: error: unknown type name 'uint32_t'
+  432 | static uint32_t CRC_Handle_8(CRC_HandleTypeDef *hcrc, uint8_t pBuffer[], uint32_t BufferLength)
+      |                                                                          ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:432:74: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:483:8: error: unknown type name 'uint32_t'
+  483 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength)
+      |        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:483:56: error: unknown type name 'uint16_t'
+  483 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength)
+      |                                                        ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:483:56: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:483:76: error: unknown type name 'uint32_t'
+  483 | static uint32_t CRC_Handle_16(CRC_HandleTypeDef *hcrc, uint16_t pBuffer[], uint32_t BufferLength)
+      |                                                                            ^~~~~~~~
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:483:76: note: 'uint32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c: In function 'HAL_CRC_GetState':
+..\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c:410:1: warning: control reaches end of non-void function [-Wreturn-type]
+  410 | }
+      | ^
+
+21:27:34 Build Failed. 436 errors, 2 warnings. (took 677ms)
+
