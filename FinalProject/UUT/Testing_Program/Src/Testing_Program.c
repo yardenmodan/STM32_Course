@@ -9,21 +9,12 @@
 
 
 //#include "inet.h"
-//
+
 
 //#include "stm32f7xx_hal.h"
 
 
 
-
-
-/*
- *	EVB configuration:
- *	IP: 		192.168.7.2
- *	NETMASK: 	255.255.255.0 (or 192.168.7.0/24)
- *	GATEWAY: 	192.168.7.1 (not in use but required by IDE)
- *	Port:
- */
 
 
 
@@ -56,83 +47,83 @@ void Testing_Program(void) {
 		if(callback_flag == 1){			// got packet
 			callback_flag=0;
 			Parsing(&client_to_server_packet, incoming_buffer);
-			//switch ((int)client_to_server_packet.Peripheral){
-				//case (TIMER):
-						//void timer_testing(uint8_t* new_interval, uint32_t* return_from_test_value){
+			switch ((int)client_to_server_packet.Peripheral){
+				case (TIMER):
+				void timer_testing(uint8_t* new_interval, uint32_t* return_from_test_value){
 
-//					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
-//						timer_testing( client_to_server_packet.str,&return_from_timer_value);
-//						int required_time=atoi(client_to_server_packet.str);
-//						testing_result= ((uint32_t)required_time!=return_from_timer_value)? FALSE : TRUE ;
-//						if (testing_result==FALSE){
-//
-//							printf("TIMER test failed!\n");
-//							break;
-//
-//
-//						}
-//
-//					}
-//					break;
-//
-//				case (UART):
-//					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
-//						uart_testing(client_to_server_packet.str, return_from_test_value);
-//						testing_result= (strcmp(return_from_test_value,client_to_server_packet.str)!=0)? FALSE : TRUE ;
-//						if (testing_result==FALSE){
-//							printf("UART test failed!\n");
-//							break;
-//
-//
-//						}
-//
-//					}
-//					break;
-////				case (SPI):
-////					for (int iter=0; iter<client_to_server_packet->iter_num;i++){
-////						spi_testing(client_to_server_packet->str, return_from_test_value);
-////						testing_result= (strcmp(return_from_test_value,client_to_server_packet->str)!=0)? FALSE : TRUE ;
-////						if (testing_result==FALSE){
-////							printf("SPI test failed!\n");
-////							break;
-////
-////
-////						}
-////
-////					}
-////					break;
-////				case (I2C):
-////					for (int iter=0; iter<client_to_server_packet->iter_num;i++){
-////						i2c_testing(client_to_server_packet->str, return_from_test_value);
-////						testing_result= (strcmp(return_from_test_value,client_to_server_packet->str)!=0)? FALSE : TRUE ;
-////						if (testing_result==FALSE){
-////							printf("I2C test failed!\n");
-////							break;
-////
-////
-////						}
-////
-////					}
-////					break;
-//				case (ADC_P):
-//					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
-//						adc_testing(client_to_server_packet.str, return_from_test_value);
-//						testing_result= (strcmp(return_from_test_value,client_to_server_packet.str)!=0)? FALSE : TRUE ;
-//						if (testing_result==FALSE){
-//							printf("ADC test failed!\n");
-//							break;
-//
-//
-//						}
-//
-//					}
-//					break;
-//				default:
-//					break;
-//
-//
+					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
+						timer_testing( client_to_server_packet.str,&return_from_timer_value);
+						int required_time=atoi(client_to_server_packet.str);
+						testing_result= ((uint32_t)required_time!=return_from_timer_value)? FALSE : TRUE ;
+						if (testing_result==FALSE){
 
-			//}
+							printf("TIMER test failed!\n");
+							break;
+
+
+						}
+
+					}
+					break;
+
+				case (UART):
+					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
+						uart_testing(client_to_server_packet.str, return_from_test_value);
+						testing_result= (strcmp(return_from_test_value,client_to_server_packet.str)!=0)? FALSE : TRUE ;
+						if (testing_result==FALSE){
+							printf("UART test failed!\n");
+							break;
+
+
+						}
+
+					}
+					break;
+				case (SPI):
+					for (int iter=0; iter<client_to_server_packet->iter_num;i++){
+						spi_testing(client_to_server_packet->str, return_from_test_value);
+						testing_result= (strcmp(return_from_test_value,client_to_server_packet->str)!=0)? FALSE : TRUE ;
+						if (testing_result==FALSE){
+							printf("SPI test failed!\n");
+							break;
+
+
+						}
+
+					}
+					break;
+				case (I2C):
+					for (int iter=0; iter<client_to_server_packet->iter_num;i++){
+						i2c_testing(client_to_server_packet->str, return_from_test_value);
+						testing_result= (strcmp(return_from_test_value,client_to_server_packet->str)!=0)? FALSE : TRUE ;
+						if (testing_result==FALSE){
+							printf("I2C test failed!\n");
+							break;
+
+
+						}
+
+					}
+					break;
+				case (ADC_P):
+					for (int iter=0; iter<client_to_server_packet.iter_num;iter++){
+						adc_testing(client_to_server_packet.str, return_from_test_value);
+						testing_result= (strcmp(return_from_test_value,client_to_server_packet.str)!=0)? FALSE : TRUE ;
+						if (testing_result==FALSE){
+							printf("ADC test failed!\n");
+							break;
+
+
+						}
+
+					}
+					break;
+				default:
+					break;
+
+
+
+			}
 			memcpy((uint8_t*)server_to_client_packet.TestID,(uint8_t*)client_to_server_packet.TestID,4);
 			memcpy((uint8_t*)&(server_to_client_packet.TestResult),(uint8_t*)&testing_result ,1);
 
